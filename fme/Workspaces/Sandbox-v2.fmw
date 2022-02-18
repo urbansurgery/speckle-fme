@@ -1,0 +1,871 @@
+#! <?xml version="1.0" encoding="UTF-8" ?>
+#! <WORKSPACE
+#    Command line to run this workspace:
+#        /Library/FME/2021.2/fme /Users/jonathonbroughton/Projects/jsdbroughton/speckle-fme/fme/Workspaces/Sandbox-v2.fmw
+#          --SPECKLE_ACCOUNT "jonathon@stardotbmp.com"
+#          --FME_LAUNCH_VIEWER_APP "YES"
+#    
+#!   ARCGIS_COMPATIBILITY="ARCGIS_AUTO"
+#!   ATTR_TYPE_ENCODING="SDF"
+#!   BEGIN_PYTHON="import&lt;space&gt;sys&lt;lf&gt;sys.path.append&lt;openparen&gt;&lt;quote&gt;&lt;solidus&gt;Users&lt;solidus&gt;jonathonbroughton&lt;solidus&gt;Projects&lt;solidus&gt;jsdbroughton&lt;solidus&gt;speckle-fme&lt;quote&gt;&lt;closeparen&gt;"
+#!   BEGIN_TCL=""
+#!   CATEGORY=""
+#!   DESCRIPTION=""
+#!   DESTINATION="NONE"
+#!   DESTINATION_ROUTING_FILE=""
+#!   DOC_EXTENTS="5404 1963"
+#!   DOC_TOP_LEFT="-750 -221"
+#!   END_PYTHON=""
+#!   END_TCL=""
+#!   EXPLICIT_BOOKMARK_ORDER="false"
+#!   FME_BUILD_NUM="21789"
+#!   FME_DOCUMENT_GUID="c5c76b64-8057-4c4e-936e-62f092bd8dc6"
+#!   FME_DOCUMENT_PRIORGUID="3053aab4-fd80-4b30-8f5a-aa296260b708,0ff6eb8c-ab35-4e4f-823d-e21eecbc4e24,82a55ec8-a689-435a-938a-2bb50b4b5e89,70d432fb-b68d-424e-9a77-024809b941ce,666b5f4a-1821-46ed-931d-99269d1155a9,7d29b847-29f5-4065-957b-b565065b3d6a,ac0410e2-e44c-44e0-b694-83ad6976b8d6,9394ac9a-9639-42e5-98ae-5b56c840f420,d483f14f-8f00-4fdb-b34a-1cb5e3572fb7,4bcf467e-7e18-4e24-8dc0-61acdbb3cffb,3cc369dd-bee8-43df-86a2-fa4cbcaa5242,e2fdb39c-1402-4d97-81cd-a8fa1cf049c4,0163d65e-f4bb-452b-9125-ea7bbaf911b4,471cb8e7-3d8b-4f2f-971e-36e291edb3a7"
+#!   FME_GEOMETRY_HANDLING="Enhanced"
+#!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
+#!   FME_NAMES_ENCODING="UTF-8"
+#!   FME_REPROJECTION_ENGINE="FME"
+#!   FME_SERVER_SERVICES=""
+#!   FME_STROKE_MAX_DEVIATION="0"
+#!   HISTORY=""
+#!   IGNORE_READER_FAILURE="No"
+#!   LAST_SAVE_BUILD="FME(R) 2021.2.0.1 (20211112 - Build 21789 - macosx)"
+#!   LAST_SAVE_DATE="2022-02-17T08:48:29"
+#!   LOG_FILE=""
+#!   LOG_MAX_RECORDED_FEATURES="200"
+#!   MARKDOWN_DESCRIPTION=""
+#!   MARKDOWN_USAGE=""
+#!   MAX_LOG_FEATURES="200"
+#!   MULTI_WRITER_DATASET_ORDER="BY_ID"
+#!   PASSWORD=""
+#!   PYTHON_COMPATIBILITY="38"
+#!   REDIRECT_TERMINATORS="NONE"
+#!   SAVE_ON_PROMPT_AND_RUN="Yes"
+#!   SHOW_ANNOTATIONS="true"
+#!   SHOW_INFO_NODES="true"
+#!   SOURCE="NONE"
+#!   SOURCE_ROUTING_FILE=""
+#!   TERMINATE_REJECTED="NO"
+#!   TITLE=""
+#!   USAGE=""
+#!   USE_MARKDOWN=""
+#!   VIEW_POSITION="-897.009 285.003"
+#!   WARN_INVALID_XFORM_PARAM="Yes"
+#!   WORKSPACE_VERSION="1"
+#!   ZOOM_SCALE="100"
+#! >
+#! <DATASETS>
+#! </DATASETS>
+#! <DATA_TYPES>
+#! </DATA_TYPES>
+#! <GEOM_TYPES>
+#! </GEOM_TYPES>
+#! <FEATURE_TYPES>
+#! </FEATURE_TYPES>
+#! <FMESERVER>
+#! </FMESERVER>
+#! <GLOBAL_PARAMETERS>
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI OPTIONAL NAMEDGROUP PARAMETER SPECKLE_ACCOUNT Speckle"
+#!   DEFAULT_VALUE=""
+#!   IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI STRING SPECKLE_ACCOUNT Speckle User Account"
+#!   DEFAULT_VALUE="jonathon@stardotbmp.com"
+#!   IS_STAND_ALONE="true"
+#! />
+#! </GLOBAL_PARAMETERS>
+#! <USER_PARAMETERS
+#!   FORM="eyJwYXJhbWV0ZXJzIjpbeyJuYW1lIjoiUEFSQU1FVEVSIiwicGFyYW1ldGVycyI6W3siZWRpdG9yIjoicGxhaW50ZXh0IiwibmFtZSI6IlNQRUNLTEVfQUNDT1VOVCIsInByb21wdCI6IlNwZWNrbGUgVXNlciBBY2NvdW50IiwicmVxdWlyZWQiOnRydWUsInNob3dFZGl0QnV0dG9uIjpmYWxzZSwidHlwZSI6InRleHQiLCJ2YWx1ZVR5cGUiOiJzdHJpbmcifV0sInByb21wdCI6IlNwZWNrbGUiLCJyZXF1aXJlZCI6ZmFsc2UsInR5cGUiOiJncm91cCIsInZhbHVlVHlwZSI6InN0cmluZyJ9XX0="
+#! >
+#! <PARAMETER_INFO>
+#!     <INFO NAME="PARAMETER" IS_STAND_ALONE="true" />
+#!     <INFO NAME="SPECKLE_ACCOUNT" IS_STAND_ALONE="true" />
+#! </PARAMETER_INFO>
+#! </USER_PARAMETERS>
+#! <COMMENTS>
+#! <COMMENT
+#!   IDENTIFIER="16"
+#!   COMMENT_VALUE="&lt;b&gt;TestFilter&amp;nbsp;[TestFilter]&lt;/b&gt;&lt;br&gt;Port&amp;nbsp;Definitions:&lt;table border=0 cellspacing=0&gt;&lt;tr&gt;&lt;td valign=middle&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/td&gt;&lt;td&gt;&lt;table border=1 cellspacing=0 cellpadding=2&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Test&amp;nbsp;Condition&lt;/td&gt;&lt;td&gt;Output&amp;nbsp;Port&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;If&lt;/td&gt;&lt;td&gt;TEST&amp;nbsp;@Value(commit_count)&amp;nbsp;&amp;gt;&amp;nbsp;0&lt;br&gt;Composite&amp;nbsp;Test:&amp;nbsp;1&lt;/td&gt;&lt;td&gt;@Value(commitCount)&amp;nbsp;&amp;gt;&amp;nbsp;0&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Else&lt;/td&gt;&lt;td&gt;&lt;font color=#808080&gt;&amp;lt;All&amp;nbsp;Other&amp;nbsp;Conditions&amp;gt;&lt;/font&gt;&lt;/td&gt;&lt;td&gt;&amp;lt;Unfiltered&amp;gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"
+#!   POSITION="3089.7553982436375 1742.0047700477005"
+#!   TOP_LEFT="3089.7553982436375 1742.0047700477005"
+#!   BOTTOM_RIGHT="4417.7681783714388 1743.0047700477005"
+#!   BOUNDING_RECT="3089.7553982436375 1742.0047700477005 1328.0127801278013 -1"
+#!   ORDER="500000000000015"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="true"
+#!   CUSTOM_USER_COLOR="false"
+#!   ANCHORED_NODE="14"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="17"
+#!   COMMENT_VALUE="&lt;b&gt;Is_Authenticated&amp;nbsp;[Tester]&lt;/b&gt;&lt;br&gt;Test&amp;nbsp;Clauses:&lt;table border=0 cellspacing=0&gt;&lt;tr&gt;&lt;td valign=middle&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/td&gt;&lt;td&gt;&lt;table border=1 cellspacing=0 cellpadding=2&gt;&lt;tr&gt;&lt;td&gt;Left&amp;nbsp;Value&lt;/td&gt;&lt;td&gt;Operator&lt;/td&gt;&lt;td&gt;Right&amp;nbsp;Value&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;@Value(authenticated)&lt;/td&gt;&lt;td&gt;=&lt;/td&gt;&lt;td&gt;Yes&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;Advanced:&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Preserve&amp;nbsp;Feature&amp;nbsp;Order:&amp;nbsp;Per&amp;nbsp;Output&amp;nbsp;Port"
+#!   POSITION="1142.5046350463504 1494.8688676541938"
+#!   TOP_LEFT="1142.5046350463504 1494.8688676541938"
+#!   BOTTOM_RIGHT="2119.5139051390515 1495.8688676541938"
+#!   BOUNDING_RECT="1142.5046350463504 1494.8688676541938 977.00927009270094 -1"
+#!   ORDER="500000000000016"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="true"
+#!   CUSTOM_USER_COLOR="false"
+#!   ANCHORED_NODE="4"
+#! />
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! <TRANSFORMER
+#!   IDENTIFIER="2"
+#!   TYPE="PythonCreator"
+#!   VERSION="3"
+#!   POSITION="150 750"
+#!   BOUNDING_RECT="150 750 863.31875000000002 71"
+#!   ORDER="500000000000001"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="21789"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <XFORM_ATTR ATTR_NAME="authenticated" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="userId" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="userName" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="NEW_ATTRIBUTES" PARM_VALUE="authenticated userId userName"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PYTHONSOURCE_NEW" PARM_VALUE="import&lt;space&gt;fmeobjects&lt;lf&gt;&lt;lf&gt;from&lt;space&gt;devtools&lt;space&gt;import&lt;space&gt;debug&lt;lf&gt;&lt;lf&gt;from&lt;space&gt;specklepy.api.client&lt;space&gt;import&lt;space&gt;SpeckleClient&lt;lf&gt;from&lt;space&gt;specklepy.api.credentials&lt;space&gt;import&lt;space&gt;get_default_account&lt;lf&gt;&lt;lf&gt;logger&lt;space&gt;=&lt;space&gt;fmeobjects.FMELogFile&lt;openparen&gt;&lt;closeparen&gt;&lt;space&gt;&lt;lf&gt;&lt;lf&gt;class&lt;space&gt;FeatureCreator&lt;openparen&gt;object&lt;closeparen&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;def&lt;space&gt;__init__&lt;openparen&gt;self&lt;closeparen&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;account&lt;space&gt;=&lt;space&gt;get_default_account&lt;openparen&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;client&lt;space&gt;=&lt;space&gt;SpeckleClient&lt;openparen&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;#&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;logger.logMessageString&lt;openparen&gt;&lt;quote&gt;--------&lt;quote&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;client.authenticate&lt;openparen&gt;token=account.token&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;#&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;logger.logMessageString&lt;openparen&gt;str&lt;openparen&gt;client&lt;closeparen&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;#&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;logger.logMessageString&lt;openparen&gt;str&lt;openparen&gt;account&lt;closeparen&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;#&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;logger.logMessageString&lt;openparen&gt;str&lt;openparen&gt;vars&lt;openparen&gt;account&lt;closeparen&gt;&lt;closeparen&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;#&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;logger.logMessageString&lt;openparen&gt;str&lt;openparen&gt;vars&lt;openparen&gt;client&lt;closeparen&gt;&lt;closeparen&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;#&lt;space&gt;&lt;space&gt;logger.logMessageString&lt;openparen&gt;&lt;quote&gt;--------&lt;quote&gt;&lt;closeparen&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;self.client&lt;space&gt;=&lt;space&gt;client&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;self.account&lt;space&gt;=&lt;space&gt;account&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;pass&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;def&lt;space&gt;input&lt;openparen&gt;self&lt;comma&gt;&lt;space&gt;feature&lt;closeparen&gt;:&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;client&lt;space&gt;=&lt;space&gt;fmeobjects.FMEFeature&lt;openparen&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;client.setAttribute&lt;openparen&gt;fmeobjects.kFMEFeatureTypeAttr&lt;comma&gt;&lt;space&gt;&lt;quote&gt;SpeckleClient&lt;quote&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;client.setFeatureType&lt;openparen&gt;&lt;apos&gt;SpeckleClient&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;client.setAttribute&lt;openparen&gt;&lt;quote&gt;_token&lt;quote&gt;&lt;comma&gt;&lt;space&gt;self.account.token&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;client.setAttribute&lt;openparen&gt;&lt;quote&gt;_refreshToken&lt;quote&gt;&lt;comma&gt;&lt;space&gt;self.account.refreshToken&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;client.setAttribute&lt;openparen&gt;&lt;quote&gt;_host&lt;quote&gt;&lt;comma&gt;&lt;space&gt;self.client.url&lt;closeparen&gt;&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;client.setAttribute&lt;openparen&gt;&lt;apos&gt;authenticated&lt;apos&gt;&lt;comma&gt;&lt;space&gt;self.client.me&lt;space&gt;is&lt;space&gt;not&lt;space&gt;None&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;client.setAttribute&lt;openparen&gt;&lt;quote&gt;userId&lt;quote&gt;&lt;comma&gt;&lt;space&gt;self.account.userInfo.id&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;client.setAttribute&lt;openparen&gt;&lt;quote&gt;userName&lt;quote&gt;&lt;comma&gt;&lt;space&gt;self.account.userInfo.name&lt;closeparen&gt;&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;self.pyoutput&lt;openparen&gt;client&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;def&lt;space&gt;close&lt;openparen&gt;self&lt;closeparen&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;pass&lt;lf&gt;"/>
+#!     <XFORM_PARM PARM_NAME="PYTHONSYMBOL" PARM_VALUE="FeatureCreator"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="SpeckleFME:Get_Default_Account_Client"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="4"
+#!   TYPE="Tester"
+#!   VERSION="3"
+#!   POSITION="1200 750"
+#!   BOUNDING_RECT="1200 750 430 71"
+#!   ORDER="500000000000002"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="21789"
+#! >
+#!     <OUTPUT_FEAT NAME="PASSED"/>
+#!     <XFORM_ATTR ATTR_NAME="authenticated" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="userId" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="userName" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="FAILED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="authenticated" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="userId" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="userName" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="BOOL_OP" PARM_VALUE="OR"/>
+#!     <XFORM_PARM PARM_NAME="COMPOSITE_MSG" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="COMPOSITE_TEST" PARM_VALUE="1"/>
+#!     <XFORM_PARM PARM_NAME="PRESERVE_FEATURE_ORDER" PARM_VALUE="Per Output Port"/>
+#!     <XFORM_PARM PARM_NAME="TEST_CLAUSE" PARM_VALUE="TEST &lt;at&gt;Value&lt;openparen&gt;authenticated&lt;closeparen&gt; = Yes"/>
+#!     <XFORM_PARM PARM_NAME="TEST_CLAUSE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TEST_MODE" PARM_VALUE="TEST"/>
+#!     <XFORM_PARM PARM_NAME="TEST_PREVIEW_GROUP" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Is_Authenticated"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="12"
+#!   TYPE="PythonCaller"
+#!   VERSION="4"
+#!   POSITION="1950 750"
+#!   BOUNDING_RECT="1950 750 536.89687500000002 71"
+#!   ORDER="500000000000008"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="21789"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <XFORM_ATTR ATTR_NAME="stream_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="stream_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="description" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="is_public" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="stream_no" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY_MODE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_PROCESSING_GROUP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="HIDE_ATTRIBUTES" PARM_VALUE="authenticated userId userName"/>
+#!     <XFORM_PARM PARM_NAME="LIST_ATTRS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="NEW_ATTRIBUTES" PARM_VALUE="stream_id stream_name description is_public stream_no"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PYTHONSOURCE" PARM_VALUE="import&lt;space&gt;fmeobjects&lt;lf&gt;&lt;lf&gt;from&lt;space&gt;devtools&lt;space&gt;import&lt;space&gt;debug&lt;lf&gt;&lt;lf&gt;from&lt;space&gt;specklepy.api.client&lt;space&gt;import&lt;space&gt;SpeckleClient&lt;lf&gt;from&lt;space&gt;specklepy.api.models&lt;space&gt;import&lt;space&gt;Stream&lt;lf&gt;&lt;lf&gt;logger&lt;space&gt;=&lt;space&gt;fmeobjects.FMELogFile&lt;openparen&gt;&lt;closeparen&gt;&lt;space&gt;&lt;lf&gt;&lt;lf&gt;class&lt;space&gt;FeatureProcessor&lt;openparen&gt;object&lt;closeparen&gt;:&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;def&lt;space&gt;__init__&lt;openparen&gt;self&lt;closeparen&gt;:&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;pass&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;def&lt;space&gt;input&lt;openparen&gt;self&lt;comma&gt;&lt;space&gt;feature&lt;closeparen&gt;:&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;logger.logMessageString&lt;openparen&gt;&lt;apos&gt;~~~~~~&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;token&lt;space&gt;=&lt;space&gt;feature.getAttribute&lt;openparen&gt;&lt;apos&gt;_token&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;host&lt;space&gt;=&lt;space&gt;feature.getAttribute&lt;openparen&gt;&lt;apos&gt;_host&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;client&lt;space&gt;=&lt;space&gt;SpeckleClient&lt;openparen&gt;host&lt;closeparen&gt;&lt;semicolon&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;client.authenticate&lt;openparen&gt;token&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;streams&lt;space&gt;=&lt;space&gt;client.stream.list&lt;openparen&gt;&lt;closeparen&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;for&lt;space&gt;x&lt;space&gt;in&lt;space&gt;range&lt;openparen&gt;len&lt;openparen&gt;streams&lt;closeparen&gt;&lt;closeparen&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;stream&lt;space&gt;=&lt;space&gt;streams&lt;openbracket&gt;x&lt;closebracket&gt;&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;logger.logMessageString&lt;openparen&gt;str&lt;openparen&gt;dir&lt;openparen&gt;stream&lt;closeparen&gt;&lt;closeparen&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;streamFeature&lt;space&gt;=&lt;space&gt;fmeobjects.FMEFeature&lt;openparen&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;streamFeature.setFeatureType&lt;openparen&gt;&lt;apos&gt;SpeckleStream&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;streamFeature.setAttribute&lt;openparen&gt;fmeobjects.kFMEFeatureTypeAttr&lt;comma&gt;&lt;space&gt;&lt;quote&gt;SpeckleStream&lt;quote&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;streamFeature.setAttribute&lt;openparen&gt;&lt;apos&gt;stream_no&lt;apos&gt;&lt;comma&gt;x&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;streamFeature.setAttribute&lt;openparen&gt;&lt;apos&gt;stream_id&lt;apos&gt;&lt;comma&gt;stream.id&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;streamFeature.setAttribute&lt;openparen&gt;&lt;apos&gt;stream_name&lt;apos&gt;&lt;comma&gt;stream.name&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;streamFeature.setAttribute&lt;openparen&gt;&lt;apos&gt;description&lt;apos&gt;&lt;comma&gt;stream.description&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;streamFeature.setAttribute&lt;openparen&gt;&lt;apos&gt;is_public&lt;apos&gt;&lt;comma&gt;stream.isPublic&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;streamFeature.setAttribute&lt;openparen&gt;&lt;apos&gt;_token&lt;apos&gt;&lt;comma&gt;&lt;space&gt;token&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;streamFeature.setAttribute&lt;openparen&gt;&lt;apos&gt;_host&lt;apos&gt;&lt;comma&gt;&lt;space&gt;host&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;self.pyoutput&lt;openparen&gt;streamFeature&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;logger.logMessageString&lt;openparen&gt;&lt;apos&gt;~~~~~~&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;def&lt;space&gt;close&lt;openparen&gt;self&lt;closeparen&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;quote&gt;&lt;quote&gt;&lt;quote&gt;This&lt;space&gt;method&lt;space&gt;is&lt;space&gt;called&lt;space&gt;once&lt;space&gt;all&lt;space&gt;the&lt;space&gt;FME&lt;space&gt;Features&lt;space&gt;have&lt;space&gt;been&lt;space&gt;processed&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;from&lt;space&gt;input&lt;openparen&gt;&lt;closeparen&gt;.&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;quote&gt;&lt;quote&gt;&lt;quote&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;pass&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;def&lt;space&gt;process_group&lt;openparen&gt;self&lt;closeparen&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;quote&gt;&lt;quote&gt;&lt;quote&gt;When&lt;space&gt;&lt;apos&gt;Group&lt;space&gt;By&lt;apos&gt;&lt;space&gt;attribute&lt;openparen&gt;s&lt;closeparen&gt;&lt;space&gt;are&lt;space&gt;specified&lt;comma&gt;&lt;space&gt;this&lt;space&gt;method&lt;space&gt;is&lt;space&gt;called&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;once&lt;space&gt;all&lt;space&gt;the&lt;space&gt;FME&lt;space&gt;Features&lt;space&gt;in&lt;space&gt;a&lt;space&gt;current&lt;space&gt;group&lt;space&gt;have&lt;space&gt;been&lt;space&gt;sent&lt;space&gt;to&lt;space&gt;input&lt;openparen&gt;&lt;closeparen&gt;.&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;FME&lt;space&gt;Features&lt;space&gt;sent&lt;space&gt;to&lt;space&gt;input&lt;openparen&gt;&lt;closeparen&gt;&lt;space&gt;should&lt;space&gt;generally&lt;space&gt;be&lt;space&gt;cached&lt;space&gt;for&lt;space&gt;group-by&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;processing&lt;space&gt;in&lt;space&gt;this&lt;space&gt;method&lt;space&gt;when&lt;space&gt;knowledge&lt;space&gt;of&lt;space&gt;all&lt;space&gt;Features&lt;space&gt;is&lt;space&gt;required.&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;The&lt;space&gt;resulting&lt;space&gt;Feature&lt;openparen&gt;s&lt;closeparen&gt;&lt;space&gt;from&lt;space&gt;the&lt;space&gt;group-by&lt;space&gt;processing&lt;space&gt;should&lt;space&gt;be&lt;space&gt;emitted&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;through&lt;space&gt;self.pyoutput&lt;openparen&gt;&lt;closeparen&gt;.&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;FME&lt;space&gt;will&lt;space&gt;continue&lt;space&gt;calling&lt;space&gt;input&lt;openparen&gt;&lt;closeparen&gt;&lt;space&gt;a&lt;space&gt;number&lt;space&gt;of&lt;space&gt;times&lt;space&gt;followed&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;by&lt;space&gt;process_group&lt;openparen&gt;&lt;closeparen&gt;&lt;space&gt;for&lt;space&gt;each&lt;space&gt;&lt;apos&gt;Group&lt;space&gt;By&lt;apos&gt;&lt;space&gt;attribute&lt;comma&gt;&lt;space&gt;so&lt;space&gt;this&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;implementation&lt;space&gt;should&lt;space&gt;reset&lt;space&gt;any&lt;space&gt;class&lt;space&gt;members&lt;space&gt;for&lt;space&gt;the&lt;space&gt;next&lt;space&gt;group.&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;quote&gt;&lt;quote&gt;&lt;quote&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;pass&lt;lf&gt;"/>
+#!     <XFORM_PARM PARM_NAME="PYTHONSYMBOL" PARM_VALUE="FeatureProcessor"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="SpeckleFME:Get_Streams"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="9"
+#!   TYPE="PythonCaller"
+#!   VERSION="4"
+#!   POSITION="2700 1200"
+#!   BOUNDING_RECT="2700 1200 556.10000000000002 71"
+#!   ORDER="500000000000008"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="21789"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <XFORM_ATTR ATTR_NAME="stream_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="stream_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="branch_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="branch_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="commit_count" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="branch_no" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY_MODE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_PROCESSING_GROUP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="HIDE_ATTRIBUTES" PARM_VALUE="description is_public stream_no"/>
+#!     <XFORM_PARM PARM_NAME="LIST_ATTRS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="NEW_ATTRIBUTES" PARM_VALUE="branch_id branch_name description commit_count branch_no stream_id stream_name"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PYTHONSOURCE" PARM_VALUE="import&lt;space&gt;fmeobjects&lt;lf&gt;&lt;lf&gt;from&lt;space&gt;devtools&lt;space&gt;import&lt;space&gt;debug&lt;lf&gt;&lt;lf&gt;from&lt;space&gt;specklepy.api.client&lt;space&gt;import&lt;space&gt;SpeckleClient&lt;lf&gt;from&lt;space&gt;specklepy.api.models&lt;space&gt;import&lt;space&gt;Stream&lt;lf&gt;&lt;lf&gt;logger&lt;space&gt;=&lt;space&gt;fmeobjects.FMELogFile&lt;openparen&gt;&lt;closeparen&gt;&lt;space&gt;&lt;lf&gt;&lt;lf&gt;class&lt;space&gt;FeatureProcessor&lt;openparen&gt;object&lt;closeparen&gt;:&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;def&lt;space&gt;__init__&lt;openparen&gt;self&lt;closeparen&gt;:&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;pass&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;def&lt;space&gt;input&lt;openparen&gt;self&lt;comma&gt;&lt;space&gt;feature&lt;closeparen&gt;:&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;logger.logMessageString&lt;openparen&gt;&lt;apos&gt;~~~~~~&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;token&lt;space&gt;=&lt;space&gt;feature.getAttribute&lt;openparen&gt;&lt;apos&gt;_token&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;host&lt;space&gt;=&lt;space&gt;feature.getAttribute&lt;openparen&gt;&lt;apos&gt;_host&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;client&lt;space&gt;=&lt;space&gt;SpeckleClient&lt;openparen&gt;host&lt;closeparen&gt;&lt;semicolon&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;client.authenticate&lt;openparen&gt;token&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;streamId&lt;space&gt;=&lt;space&gt;feature.getAttribute&lt;openparen&gt;&lt;apos&gt;stream_id&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;stream&lt;space&gt;=&lt;space&gt;client.stream.get&lt;openparen&gt;streamId&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;if&lt;space&gt;stream.branches&lt;space&gt;is&lt;space&gt;not&lt;space&gt;None:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;branches&lt;space&gt;=&lt;space&gt;stream.branches.items&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;for&lt;space&gt;x&lt;space&gt;in&lt;space&gt;range&lt;openparen&gt;len&lt;openparen&gt;branches&lt;closeparen&gt;&lt;closeparen&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;branch&lt;space&gt;=&lt;space&gt;branches&lt;openbracket&gt;x&lt;closebracket&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;branchFeature&lt;space&gt;=&lt;space&gt;fmeobjects.FMEFeature&lt;openparen&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;branchFeature.setFeatureType&lt;openparen&gt;&lt;apos&gt;SpeckleBranch&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;branchFeature.setAttribute&lt;openparen&gt;fmeobjects.kFMEFeatureTypeAttr&lt;comma&gt;&lt;space&gt;&lt;quote&gt;SpeckleBranch&lt;quote&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;branchFeature.setAttribute&lt;openparen&gt;&lt;apos&gt;branch_no&lt;apos&gt;&lt;comma&gt;&lt;space&gt;x&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;branchFeature.setAttribute&lt;openparen&gt;&lt;apos&gt;branch_id&lt;apos&gt;&lt;comma&gt;&lt;space&gt;branch.id&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;branchFeature.setAttribute&lt;openparen&gt;&lt;apos&gt;branch_name&lt;apos&gt;&lt;comma&gt;&lt;space&gt;branch.name&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;branchFeature.setAttribute&lt;openparen&gt;&lt;apos&gt;description&lt;apos&gt;&lt;comma&gt;&lt;space&gt;branch.description&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;branchFeature.setAttribute&lt;openparen&gt;&lt;apos&gt;commit_count&lt;apos&gt;&lt;comma&gt;&lt;space&gt;branch.commits.totalCount&lt;closeparen&gt;&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;branchFeature.setAttribute&lt;openparen&gt;&lt;apos&gt;stream_id&lt;apos&gt;&lt;comma&gt;&lt;space&gt;stream.id&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;branchFeature.setAttribute&lt;openparen&gt;&lt;apos&gt;stream_name&lt;apos&gt;&lt;comma&gt;&lt;space&gt;stream.name&lt;closeparen&gt;&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;branchFeature.setAttribute&lt;openparen&gt;&lt;apos&gt;_token&lt;apos&gt;&lt;comma&gt;&lt;space&gt;token&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;branchFeature.setAttribute&lt;openparen&gt;&lt;apos&gt;_host&lt;apos&gt;&lt;comma&gt;&lt;space&gt;host&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;self.pyoutput&lt;openparen&gt;branchFeature&lt;closeparen&gt;&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;logger.logMessageString&lt;openparen&gt;str&lt;openparen&gt;branches&lt;closeparen&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;logger.logMessageString&lt;openparen&gt;&lt;apos&gt;~~~~~~&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;def&lt;space&gt;close&lt;openparen&gt;self&lt;closeparen&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;quote&gt;&lt;quote&gt;&lt;quote&gt;This&lt;space&gt;method&lt;space&gt;is&lt;space&gt;called&lt;space&gt;once&lt;space&gt;all&lt;space&gt;the&lt;space&gt;FME&lt;space&gt;Features&lt;space&gt;have&lt;space&gt;been&lt;space&gt;processed&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;from&lt;space&gt;input&lt;openparen&gt;&lt;closeparen&gt;.&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;quote&gt;&lt;quote&gt;&lt;quote&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;pass&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;def&lt;space&gt;process_group&lt;openparen&gt;self&lt;closeparen&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;quote&gt;&lt;quote&gt;&lt;quote&gt;When&lt;space&gt;&lt;apos&gt;Group&lt;space&gt;By&lt;apos&gt;&lt;space&gt;attribute&lt;openparen&gt;s&lt;closeparen&gt;&lt;space&gt;are&lt;space&gt;specified&lt;comma&gt;&lt;space&gt;this&lt;space&gt;method&lt;space&gt;is&lt;space&gt;called&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;once&lt;space&gt;all&lt;space&gt;the&lt;space&gt;FME&lt;space&gt;Features&lt;space&gt;in&lt;space&gt;a&lt;space&gt;current&lt;space&gt;group&lt;space&gt;have&lt;space&gt;been&lt;space&gt;sent&lt;space&gt;to&lt;space&gt;input&lt;openparen&gt;&lt;closeparen&gt;.&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;FME&lt;space&gt;Features&lt;space&gt;sent&lt;space&gt;to&lt;space&gt;input&lt;openparen&gt;&lt;closeparen&gt;&lt;space&gt;should&lt;space&gt;generally&lt;space&gt;be&lt;space&gt;cached&lt;space&gt;for&lt;space&gt;group-by&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;processing&lt;space&gt;in&lt;space&gt;this&lt;space&gt;method&lt;space&gt;when&lt;space&gt;knowledge&lt;space&gt;of&lt;space&gt;all&lt;space&gt;Features&lt;space&gt;is&lt;space&gt;required.&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;The&lt;space&gt;resulting&lt;space&gt;Feature&lt;openparen&gt;s&lt;closeparen&gt;&lt;space&gt;from&lt;space&gt;the&lt;space&gt;group-by&lt;space&gt;processing&lt;space&gt;should&lt;space&gt;be&lt;space&gt;emitted&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;through&lt;space&gt;self.pyoutput&lt;openparen&gt;&lt;closeparen&gt;.&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;FME&lt;space&gt;will&lt;space&gt;continue&lt;space&gt;calling&lt;space&gt;input&lt;openparen&gt;&lt;closeparen&gt;&lt;space&gt;a&lt;space&gt;number&lt;space&gt;of&lt;space&gt;times&lt;space&gt;followed&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;by&lt;space&gt;process_group&lt;openparen&gt;&lt;closeparen&gt;&lt;space&gt;for&lt;space&gt;each&lt;space&gt;&lt;apos&gt;Group&lt;space&gt;By&lt;apos&gt;&lt;space&gt;attribute&lt;comma&gt;&lt;space&gt;so&lt;space&gt;this&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;implementation&lt;space&gt;should&lt;space&gt;reset&lt;space&gt;any&lt;space&gt;class&lt;space&gt;members&lt;space&gt;for&lt;space&gt;the&lt;space&gt;next&lt;space&gt;group.&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;quote&gt;&lt;quote&gt;&lt;quote&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;pass&lt;lf&gt;"/>
+#!     <XFORM_PARM PARM_NAME="PYTHONSYMBOL" PARM_VALUE="FeatureProcessor"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="SpeckleFME:Get_Branches"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="14"
+#!   TYPE="TestFilter"
+#!   VERSION="2"
+#!   POSITION="3450 1200"
+#!   BOUNDING_RECT="3450 1200 454 71"
+#!   ORDER="500000000000013"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="21789"
+#! >
+#!     <OUTPUT_FEAT NAME="&lt;at&gt;Value&lt;openparen&gt;commitCount&lt;closeparen&gt;&lt;space&gt;&lt;gt&gt;&lt;space&gt;0"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="stream_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="stream_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="branch_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="branch_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="commit_count" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="branch_no" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="&lt;lt&gt;UNFILTERED&lt;gt&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="stream_id" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="stream_name" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="branch_id" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="branch_name" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="commit_count" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="branch_no" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="DEFAULT_VALUE" PARM_VALUE="&lt;lt&gt;UNFILTERED&lt;gt&gt;"/>
+#!     <XFORM_PARM PARM_NAME="PRESERVE_FEATURE_ORDER" PARM_VALUE="Per Output Port"/>
+#!     <XFORM_PARM PARM_NAME="TESTLISTGRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TEST_LIST" PARM_VALUE="&quot;BOOL_OP,OR,COMPOSITE_TEST,&quot;&quot;&quot;&quot;&quot;&quot;1&quot;&quot;&quot;&quot;&quot;&quot;,TEST_CLAUSE,TEST&lt;space&gt;&lt;lt&gt;at&lt;gt&gt;Value&lt;lt&gt;openparen&lt;gt&gt;commit_count&lt;lt&gt;closeparen&lt;gt&gt;&lt;space&gt;&lt;gt&gt;&lt;space&gt;0&quot;,&lt;at&gt;Value&lt;openparen&gt;commitCount&lt;closeparen&gt;&lt;space&gt;&lt;gt&gt;&lt;space&gt;0"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="TestFilter"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="18"
+#!   TYPE="PythonCaller"
+#!   VERSION="4"
+#!   POSITION="3600 300"
+#!   BOUNDING_RECT="3600 300 709.22500000000002 71"
+#!   ORDER="500000000000008"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="21789"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <XFORM_ATTR ATTR_NAME="stream_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="description" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="is_public" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="stream_no" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="branch_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="commit_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="object_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="total_children_count" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY_MODE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_PROCESSING_GROUP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="HIDE_ATTRIBUTES" PARM_VALUE="stream_name"/>
+#!     <XFORM_PARM PARM_NAME="LIST_ATTRS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="NEW_ATTRIBUTES" PARM_VALUE="stream_id branch_id commit_id object_id total_children_count"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PYTHONSOURCE" PARM_VALUE="import&lt;space&gt;fmeobjects&lt;lf&gt;&lt;lf&gt;from&lt;space&gt;devtools&lt;space&gt;import&lt;space&gt;debug&lt;lf&gt;&lt;lf&gt;from&lt;space&gt;specklepy.api&lt;space&gt;import&lt;space&gt;operations&lt;lf&gt;from&lt;space&gt;specklepy.api.client&lt;space&gt;import&lt;space&gt;SpeckleClient&lt;lf&gt;from&lt;space&gt;specklepy.api.client&lt;space&gt;import&lt;space&gt;SpeckleException&lt;lf&gt;from&lt;space&gt;specklepy.api.models&lt;space&gt;import&lt;space&gt;Stream&lt;lf&gt;from&lt;space&gt;specklepy.transports.server&lt;space&gt;import&lt;space&gt;ServerTransport&lt;lf&gt;&lt;lf&gt;import&lt;space&gt;codecs&lt;lf&gt;&lt;lf&gt;logger&lt;space&gt;=&lt;space&gt;fmeobjects.FMELogFile&lt;openparen&gt;&lt;closeparen&gt;&lt;space&gt;&lt;lf&gt;&lt;lf&gt;class&lt;space&gt;FeatureProcessor&lt;openparen&gt;object&lt;closeparen&gt;:&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;def&lt;space&gt;__init__&lt;openparen&gt;self&lt;closeparen&gt;:&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;pass&lt;lf&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;def&lt;space&gt;input&lt;openparen&gt;self&lt;comma&gt;&lt;space&gt;feature&lt;closeparen&gt;:&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;logger.logMessageString&lt;openparen&gt;&lt;apos&gt;~~~~~~&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;token&lt;space&gt;=&lt;space&gt;feature.getAttribute&lt;openparen&gt;&lt;apos&gt;_token&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;host&lt;space&gt;=&lt;space&gt;feature.getAttribute&lt;openparen&gt;&lt;apos&gt;_host&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;client&lt;space&gt;=&lt;space&gt;SpeckleClient&lt;openparen&gt;host&lt;closeparen&gt;&lt;semicolon&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;client.authenticate&lt;openparen&gt;token&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;streamId&lt;space&gt;=&lt;space&gt;feature.getAttribute&lt;openparen&gt;&lt;apos&gt;stream_id&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;stream&lt;space&gt;=&lt;space&gt;client.stream.get&lt;openparen&gt;streamId&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;if&lt;space&gt;stream.branches&lt;space&gt;is&lt;space&gt;None:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;return&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;branches&lt;space&gt;=&lt;space&gt;stream.branches.items&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;main_branch&lt;space&gt;=&lt;space&gt;&lt;openbracket&gt;x&lt;space&gt;for&lt;space&gt;x&lt;space&gt;in&lt;space&gt;branches&lt;space&gt;if&lt;space&gt;x.name&lt;space&gt;==&lt;space&gt;&lt;apos&gt;main&lt;apos&gt;&lt;closebracket&gt;&lt;openbracket&gt;0&lt;closebracket&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;if&lt;space&gt;main_branch&lt;space&gt;is&lt;space&gt;None&lt;space&gt;or&lt;space&gt;main_branch.commits&lt;space&gt;is&lt;space&gt;None&lt;space&gt;or&lt;space&gt;main_branch.commits.cursor&lt;space&gt;is&lt;space&gt;None:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;logger.logMessage&lt;openparen&gt;0&lt;comma&gt;&lt;openbracket&gt;&lt;apos&gt;No&lt;space&gt;Commits&lt;space&gt;on&lt;space&gt;Main&lt;space&gt;Branch&lt;apos&gt;&lt;closebracket&gt;&lt;space&gt;&lt;comma&gt;&lt;space&gt;fmeobjects.FME_ERROR&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;return&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;transport&lt;space&gt;=&lt;space&gt;ServerTransport&lt;openparen&gt;client=client&lt;comma&gt;&lt;space&gt;stream_id=streamId&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;commit&lt;space&gt;=&lt;space&gt;main_branch.commits.items&lt;openbracket&gt;0&lt;closebracket&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;objId&lt;space&gt;=&lt;space&gt;commit.referencedObject&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;if&lt;space&gt;objId&lt;space&gt;is&lt;space&gt;None:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;return&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;try:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;commitObject&lt;space&gt;=&lt;space&gt;operations.receive&lt;openparen&gt;objId&lt;comma&gt;&lt;space&gt;transport&lt;comma&gt;&lt;space&gt;None&lt;closeparen&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;logger.logMessageString&lt;openparen&gt;&lt;apos&gt;wow&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;objectFeature&lt;space&gt;=&lt;space&gt;fmeobjects.FMEFeature&lt;openparen&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;objectFeature.setFeatureType&lt;openparen&gt;commitObject.speckle_type&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;objectFeature.setAttribute&lt;openparen&gt;fmeobjects.kFMEFeatureTypeAttr&lt;comma&gt;&lt;space&gt;commitObject.speckle_type&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;objectFeature.setAttribute&lt;openparen&gt;&lt;apos&gt;object_id&lt;apos&gt;&lt;comma&gt;&lt;space&gt;commitObject.id&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;objectFeature.setAttribute&lt;openparen&gt;&lt;apos&gt;total_children_count&lt;apos&gt;&lt;comma&gt;&lt;space&gt;commitObject.totalChildrenCount&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;objectFeature.setAttribute&lt;openparen&gt;&lt;apos&gt;stream_id&lt;apos&gt;&lt;comma&gt;&lt;space&gt;stream.id&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;objectFeature.setAttribute&lt;openparen&gt;&lt;apos&gt;branch_id&lt;apos&gt;&lt;comma&gt;&lt;space&gt;main_branch.id&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;objectFeature.setAttribute&lt;openparen&gt;&lt;apos&gt;commit_id&lt;apos&gt;&lt;comma&gt;&lt;space&gt;commit.id&lt;closeparen&gt;&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;#&lt;space&gt;&lt;space&gt;objectFeature.setAttribute&lt;openparen&gt;&lt;apos&gt;data&lt;apos&gt;&lt;comma&gt;&lt;space&gt;commitObject.data&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;logger.logMessageString&lt;openparen&gt;str&lt;openparen&gt;vars&lt;openparen&gt;commitObject&lt;closeparen&gt;&lt;closeparen&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;memberNames&lt;space&gt;=&lt;space&gt;commitObject.get_member_names&lt;openparen&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;logger.logMessageString&lt;openparen&gt;str&lt;openparen&gt;memberNames&lt;closeparen&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;logger.logMessageString&lt;openparen&gt;commitObject.units&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;self.pyoutput&lt;openparen&gt;objectFeature&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;except&lt;space&gt;SpeckleException&lt;space&gt;as&lt;space&gt;e:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;logger.logMessageString&lt;openparen&gt;str&lt;openparen&gt;dir&lt;openparen&gt;e&lt;closeparen&gt;&lt;closeparen&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;logger.logMessage&lt;openparen&gt;0&lt;comma&gt;&lt;openbracket&gt;e.message&lt;closebracket&gt;&lt;comma&gt;fmeobjects.FME_ERROR&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;logger.logMessage&lt;openparen&gt;0&lt;comma&gt;&lt;openbracket&gt;str&lt;openparen&gt;e.with_traceback&lt;closeparen&gt;&lt;closebracket&gt;&lt;comma&gt;fmeobjects.FME_ERROR&lt;closeparen&gt;&lt;lf&gt;&lt;lf&gt;&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;return&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;def&lt;space&gt;close&lt;openparen&gt;self&lt;closeparen&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;quote&gt;&lt;quote&gt;&lt;quote&gt;This&lt;space&gt;method&lt;space&gt;is&lt;space&gt;called&lt;space&gt;once&lt;space&gt;all&lt;space&gt;the&lt;space&gt;FME&lt;space&gt;Features&lt;space&gt;have&lt;space&gt;been&lt;space&gt;processed&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;from&lt;space&gt;input&lt;openparen&gt;&lt;closeparen&gt;.&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;quote&gt;&lt;quote&gt;&lt;quote&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;logger.logMessageString&lt;openparen&gt;&lt;apos&gt;~~~~~~&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;pass&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;def&lt;space&gt;process_group&lt;openparen&gt;self&lt;closeparen&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;quote&gt;&lt;quote&gt;&lt;quote&gt;When&lt;space&gt;&lt;apos&gt;Group&lt;space&gt;By&lt;apos&gt;&lt;space&gt;attribute&lt;openparen&gt;s&lt;closeparen&gt;&lt;space&gt;are&lt;space&gt;specified&lt;comma&gt;&lt;space&gt;this&lt;space&gt;method&lt;space&gt;is&lt;space&gt;called&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;once&lt;space&gt;all&lt;space&gt;the&lt;space&gt;FME&lt;space&gt;Features&lt;space&gt;in&lt;space&gt;a&lt;space&gt;current&lt;space&gt;group&lt;space&gt;have&lt;space&gt;been&lt;space&gt;sent&lt;space&gt;to&lt;space&gt;input&lt;openparen&gt;&lt;closeparen&gt;.&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;FME&lt;space&gt;Features&lt;space&gt;sent&lt;space&gt;to&lt;space&gt;input&lt;openparen&gt;&lt;closeparen&gt;&lt;space&gt;should&lt;space&gt;generally&lt;space&gt;be&lt;space&gt;cached&lt;space&gt;for&lt;space&gt;group-by&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;processing&lt;space&gt;in&lt;space&gt;this&lt;space&gt;method&lt;space&gt;when&lt;space&gt;knowledge&lt;space&gt;of&lt;space&gt;all&lt;space&gt;Features&lt;space&gt;is&lt;space&gt;required.&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;The&lt;space&gt;resulting&lt;space&gt;Feature&lt;openparen&gt;s&lt;closeparen&gt;&lt;space&gt;from&lt;space&gt;the&lt;space&gt;group-by&lt;space&gt;processing&lt;space&gt;should&lt;space&gt;be&lt;space&gt;emitted&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;through&lt;space&gt;self.pyoutput&lt;openparen&gt;&lt;closeparen&gt;.&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;FME&lt;space&gt;will&lt;space&gt;continue&lt;space&gt;calling&lt;space&gt;input&lt;openparen&gt;&lt;closeparen&gt;&lt;space&gt;a&lt;space&gt;number&lt;space&gt;of&lt;space&gt;times&lt;space&gt;followed&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;by&lt;space&gt;process_group&lt;openparen&gt;&lt;closeparen&gt;&lt;space&gt;for&lt;space&gt;each&lt;space&gt;&lt;apos&gt;Group&lt;space&gt;By&lt;apos&gt;&lt;space&gt;attribute&lt;comma&gt;&lt;space&gt;so&lt;space&gt;this&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;implementation&lt;space&gt;should&lt;space&gt;reset&lt;space&gt;any&lt;space&gt;class&lt;space&gt;members&lt;space&gt;for&lt;space&gt;the&lt;space&gt;next&lt;space&gt;group.&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;quote&gt;&lt;quote&gt;&lt;quote&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;pass&lt;lf&gt;"/>
+#!     <XFORM_PARM PARM_NAME="PYTHONSYMBOL" PARM_VALUE="FeatureProcessor"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="SpeckleFME:Get_Latest_From_Main"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="19"
+#!   TYPE="AttributeFilter"
+#!   VERSION="5"
+#!   POSITION="2766.279732564768 450"
+#!   BOUNDING_RECT="2766.279732564768 450 454 71"
+#!   ORDER="500000000000010"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="21789"
+#! >
+#!     <OUTPUT_FEAT NAME="&lt;lt&gt;EMPTY&lt;gt&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="stream_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="stream_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="description" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="is_public" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="stream_no" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="&lt;lt&gt;MISSING&lt;gt&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="stream_id" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="stream_name" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="description" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="is_public" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="stream_no" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <OUTPUT_FEAT NAME="&lt;lt&gt;NULL&lt;gt&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="2"/>
+#!     <XFORM_ATTR ATTR_NAME="stream_id" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="stream_name" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="description" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="is_public" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="stream_no" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <OUTPUT_FEAT NAME="&lt;lt&gt;UNFILTERED&lt;gt&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="3"/>
+#!     <XFORM_ATTR ATTR_NAME="stream_id" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="stream_name" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="description" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="is_public" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="stream_no" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <OUTPUT_FEAT NAME="0"/>
+#!     <FEAT_COLLAPSED COLLAPSED="4"/>
+#!     <XFORM_ATTR ATTR_NAME="stream_id" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="stream_name" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="description" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="is_public" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="stream_no" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <OUTPUT_FEAT NAME="1"/>
+#!     <FEAT_COLLAPSED COLLAPSED="5"/>
+#!     <XFORM_ATTR ATTR_NAME="stream_id" IS_USER_CREATED="false" FEAT_INDEX="5" />
+#!     <XFORM_ATTR ATTR_NAME="stream_name" IS_USER_CREATED="false" FEAT_INDEX="5" />
+#!     <XFORM_ATTR ATTR_NAME="description" IS_USER_CREATED="false" FEAT_INDEX="5" />
+#!     <XFORM_ATTR ATTR_NAME="is_public" IS_USER_CREATED="false" FEAT_INDEX="5" />
+#!     <XFORM_ATTR ATTR_NAME="stream_no" IS_USER_CREATED="false" FEAT_INDEX="5" />
+#!     <OUTPUT_FEAT NAME="2"/>
+#!     <FEAT_COLLAPSED COLLAPSED="6"/>
+#!     <XFORM_ATTR ATTR_NAME="stream_id" IS_USER_CREATED="false" FEAT_INDEX="6" />
+#!     <XFORM_ATTR ATTR_NAME="stream_name" IS_USER_CREATED="false" FEAT_INDEX="6" />
+#!     <XFORM_ATTR ATTR_NAME="description" IS_USER_CREATED="false" FEAT_INDEX="6" />
+#!     <XFORM_ATTR ATTR_NAME="is_public" IS_USER_CREATED="false" FEAT_INDEX="6" />
+#!     <XFORM_ATTR ATTR_NAME="stream_no" IS_USER_CREATED="false" FEAT_INDEX="6" />
+#!     <OUTPUT_FEAT NAME="3"/>
+#!     <FEAT_COLLAPSED COLLAPSED="7"/>
+#!     <XFORM_ATTR ATTR_NAME="stream_id" IS_USER_CREATED="false" FEAT_INDEX="7" />
+#!     <XFORM_ATTR ATTR_NAME="stream_name" IS_USER_CREATED="false" FEAT_INDEX="7" />
+#!     <XFORM_ATTR ATTR_NAME="description" IS_USER_CREATED="false" FEAT_INDEX="7" />
+#!     <XFORM_ATTR ATTR_NAME="is_public" IS_USER_CREATED="false" FEAT_INDEX="7" />
+#!     <XFORM_ATTR ATTR_NAME="stream_no" IS_USER_CREATED="false" FEAT_INDEX="7" />
+#!     <OUTPUT_FEAT NAME="4"/>
+#!     <FEAT_COLLAPSED COLLAPSED="8"/>
+#!     <XFORM_ATTR ATTR_NAME="stream_id" IS_USER_CREATED="false" FEAT_INDEX="8" />
+#!     <XFORM_ATTR ATTR_NAME="stream_name" IS_USER_CREATED="false" FEAT_INDEX="8" />
+#!     <XFORM_ATTR ATTR_NAME="description" IS_USER_CREATED="false" FEAT_INDEX="8" />
+#!     <XFORM_ATTR ATTR_NAME="is_public" IS_USER_CREATED="false" FEAT_INDEX="8" />
+#!     <XFORM_ATTR ATTR_NAME="stream_no" IS_USER_CREATED="false" FEAT_INDEX="8" />
+#!     <OUTPUT_FEAT NAME="5"/>
+#!     <FEAT_COLLAPSED COLLAPSED="9"/>
+#!     <XFORM_ATTR ATTR_NAME="stream_id" IS_USER_CREATED="false" FEAT_INDEX="9" />
+#!     <XFORM_ATTR ATTR_NAME="stream_name" IS_USER_CREATED="false" FEAT_INDEX="9" />
+#!     <XFORM_ATTR ATTR_NAME="description" IS_USER_CREATED="false" FEAT_INDEX="9" />
+#!     <XFORM_ATTR ATTR_NAME="is_public" IS_USER_CREATED="false" FEAT_INDEX="9" />
+#!     <XFORM_ATTR ATTR_NAME="stream_no" IS_USER_CREATED="false" FEAT_INDEX="9" />
+#!     <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_NAME" PARM_VALUE="stream_no"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_VALUES" PARM_VALUE="&lt;lt&gt;Empty&lt;gt&gt;,&lt;lt&gt;Missing&lt;gt&gt;,&lt;lt&gt;Null&lt;gt&gt;,&lt;lt&gt;Unfiltered&lt;gt&gt;,0,1,2,3,4,5"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_VALUES_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PRESERVE_FEATURE_ORDER" PARM_VALUE="Per Output Port"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeFilter_2"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="22"
+#!   TYPE="AttributeFilter"
+#!   VERSION="5"
+#!   POSITION="4200 1200"
+#!   BOUNDING_RECT="4200 1200 454 71"
+#!   ORDER="500000000000010"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="21789"
+#! >
+#!     <OUTPUT_FEAT NAME="&lt;lt&gt;EMPTY&lt;gt&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="stream_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="stream_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="branch_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="branch_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="commit_count" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="branch_no" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="&lt;lt&gt;MISSING&lt;gt&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="stream_id" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="stream_name" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="branch_id" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="branch_name" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="commit_count" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="branch_no" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <OUTPUT_FEAT NAME="&lt;lt&gt;NULL&lt;gt&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="2"/>
+#!     <XFORM_ATTR ATTR_NAME="stream_id" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="stream_name" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="branch_id" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="branch_name" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="commit_count" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="branch_no" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <OUTPUT_FEAT NAME="&lt;lt&gt;UNFILTERED&lt;gt&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="3"/>
+#!     <XFORM_ATTR ATTR_NAME="stream_id" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="stream_name" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="branch_id" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="branch_name" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="commit_count" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="branch_no" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <OUTPUT_FEAT NAME="0"/>
+#!     <FEAT_COLLAPSED COLLAPSED="4"/>
+#!     <XFORM_ATTR ATTR_NAME="stream_id" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="stream_name" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="branch_id" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="branch_name" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="commit_count" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="branch_no" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <OUTPUT_FEAT NAME="1"/>
+#!     <FEAT_COLLAPSED COLLAPSED="5"/>
+#!     <XFORM_ATTR ATTR_NAME="stream_id" IS_USER_CREATED="false" FEAT_INDEX="5" />
+#!     <XFORM_ATTR ATTR_NAME="stream_name" IS_USER_CREATED="false" FEAT_INDEX="5" />
+#!     <XFORM_ATTR ATTR_NAME="branch_id" IS_USER_CREATED="false" FEAT_INDEX="5" />
+#!     <XFORM_ATTR ATTR_NAME="branch_name" IS_USER_CREATED="false" FEAT_INDEX="5" />
+#!     <XFORM_ATTR ATTR_NAME="commit_count" IS_USER_CREATED="false" FEAT_INDEX="5" />
+#!     <XFORM_ATTR ATTR_NAME="branch_no" IS_USER_CREATED="false" FEAT_INDEX="5" />
+#!     <OUTPUT_FEAT NAME="2"/>
+#!     <FEAT_COLLAPSED COLLAPSED="6"/>
+#!     <XFORM_ATTR ATTR_NAME="stream_id" IS_USER_CREATED="false" FEAT_INDEX="6" />
+#!     <XFORM_ATTR ATTR_NAME="stream_name" IS_USER_CREATED="false" FEAT_INDEX="6" />
+#!     <XFORM_ATTR ATTR_NAME="branch_id" IS_USER_CREATED="false" FEAT_INDEX="6" />
+#!     <XFORM_ATTR ATTR_NAME="branch_name" IS_USER_CREATED="false" FEAT_INDEX="6" />
+#!     <XFORM_ATTR ATTR_NAME="commit_count" IS_USER_CREATED="false" FEAT_INDEX="6" />
+#!     <XFORM_ATTR ATTR_NAME="branch_no" IS_USER_CREATED="false" FEAT_INDEX="6" />
+#!     <OUTPUT_FEAT NAME="3"/>
+#!     <FEAT_COLLAPSED COLLAPSED="7"/>
+#!     <XFORM_ATTR ATTR_NAME="stream_id" IS_USER_CREATED="false" FEAT_INDEX="7" />
+#!     <XFORM_ATTR ATTR_NAME="stream_name" IS_USER_CREATED="false" FEAT_INDEX="7" />
+#!     <XFORM_ATTR ATTR_NAME="branch_id" IS_USER_CREATED="false" FEAT_INDEX="7" />
+#!     <XFORM_ATTR ATTR_NAME="branch_name" IS_USER_CREATED="false" FEAT_INDEX="7" />
+#!     <XFORM_ATTR ATTR_NAME="commit_count" IS_USER_CREATED="false" FEAT_INDEX="7" />
+#!     <XFORM_ATTR ATTR_NAME="branch_no" IS_USER_CREATED="false" FEAT_INDEX="7" />
+#!     <OUTPUT_FEAT NAME="4"/>
+#!     <FEAT_COLLAPSED COLLAPSED="8"/>
+#!     <XFORM_ATTR ATTR_NAME="stream_id" IS_USER_CREATED="false" FEAT_INDEX="8" />
+#!     <XFORM_ATTR ATTR_NAME="stream_name" IS_USER_CREATED="false" FEAT_INDEX="8" />
+#!     <XFORM_ATTR ATTR_NAME="branch_id" IS_USER_CREATED="false" FEAT_INDEX="8" />
+#!     <XFORM_ATTR ATTR_NAME="branch_name" IS_USER_CREATED="false" FEAT_INDEX="8" />
+#!     <XFORM_ATTR ATTR_NAME="commit_count" IS_USER_CREATED="false" FEAT_INDEX="8" />
+#!     <XFORM_ATTR ATTR_NAME="branch_no" IS_USER_CREATED="false" FEAT_INDEX="8" />
+#!     <OUTPUT_FEAT NAME="5"/>
+#!     <FEAT_COLLAPSED COLLAPSED="9"/>
+#!     <XFORM_ATTR ATTR_NAME="stream_id" IS_USER_CREATED="false" FEAT_INDEX="9" />
+#!     <XFORM_ATTR ATTR_NAME="stream_name" IS_USER_CREATED="false" FEAT_INDEX="9" />
+#!     <XFORM_ATTR ATTR_NAME="branch_id" IS_USER_CREATED="false" FEAT_INDEX="9" />
+#!     <XFORM_ATTR ATTR_NAME="branch_name" IS_USER_CREATED="false" FEAT_INDEX="9" />
+#!     <XFORM_ATTR ATTR_NAME="commit_count" IS_USER_CREATED="false" FEAT_INDEX="9" />
+#!     <XFORM_ATTR ATTR_NAME="branch_no" IS_USER_CREATED="false" FEAT_INDEX="9" />
+#!     <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_NAME" PARM_VALUE="branch_no"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_VALUES" PARM_VALUE="&lt;lt&gt;Empty&lt;gt&gt;,&lt;lt&gt;Missing&lt;gt&gt;,&lt;lt&gt;Null&lt;gt&gt;,&lt;lt&gt;Unfiltered&lt;gt&gt;,0,1,2,3,4,5"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_VALUES_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PRESERVE_FEATURE_ORDER" PARM_VALUE="Per Output Port"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeFilter_3"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="25"
+#!   TYPE="PythonCaller"
+#!   VERSION="4"
+#!   POSITION="450 0"
+#!   BOUNDING_RECT="450 0 454 71"
+#!   ORDER="500000000000026"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="21789"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="speckle_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="object_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="branch_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="commit_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="stream_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="stream_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="description" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="commit_message" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY_MODE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_PROCESSING_GROUP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="HIDE_ATTRIBUTES" PARM_VALUE="_creation_instance stream_url"/>
+#!     <XFORM_PARM PARM_NAME="LIST_ATTRS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="NEW_ATTRIBUTES" PARM_VALUE="fme_feature_type speckle_type object_id branch_id commit_id stream_id stream_name description commit_message"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PYTHONSOURCE" PARM_VALUE="from&lt;space&gt;fme_speckle.readers&lt;space&gt;import&lt;space&gt;StreamReader"/>
+#!     <XFORM_PARM PARM_NAME="PYTHONSYMBOL" PARM_VALUE="StreamReader"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="PythonCaller"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="26"
+#!   TYPE="Creator"
+#!   VERSION="5"
+#!   POSITION="-750 -150"
+#!   BOUNDING_RECT="-750 -150 430 71"
+#!   ORDER="500000000000027"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="21789"
+#! >
+#!     <OUTPUT_FEAT NAME="CREATED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATEND" PARM_VALUE="no"/>
+#!     <XFORM_PARM PARM_NAME="COORDS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="COORDSYS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="CRE_ATTR" PARM_VALUE="_creation_instance"/>
+#!     <XFORM_PARM PARM_NAME="GEOM" PARM_VALUE="&lt;lt&gt;?xml&lt;space&gt;version=&lt;quote&gt;1.0&lt;quote&gt;&lt;space&gt;encoding=&lt;quote&gt;US_ASCII&lt;quote&gt;&lt;space&gt;standalone=&lt;quote&gt;no&lt;quote&gt;&lt;space&gt;?&lt;gt&gt;&lt;lt&gt;geometry&lt;space&gt;dimension=&lt;quote&gt;2&lt;quote&gt;&lt;gt&gt;&lt;lt&gt;null&lt;solidus&gt;&lt;gt&gt;&lt;lt&gt;&lt;solidus&gt;geometry&lt;gt&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GEOMTYPE" PARM_VALUE="Geometry Object"/>
+#!     <XFORM_PARM PARM_NAME="NUM" PARM_VALUE="1"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Creator"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="28"
+#!   TYPE="AttributeCreator"
+#!   VERSION="9"
+#!   POSITION="-150 0"
+#!   BOUNDING_RECT="-150 0 454 71"
+#!   ORDER="500000000000028"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="21789"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="stream_url" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; stream_url SET_TO https:&lt;solidus&gt;&lt;solidus&gt;speckle.xyz&lt;solidus&gt;streams&lt;solidus&gt;fd1d44405d&lt;solidus&gt;objects&lt;solidus&gt;10ccf0ccdb46f79a24400319a71685b5"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeCreator"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="27"
+#!   TYPE="SpeckleClient_v1"
+#!   VERSION="1"
+#!   POSITION="-600 300"
+#!   BOUNDING_RECT="-600 300 430 71"
+#!   ORDER="500000000000029"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="21789"
+#! >
+#!     <OUTPUT_FEAT NAME="Output"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="authenticated" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="userId" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="userName" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="SpeckleClient_v1"/>
+#! </TRANSFORMER>
+#! </TRANSFORMERS>
+#! <FEAT_LINKS>
+#! <FEAT_LINK
+#!   IDENTIFIER="11"
+#!   SOURCE_NODE="2"
+#!   TARGET_NODE="4"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.82352941176470584,0.82352941176470584,0.82352941176470584,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="29"
+#!   SOURCE_NODE="26"
+#!   TARGET_NODE="28"
+#!   SOURCE_PORT_DESC="fo 0 CREATED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.82352941176470584,0.82352941176470584,0.82352941176470584,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="7"
+#!   SOURCE_NODE="4"
+#!   TARGET_NODE="12"
+#!   SOURCE_PORT_DESC="fo 0 PASSED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.82352941176470584,0.82352941176470584,0.82352941176470584,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="15"
+#!   SOURCE_NODE="9"
+#!   TARGET_NODE="14"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.82352941176470584,0.82352941176470584,0.82352941176470584,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="20"
+#!   SOURCE_NODE="12"
+#!   TARGET_NODE="19"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.82352941176470584,0.82352941176470584,0.82352941176470584,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="24"
+#!   SOURCE_NODE="12"
+#!   TARGET_NODE="9"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="1"
+#!   HIDDEN="false"
+#!   COLOUR="0.82352941176470584,0.82352941176470584,0.82352941176470584,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="23"
+#!   SOURCE_NODE="14"
+#!   TARGET_NODE="22"
+#!   SOURCE_PORT_DESC="fo 0 &lt;lt&gt;at&lt;gt&gt;Value&lt;lt&gt;openparen&lt;gt&gt;commitCount&lt;lt&gt;closeparen&lt;gt&gt;&lt;lt&gt;space&lt;gt&gt;&lt;lt&gt;gt&lt;gt&gt;&lt;lt&gt;space&lt;gt&gt;0"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.82352941176470584,0.82352941176470584,0.82352941176470584,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="31"
+#!   SOURCE_NODE="28"
+#!   TARGET_NODE="25"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.82352941176470584,0.82352941176470584,0.82352941176470584,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="21"
+#!   SOURCE_NODE="19"
+#!   TARGET_NODE="18"
+#!   SOURCE_PORT_DESC="fo 4 0"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.82352941176470584,0.82352941176470584,0.82352941176470584,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! </ATTR_LINKS>
+#! <SUBDOCUMENTS>
+#! </SUBDOCUMENTS>
+#! <LOOKUP_TABLES>
+#! </LOOKUP_TABLES>
+#! </WORKSPACE>
+
+FME_PYTHON_VERSION 38
+ARCGIS_COMPATIBILITY ARCGIS_AUTO
+# ============================================================================
+DEFAULT_MACRO PARAMETER 
+DEFAULT_MACRO SPECKLE_ACCOUNT jonathon@stardotbmp.com
+# ============================================================================
+GUI OPTIONAL NAMEDGROUP PARAMETER SPECKLE_ACCOUNT Speckle
+GUI STRING SPECKLE_ACCOUNT Speckle User Account
+# ============================================================================
+USER_PARAMETERS eyJwYXJhbWV0ZXJzIjpbeyJuYW1lIjoiUEFSQU1FVEVSIiwicGFyYW1ldGVycyI6W3siZWRpdG9yIjoicGxhaW50ZXh0IiwibmFtZSI6IlNQRUNLTEVfQUNDT1VOVCIsInByb21wdCI6IlNwZWNrbGUgVXNlciBBY2NvdW50IiwicmVxdWlyZWQiOnRydWUsInNob3dFZGl0QnV0dG9uIjpmYWxzZSwidHlwZSI6InRleHQiLCJ2YWx1ZVR5cGUiOiJzdHJpbmcifV0sInByb21wdCI6IlNwZWNrbGUiLCJyZXF1aXJlZCI6ZmFsc2UsInR5cGUiOiJncm91cCIsInZhbHVlVHlwZSI6InN0cmluZyJ9XX0=
+# ============================================================================
+INCLUDE [ if {{$(SPECKLE_ACCOUNT)} == {}} { puts_real {Parameter 'SPECKLE_ACCOUNT' must be given a value.}; exit 1; }; ]
+#! START_HEADER
+#! START_WB_HEADER
+READER_TYPE MULTI_READER
+WRITER_TYPE NULL
+WRITER_KEYWORD NULL_DEST
+NULL_DEST_DATASET null
+#! END_WB_HEADER
+#! START_WB_HEADER
+#! END_WB_HEADER
+#! END_HEADER
+
+LOG_FILTER_MASK -1
+LOG_MAX_FEATURES 200
+LOG_MAX_RECORDED_FEATURES 200
+FME_REPROJECTION_ENGINE FME
+FME_IMPLICIT_CSMAP_REPROJECTION_MODE Auto
+FME_GEOMETRY_HANDLING Enhanced
+FME_STROKE_MAX_DEVIATION 0
+FME_NAMES_ENCODING UTF-8
+LAST_SAVE_BUILD "FME 2021.2.0.1 (20211112 - Build 21789 - macosx)"
+# -------------------------------------------------------------------------
+
+MULTI_READER_CONTINUE_ON_READER_FAILURE No
+FME_BEGIN_PYTHON_ENC import<space>sys<lf>sys.path.append<openparen><quote><solidus>Users<solidus>jonathonbroughton<solidus>Projects<solidus>jsdbroughton<solidus>speckle-fme<quote><closeparen>
+
+# -------------------------------------------------------------------------
+
+MACRO WORKSPACE_NAME Sandbox-v2
+MACRO FME_VIEWER_APP fmedatainspector
+DEFAULT_MACRO WB_CURRENT_CONTEXT
+# -------------------------------------------------------------------------
+FME_PYTHON_PATH "$(FME_MF_DIR)"
+FACTORY_DEF {*} CreationFactory    FACTORY_NAME { SpeckleFME:Get_Default_Account_Client_Creator }    OUTPUT { FEATURE_TYPE _____CREATED_PYTHON__ }
+FACTORY_DEF {*} PythonFactory    FACTORY_NAME { SpeckleFME:Get_Default_Account_Client }    INPUT FEATURE_TYPE _____CREATED_PYTHON__    SYMBOL_NAME { FeatureCreator }    PYTHON_NAMESPACE FMEOBJECTS    SOURCE_CODE { import<space>fmeobjects<lf><lf>from<space>devtools<space>import<space>debug<lf><lf>from<space>specklepy.api.client<space>import<space>SpeckleClient<lf>from<space>specklepy.api.credentials<space>import<space>get_default_account<lf><lf>logger<space>=<space>fmeobjects.FMELogFile<openparen><closeparen><space><lf><lf>class<space>FeatureCreator<openparen>object<closeparen>:<lf><space><space><space><space><lf><space><space><space><space>def<space>__init__<openparen>self<closeparen>:<lf><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space>account<space>=<space>get_default_account<openparen><closeparen><lf><space><space><space><space><space><space><space><space>client<space>=<space>SpeckleClient<openparen><closeparen><lf><space><space><space><space><space><space><space><space><lf>#<space><space><space><space><space><space><space><space>logger.logMessageString<openparen><quote>--------<quote><closeparen><lf><lf><space><space><space><space><space><space><space><space>client.authenticate<openparen>token=account.token<closeparen><lf><space>#<space><space><space><space><space><space><space>logger.logMessageString<openparen>str<openparen>client<closeparen><closeparen><lf><space>#<space><space><space><space><space><space><space>logger.logMessageString<openparen>str<openparen>account<closeparen><closeparen><lf><space><space>#<space><space><space><space><space><space>logger.logMessageString<openparen>str<openparen>vars<openparen>account<closeparen><closeparen><closeparen><lf><space><space><space><space>#<space><space><space><space>logger.logMessageString<openparen>str<openparen>vars<openparen>client<closeparen><closeparen><closeparen><lf><space><space><space><space><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space>#<space><space>logger.logMessageString<openparen><quote>--------<quote><closeparen><space><space><space><lf><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space>self.client<space>=<space>client<lf><space><space><space><space><space><space><space><space>self.account<space>=<space>account<lf><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space>pass<lf><space><space><space><space><space><space><space><space><lf><space><space><space><space>def<space>input<openparen>self<comma><space>feature<closeparen>:<space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space>client<space>=<space>fmeobjects.FMEFeature<openparen><closeparen><lf><space><space><space><space><space><space><space><space>client.setAttribute<openparen>fmeobjects.kFMEFeatureTypeAttr<comma><space><quote>SpeckleClient<quote><closeparen><lf><space><space><space><space><space><space><space><space>client.setFeatureType<openparen><apos>SpeckleClient<apos><closeparen><lf><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space>client.setAttribute<openparen><quote>_token<quote><comma><space>self.account.token<closeparen><lf><space><space><space><space><space><space><space><space>client.setAttribute<openparen><quote>_refreshToken<quote><comma><space>self.account.refreshToken<closeparen><lf><space><space><space><space><space><space><space><space>client.setAttribute<openparen><quote>_host<quote><comma><space>self.client.url<closeparen><lf><lf><space><space><space><space><space><space><space><space>client.setAttribute<openparen><apos>authenticated<apos><comma><space>self.client.me<space>is<space>not<space>None<closeparen><lf><space><space><space><space><space><space><space><space>client.setAttribute<openparen><quote>userId<quote><comma><space>self.account.userInfo.id<closeparen><lf><space><space><space><space><space><space><space><space>client.setAttribute<openparen><quote>userName<quote><comma><space>self.account.userInfo.name<closeparen><lf><lf><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space>self.pyoutput<openparen>client<closeparen><lf><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space><lf><space><space><space><space>def<space>close<openparen>self<closeparen>:<lf><space><space><space><space><space><space><space><space>pass<lf> }    OUTPUT { PYOUTPUT FEATURE_TYPE SpeckleFME:Get_Default_Account_Client_OUTPUT        @SupplyAttributes(?,fme_feature_type,SpeckleFME:Get_Default_Account_Client)         }
+FACTORY_DEF * BranchingFactory   FACTORY_NAME "SpeckleFME:Get_Default_Account_Client_OUTPUT Brancher -1 11"   INPUT FEATURE_TYPE SpeckleFME:Get_Default_Account_Client_OUTPUT   TARGET_FACTORY "$(WB_CURRENT_CONTEXT)_CREATOR_BRANCH_TARGET"   MAXIMUM_COUNT None   OUTPUT PASSED FEATURE_TYPE *
+# -------------------------------------------------------------------------
+Tcl2 proc Creator_CoordSysRemover {} {   global FME_CoordSys;   set FME_CoordSys {}; }
+MACRO Creator_XML     NOT_ACTIVATED
+MACRO Creator_CLASSIC NOT_ACTIVATED
+MACRO Creator_2D3D    2D_GEOMETRY
+MACRO Creator_COORDS  <Unused>
+INCLUDE [ if { {Geometry Object} == {Geometry Object} } {            puts {MACRO Creator_XML *} } ]
+INCLUDE [ if { {Geometry Object} == {2D Coordinate List} } {            puts {MACRO Creator_2D3D 2D_GEOMETRY};            puts {MACRO Creator_CLASSIC *} } ]
+INCLUDE [ if { {Geometry Object} == {3D Coordinate List} } {            puts {MACRO Creator_2D3D 3D_GEOMETRY};            puts {MACRO Creator_CLASSIC *} } ]
+INCLUDE [ if { {Geometry Object} == {2D Min/Max Box} } {            set comment {                We need to turn the COORDS which are                    minX minY maxX maxY                into a full polygon list of coordinates            };            set splitCoords [split [string trim {<Unused>}]];            if { [llength $splitCoords] > 4} {               set trimmedCoords {};               foreach item $splitCoords { if { $item != {} } {lappend trimmedCoords $item} };               set splitCoords $trimmedCoords;            };            if { [llength $splitCoords] != 4 } {                error {Creator: Coordinate list is expected to be a space delimited list of four numbers as 'minx miny maxx maxy' - `<Unused>' is invalid};            };            set minX [lindex $splitCoords 0];            set minY [lindex $splitCoords 1];            set maxX [lindex $splitCoords 2];            set maxY [lindex $splitCoords 3];            puts "MACRO Creator_COORDS $minX $minY $minX $maxY $maxX $maxY $maxX $minY $minX $minY";            puts {MACRO Creator_2D3D 2D_GEOMETRY};            puts {MACRO Creator_CLASSIC *} } ]
+FACTORY_DEF {$(Creator_XML)} CreationFactory    FACTORY_NAME { Creator_XML_Creator }    CREATE_AT_END { no }    OUTPUT { FEATURE_TYPE _____CREATED______        @Geometry(FROM_ENCODED_STRING,<lt>?xml<space>version=<quote>1.0<quote><space>encoding=<quote>US_ASCII<quote><space>standalone=<quote>no<quote><space>?<gt><lt>geometry<space>dimension=<quote>2<quote><gt><lt>null<solidus><gt><lt><solidus>geometry<gt>) }
+FACTORY_DEF {$(Creator_CLASSIC)} CreationFactory    FACTORY_NAME { Creator_CLASSIC_Creator }    $(Creator_2D3D) { $(Creator_COORDS) }    CREATE_AT_END { no }    OUTPUT { FEATURE_TYPE _____CREATED______ }
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { Creator_Cloner }    INPUT FEATURE_TYPE _____CREATED______        @Tcl2(Creator_CoordSysRemover)        @CoordSys()    NUMBER_OF_COPIES { 1 }    COPY_NUMBER_ATTRIBUTE { "_creation_instance" }    OUTPUT { FEATURE_TYPE Creator_CREATED        fme_feature_type Creator         }
+FACTORY_DEF * BranchingFactory   FACTORY_NAME "Creator_CREATED Brancher -1 29"   INPUT FEATURE_TYPE Creator_CREATED   TARGET_FACTORY "$(WB_CURRENT_CONTEXT)_CREATOR_BRANCH_TARGET"   MAXIMUM_COUNT None   OUTPUT PASSED FEATURE_TYPE *
+# -------------------------------------------------------------------------
+MACRO SpeckleClient_v1_WORKSPACE_NAME SpeckleClient_v1
+MACRO $(SpeckleClient_v1_WORKSPACE_NAME)_XFORMER_NAME SpeckleClient_v1
+MACRO $(SpeckleClient_v1_WORKSPACE_NAME)_TRANSFORMER_GROUP 
+INCLUDE_CUSTOM_TRANSFORMER_VER SpeckleClient_v1:1
+FACTORY_DEF * TeeFactory   FACTORY_NAME "SpeckleClient_v1 Output Output Renamer/Nuker"   INPUT FEATURE_TYPE SpeckleClient_v1_Output
+# -------------------------------------------------------------------------
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(WB_CURRENT_CONTEXT)_CREATOR_BRANCH_TARGET"   INPUT FEATURE_TYPE *  OUTPUT FEATURE_TYPE *
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME { AttributeCreator }    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE Creator_CREATED    MULTI_FEATURE_MODE { NO }    NULL_ATTR_MODE { NO_OP }    ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ATTR_ACTION { "" "stream_url" "SET_TO" "https:<solidus><solidus>speckle.xyz<solidus>streams<solidus>fd1d44405d<solidus>objects<solidus>10ccf0ccdb46f79a24400319a71685b5" }    OUTPUT { OUTPUT FEATURE_TYPE AttributeCreator_OUTPUT        }
+# -------------------------------------------------------------------------
+FME_PYTHON_PATH "$(FME_MF_DIR)"
+FACTORY_DEF {*} PythonFactory    FACTORY_NAME { PythonCaller }    FLUSH_WHEN_GROUPS_CHANGE { <Unused> }    INPUT  FEATURE_TYPE AttributeCreator_OUTPUT    SYMBOL_NAME { StreamReader }    PYTHON_NAMESPACE FMEOBJECTS    SOURCE_CODE { from<space>fme_speckle.readers<space>import<space>StreamReader }    OUTPUT { PYOUTPUT FEATURE_TYPE PythonCaller_OUTPUT         }
+FACTORY_DEF * TeeFactory   FACTORY_NAME "PythonCaller OUTPUT Transformer Output Nuker"   INPUT FEATURE_TYPE PythonCaller_OUTPUT
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} TestFactory    FACTORY_NAME { Is_Authenticated }    INPUT  FEATURE_TYPE SpeckleFME:Get_Default_Account_Client_OUTPUT    TEST { "@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>authenticated<closeparen>,Is_Authenticated)" = Yes ENCODED }    BOOLEAN_OPERATOR { OR }    COMPOSITE_TEST_EXPR { "1" }    FEATURE_TABLE_SHIM_SUPPORT Yes    PRESERVE_FEATURE_ORDER { PER_OUTPUT_PORT }    OUTPUT { PASSED FEATURE_TYPE Is_Authenticated_PASSED         }
+# -------------------------------------------------------------------------
+FME_PYTHON_PATH "$(FME_MF_DIR)"
+FACTORY_DEF {*} PythonFactory    FACTORY_NAME { SpeckleFME:Get_Streams }    FLUSH_WHEN_GROUPS_CHANGE { <Unused> }    INPUT  FEATURE_TYPE Is_Authenticated_PASSED    SYMBOL_NAME { FeatureProcessor }    PYTHON_NAMESPACE FMEOBJECTS    SOURCE_CODE { import<space>fmeobjects<lf><lf>from<space>devtools<space>import<space>debug<lf><lf>from<space>specklepy.api.client<space>import<space>SpeckleClient<lf>from<space>specklepy.api.models<space>import<space>Stream<lf><lf>logger<space>=<space>fmeobjects.FMELogFile<openparen><closeparen><space><lf><lf>class<space>FeatureProcessor<openparen>object<closeparen>:<lf><lf><space><space><space><space>def<space>__init__<openparen>self<closeparen>:<space><lf><space><space><space><space><space><space><space><space>pass<lf><lf><space><space><space><space>def<space>input<openparen>self<comma><space>feature<closeparen>:<lf><lf><space><space><space><space><space><space><space><space>logger.logMessageString<openparen><apos>~~~~~~<apos><closeparen><lf><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space>token<space>=<space>feature.getAttribute<openparen><apos>_token<apos><closeparen><lf><space><space><space><space><space><space><space><space>host<space>=<space>feature.getAttribute<openparen><apos>_host<apos><closeparen><lf><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space>client<space>=<space>SpeckleClient<openparen>host<closeparen><semicolon><lf><space><space><space><space><space><space><space><space>client.authenticate<openparen>token<closeparen><lf><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space>streams<space>=<space>client.stream.list<openparen><closeparen><space><space><space><lf><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space>for<space>x<space>in<space>range<openparen>len<openparen>streams<closeparen><closeparen>:<lf><space><space><space><space><space><space><space><space><space><space><space><space><space><space>stream<space>=<space>streams<openbracket>x<closebracket><lf><lf><space><space><space><space><space><space><space><space><space><space><space><space><space><space>logger.logMessageString<openparen>str<openparen>dir<openparen>stream<closeparen><closeparen><closeparen><lf><space><space><space><space><space><space><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space><space><space><space><space><space><space>streamFeature<space>=<space>fmeobjects.FMEFeature<openparen><closeparen><lf><space><space><space><space><space><space><space><space><space><space><space><space><space><space>streamFeature.setFeatureType<openparen><apos>SpeckleStream<apos><closeparen><lf><space><space><space><space><space><space><space><space><space><space><space><space><space><space>streamFeature.setAttribute<openparen>fmeobjects.kFMEFeatureTypeAttr<comma><space><quote>SpeckleStream<quote><closeparen><lf><space><space><space><space><space><space><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space><space><space><space><space><space><space>streamFeature.setAttribute<openparen><apos>stream_no<apos><comma>x<closeparen><lf><space><space><space><space><space><space><space><space><space><space><space><space><space><space>streamFeature.setAttribute<openparen><apos>stream_id<apos><comma>stream.id<closeparen><lf><space><space><space><space><space><space><space><space><space><space><space><space><space><space>streamFeature.setAttribute<openparen><apos>stream_name<apos><comma>stream.name<closeparen><lf><space><space><space><space><space><space><space><space><space><space><space><space><space><space>streamFeature.setAttribute<openparen><apos>description<apos><comma>stream.description<closeparen><lf><space><space><space><space><space><space><space><space><space><space><space><space><space><space>streamFeature.setAttribute<openparen><apos>is_public<apos><comma>stream.isPublic<closeparen><lf><space><space><space><space><space><space><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space><space><space><space><space><space><space>streamFeature.setAttribute<openparen><apos>_token<apos><comma><space>token<closeparen><lf><space><space><space><space><space><space><space><space><space><space><space><space><space><space>streamFeature.setAttribute<openparen><apos>_host<apos><comma><space>host<closeparen><lf><space><space><space><space><space><space><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space><space><space><space><space><space><space>self.pyoutput<openparen>streamFeature<closeparen><lf><space><space><space><space><space><space><space><space><space><space><space><space><space><space><lf><lf><space><space><space><space><space><space><space><space>logger.logMessageString<openparen><apos>~~~~~~<apos><closeparen><lf><lf><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space><lf><lf><space><space><space><space>def<space>close<openparen>self<closeparen>:<lf><space><space><space><space><space><space><space><space><quote><quote><quote>This<space>method<space>is<space>called<space>once<space>all<space>the<space>FME<space>Features<space>have<space>been<space>processed<lf><space><space><space><space><space><space><space><space>from<space>input<openparen><closeparen>.<lf><space><space><space><space><space><space><space><space><quote><quote><quote><lf><space><space><space><space><space><space><space><space>pass<lf><lf><space><space><space><space>def<space>process_group<openparen>self<closeparen>:<lf><space><space><space><space><space><space><space><space><quote><quote><quote>When<space><apos>Group<space>By<apos><space>attribute<openparen>s<closeparen><space>are<space>specified<comma><space>this<space>method<space>is<space>called<space><lf><space><space><space><space><space><space><space><space>once<space>all<space>the<space>FME<space>Features<space>in<space>a<space>current<space>group<space>have<space>been<space>sent<space>to<space>input<openparen><closeparen>.<lf><lf><space><space><space><space><space><space><space><space>FME<space>Features<space>sent<space>to<space>input<openparen><closeparen><space>should<space>generally<space>be<space>cached<space>for<space>group-by<space><lf><space><space><space><space><space><space><space><space>processing<space>in<space>this<space>method<space>when<space>knowledge<space>of<space>all<space>Features<space>is<space>required.<space><lf><space><space><space><space><space><space><space><space>The<space>resulting<space>Feature<openparen>s<closeparen><space>from<space>the<space>group-by<space>processing<space>should<space>be<space>emitted<space><lf><space><space><space><space><space><space><space><space>through<space>self.pyoutput<openparen><closeparen>.<lf><lf><space><space><space><space><space><space><space><space>FME<space>will<space>continue<space>calling<space>input<openparen><closeparen><space>a<space>number<space>of<space>times<space>followed<lf><space><space><space><space><space><space><space><space>by<space>process_group<openparen><closeparen><space>for<space>each<space><apos>Group<space>By<apos><space>attribute<comma><space>so<space>this<space><lf><space><space><space><space><space><space><space><space>implementation<space>should<space>reset<space>any<space>class<space>members<space>for<space>the<space>next<space>group.<lf><space><space><space><space><space><space><space><space><quote><quote><quote><lf><space><space><space><space><space><space><space><space>pass<lf> }    OUTPUT { PYOUTPUT FEATURE_TYPE SpeckleFME:Get_Streams_OUTPUT         }
+FACTORY_DEF * TeeFactory   FACTORY_NAME "SpeckleFME:Get_Streams OUTPUT Splitter"   INPUT FEATURE_TYPE SpeckleFME:Get_Streams_OUTPUT   OUTPUT FEATURE_TYPE SpeckleFME:Get_Streams_OUTPUT_0_P9ppEt+vgE0=   OUTPUT FEATURE_TYPE SpeckleFME:Get_Streams_OUTPUT_1_nAspsZc7e1c=
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { AttributeFilter_2 }    INPUT  FEATURE_TYPE SpeckleFME:Get_Streams_OUTPUT_0_P9ppEt+vgE0=    OUTPUT { FEATURE_TYPE AttributeFilter_2_FILTER }
+FACTORY_DEF {*} AttributeFilterFactory FACTORY_NAME AttributeFilter_2_Filter COMMAND_PARM_EVALUATION SINGLE_PASS INPUT FEATURE_TYPE AttributeFilter_2_FILTER FILTER_ATTRIBUTE { stream_no } FILTER_VALUES { <lt>EMPTY<gt> <lt>MISSING<gt> <lt>NULL<gt> <lt>UNFILTERED<gt> 0 1 2 3 4 5 } PRESERVE_FEATURE_ORDER PER_OUTPUT_PORT OUTPUT <lt>EMPTY<gt> FEATURE_TYPE AttributeFilter_2_<lt>EMPTY<gt> OUTPUT <lt>MISSING<gt> FEATURE_TYPE AttributeFilter_2_<lt>MISSING<gt> OUTPUT <lt>NULL<gt> FEATURE_TYPE AttributeFilter_2_<lt>NULL<gt> OUTPUT <lt>UNFILTERED<gt> FEATURE_TYPE AttributeFilter_2_<lt>UNFILTERED<gt> OUTPUT 0 FEATURE_TYPE AttributeFilter_2_0 OUTPUT 1 FEATURE_TYPE AttributeFilter_2_1 OUTPUT 2 FEATURE_TYPE AttributeFilter_2_2 OUTPUT 3 FEATURE_TYPE AttributeFilter_2_3 OUTPUT 4 FEATURE_TYPE AttributeFilter_2_4 OUTPUT 5 FEATURE_TYPE AttributeFilter_2_5
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter_2 <lt>EMPTY<gt> Transformer Output Nuker"   INPUT FEATURE_TYPE AttributeFilter_2_<lt>EMPTY<gt>
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter_2 <lt>MISSING<gt> Transformer Output Nuker"   INPUT FEATURE_TYPE AttributeFilter_2_<lt>MISSING<gt>
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter_2 <lt>NULL<gt> Transformer Output Nuker"   INPUT FEATURE_TYPE AttributeFilter_2_<lt>NULL<gt>
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter_2 <lt>UNFILTERED<gt> Transformer Output Nuker"   INPUT FEATURE_TYPE AttributeFilter_2_<lt>UNFILTERED<gt>
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter_2 1 Transformer Output Nuker"   INPUT FEATURE_TYPE AttributeFilter_2_1
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter_2 2 Transformer Output Nuker"   INPUT FEATURE_TYPE AttributeFilter_2_2
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter_2 3 Transformer Output Nuker"   INPUT FEATURE_TYPE AttributeFilter_2_3
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter_2 4 Transformer Output Nuker"   INPUT FEATURE_TYPE AttributeFilter_2_4
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter_2 5 Transformer Output Nuker"   INPUT FEATURE_TYPE AttributeFilter_2_5
+# -------------------------------------------------------------------------
+FME_PYTHON_PATH "$(FME_MF_DIR)"
+FACTORY_DEF {*} PythonFactory    FACTORY_NAME { SpeckleFME:Get_Latest_From_Main }    FLUSH_WHEN_GROUPS_CHANGE { <Unused> }    INPUT  FEATURE_TYPE AttributeFilter_2_0    SYMBOL_NAME { FeatureProcessor }    PYTHON_NAMESPACE FMEOBJECTS    SOURCE_CODE { import<space>fmeobjects<lf><lf>from<space>devtools<space>import<space>debug<lf><lf>from<space>specklepy.api<space>import<space>operations<lf>from<space>specklepy.api.client<space>import<space>SpeckleClient<lf>from<space>specklepy.api.client<space>import<space>SpeckleException<lf>from<space>specklepy.api.models<space>import<space>Stream<lf>from<space>specklepy.transports.server<space>import<space>ServerTransport<lf><lf>import<space>codecs<lf><lf>logger<space>=<space>fmeobjects.FMELogFile<openparen><closeparen><space><lf><lf>class<space>FeatureProcessor<openparen>object<closeparen>:<lf><lf><space><space><space><space>def<space>__init__<openparen>self<closeparen>:<space><lf><space><space><space><space><space><space><space><space>pass<lf><space><lf><space><space><space><space>def<space>input<openparen>self<comma><space>feature<closeparen>:<lf><lf><space><space><space><space><space><space><space><space>logger.logMessageString<openparen><apos>~~~~~~<apos><closeparen><lf><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space>token<space>=<space>feature.getAttribute<openparen><apos>_token<apos><closeparen><lf><space><space><space><space><space><space><space><space>host<space>=<space>feature.getAttribute<openparen><apos>_host<apos><closeparen><lf><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space>client<space>=<space>SpeckleClient<openparen>host<closeparen><semicolon><lf><space><space><space><space><space><space><space><space>client.authenticate<openparen>token<closeparen><lf><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space>streamId<space>=<space>feature.getAttribute<openparen><apos>stream_id<apos><closeparen><lf><space><space><space><space><space><space><space><space>stream<space>=<space>client.stream.get<openparen>streamId<closeparen><lf><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space>if<space>stream.branches<space>is<space>None:<lf><space><space><space><space><space><space><space><space><space><space><space><space>return<lf><space><space><space><space><lf><space><space><space><space><space><space><space><space>branches<space>=<space>stream.branches.items<lf><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space>main_branch<space>=<space><openbracket>x<space>for<space>x<space>in<space>branches<space>if<space>x.name<space>==<space><apos>main<apos><closebracket><openbracket>0<closebracket><lf><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space>if<space>main_branch<space>is<space>None<space>or<space>main_branch.commits<space>is<space>None<space>or<space>main_branch.commits.cursor<space>is<space>None:<lf><space><space><space><space><space><space><space><space><space><space><space><space>logger.logMessage<openparen>0<comma><openbracket><apos>No<space>Commits<space>on<space>Main<space>Branch<apos><closebracket><space><comma><space>fmeobjects.FME_ERROR<closeparen><lf><space><space><space><space><space><space><space><space><space><space><space><space>return<space><space><lf><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space>transport<space>=<space>ServerTransport<openparen>client=client<comma><space>stream_id=streamId<closeparen><lf><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space>commit<space>=<space>main_branch.commits.items<openbracket>0<closebracket><lf><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space>objId<space>=<space>commit.referencedObject<lf><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space>if<space>objId<space>is<space>None:<lf><space><space><space><space><space><space><space><space><space><space><space><space>return<lf><lf><space><space><space><space><space><space><space><space>try:<lf><space><space><space><space><space><space><space><space><space><space><space><space>commitObject<space>=<space>operations.receive<openparen>objId<comma><space>transport<comma><space>None<closeparen><space><space><space><space><lf><space><space><space><space><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space><space><space><space><space>logger.logMessageString<openparen><apos>wow<apos><closeparen><lf><lf><space><space><space><space><space><space><space><space><space><space><space><space>objectFeature<space>=<space>fmeobjects.FMEFeature<openparen><closeparen><lf><space><space><space><space><space><space><space><space><space><space><space><space>objectFeature.setFeatureType<openparen>commitObject.speckle_type<closeparen><lf><space><space><space><space><space><space><space><space><space><space><space><space>objectFeature.setAttribute<openparen>fmeobjects.kFMEFeatureTypeAttr<comma><space>commitObject.speckle_type<closeparen><lf><space><space><space><space><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space><space><space><space><space>objectFeature.setAttribute<openparen><apos>object_id<apos><comma><space>commitObject.id<closeparen><lf><space><space><space><space><space><space><space><space><space><space><space><space>objectFeature.setAttribute<openparen><apos>total_children_count<apos><comma><space>commitObject.totalChildrenCount<closeparen><lf><space><space><space><space><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space><space><space><space><space>objectFeature.setAttribute<openparen><apos>stream_id<apos><comma><space>stream.id<closeparen><lf><space><space><space><space><space><space><space><space><space><space><space><space>objectFeature.setAttribute<openparen><apos>branch_id<apos><comma><space>main_branch.id<closeparen><lf><space><space><space><space><space><space><space><space><space><space><space><space>objectFeature.setAttribute<openparen><apos>commit_id<apos><comma><space>commit.id<closeparen><lf><lf><space><space><space><space><space><space><space><space><space><space>#<space><space>objectFeature.setAttribute<openparen><apos>data<apos><comma><space>commitObject.data<closeparen><lf><space><space><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space><space><space><space><space>logger.logMessageString<openparen>str<openparen>vars<openparen>commitObject<closeparen><closeparen><closeparen><lf><space><space><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space><space><space><space><space>memberNames<space>=<space>commitObject.get_member_names<openparen><closeparen><lf><space><space><space><space><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space><space><space><space><space>logger.logMessageString<openparen>str<openparen>memberNames<closeparen><closeparen><lf><space><space><space><space><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space><space><space><space><space>logger.logMessageString<openparen>commitObject.units<closeparen><lf><space><space><space><space><space><space><space><space><space><space><space><space><lf><lf><space><space><space><space><space><space><space><space><space><space><space><space>self.pyoutput<openparen>objectFeature<closeparen><lf><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space>except<space>SpeckleException<space>as<space>e:<lf><space><space><space><space><space><space><space><space><space><space><space><space>logger.logMessageString<openparen>str<openparen>dir<openparen>e<closeparen><closeparen><closeparen><lf><space><space><space><space><space><space><space><space><space><space><space><space>logger.logMessage<openparen>0<comma><openbracket>e.message<closebracket><comma>fmeobjects.FME_ERROR<closeparen><lf><space><space><space><space><space><space><space><space><space><space><space><space>logger.logMessage<openparen>0<comma><openbracket>str<openparen>e.with_traceback<closeparen><closebracket><comma>fmeobjects.FME_ERROR<closeparen><lf><lf><lf><lf><space><space><space><space><space><space><space><space>return<lf><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space><lf><lf><space><space><space><space>def<space>close<openparen>self<closeparen>:<lf><space><space><space><space><space><space><space><space><quote><quote><quote>This<space>method<space>is<space>called<space>once<space>all<space>the<space>FME<space>Features<space>have<space>been<space>processed<lf><space><space><space><space><space><space><space><space>from<space>input<openparen><closeparen>.<lf><space><space><space><space><space><space><space><space><quote><quote><quote><lf><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space>logger.logMessageString<openparen><apos>~~~~~~<apos><closeparen><lf><space><space><space><space><space><space><space><space>pass<lf><lf><space><space><space><space>def<space>process_group<openparen>self<closeparen>:<lf><space><space><space><space><space><space><space><space><quote><quote><quote>When<space><apos>Group<space>By<apos><space>attribute<openparen>s<closeparen><space>are<space>specified<comma><space>this<space>method<space>is<space>called<space><lf><space><space><space><space><space><space><space><space>once<space>all<space>the<space>FME<space>Features<space>in<space>a<space>current<space>group<space>have<space>been<space>sent<space>to<space>input<openparen><closeparen>.<lf><lf><space><space><space><space><space><space><space><space>FME<space>Features<space>sent<space>to<space>input<openparen><closeparen><space>should<space>generally<space>be<space>cached<space>for<space>group-by<space><lf><space><space><space><space><space><space><space><space>processing<space>in<space>this<space>method<space>when<space>knowledge<space>of<space>all<space>Features<space>is<space>required.<space><lf><space><space><space><space><space><space><space><space>The<space>resulting<space>Feature<openparen>s<closeparen><space>from<space>the<space>group-by<space>processing<space>should<space>be<space>emitted<space><lf><space><space><space><space><space><space><space><space>through<space>self.pyoutput<openparen><closeparen>.<lf><lf><space><space><space><space><space><space><space><space>FME<space>will<space>continue<space>calling<space>input<openparen><closeparen><space>a<space>number<space>of<space>times<space>followed<lf><space><space><space><space><space><space><space><space>by<space>process_group<openparen><closeparen><space>for<space>each<space><apos>Group<space>By<apos><space>attribute<comma><space>so<space>this<space><lf><space><space><space><space><space><space><space><space>implementation<space>should<space>reset<space>any<space>class<space>members<space>for<space>the<space>next<space>group.<lf><space><space><space><space><space><space><space><space><quote><quote><quote><lf><space><space><space><space><space><space><space><space>pass<lf> }    OUTPUT { PYOUTPUT FEATURE_TYPE SpeckleFME:Get_Latest_From_Main_OUTPUT         }
+FACTORY_DEF * TeeFactory   FACTORY_NAME "SpeckleFME:Get_Latest_From_Main OUTPUT Transformer Output Nuker"   INPUT FEATURE_TYPE SpeckleFME:Get_Latest_From_Main_OUTPUT
+# -------------------------------------------------------------------------
+FME_PYTHON_PATH "$(FME_MF_DIR)"
+FACTORY_DEF {*} PythonFactory    FACTORY_NAME { SpeckleFME:Get_Branches }    FLUSH_WHEN_GROUPS_CHANGE { <Unused> }    INPUT  FEATURE_TYPE SpeckleFME:Get_Streams_OUTPUT_1_nAspsZc7e1c=    SYMBOL_NAME { FeatureProcessor }    PYTHON_NAMESPACE FMEOBJECTS    SOURCE_CODE { import<space>fmeobjects<lf><lf>from<space>devtools<space>import<space>debug<lf><lf>from<space>specklepy.api.client<space>import<space>SpeckleClient<lf>from<space>specklepy.api.models<space>import<space>Stream<lf><lf>logger<space>=<space>fmeobjects.FMELogFile<openparen><closeparen><space><lf><lf>class<space>FeatureProcessor<openparen>object<closeparen>:<lf><lf><space><space><space><space>def<space>__init__<openparen>self<closeparen>:<space><lf><space><space><space><space><space><space><space><space>pass<lf><lf><space><space><space><space>def<space>input<openparen>self<comma><space>feature<closeparen>:<lf><lf><space><space><space><space><space><space><space><space>logger.logMessageString<openparen><apos>~~~~~~<apos><closeparen><lf><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space>token<space>=<space>feature.getAttribute<openparen><apos>_token<apos><closeparen><lf><space><space><space><space><space><space><space><space>host<space>=<space>feature.getAttribute<openparen><apos>_host<apos><closeparen><lf><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space>client<space>=<space>SpeckleClient<openparen>host<closeparen><semicolon><lf><space><space><space><space><space><space><space><space>client.authenticate<openparen>token<closeparen><lf><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space>streamId<space>=<space>feature.getAttribute<openparen><apos>stream_id<apos><closeparen><lf><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space>stream<space>=<space>client.stream.get<openparen>streamId<closeparen><lf><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space>if<space>stream.branches<space>is<space>not<space>None:<lf><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space><space><space><space><space>branches<space>=<space>stream.branches.items<lf><space><space><space><space><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space><space><space><space><space>for<space>x<space>in<space>range<openparen>len<openparen>branches<closeparen><closeparen>:<lf><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space>branch<space>=<space>branches<openbracket>x<closebracket><lf><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space>branchFeature<space>=<space>fmeobjects.FMEFeature<openparen><closeparen><lf><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space>branchFeature.setFeatureType<openparen><apos>SpeckleBranch<apos><closeparen><lf><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space>branchFeature.setAttribute<openparen>fmeobjects.kFMEFeatureTypeAttr<comma><space><quote>SpeckleBranch<quote><closeparen><lf><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space>branchFeature.setAttribute<openparen><apos>branch_no<apos><comma><space>x<closeparen><lf><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space>branchFeature.setAttribute<openparen><apos>branch_id<apos><comma><space>branch.id<closeparen><lf><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space>branchFeature.setAttribute<openparen><apos>branch_name<apos><comma><space>branch.name<closeparen><lf><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space>branchFeature.setAttribute<openparen><apos>description<apos><comma><space>branch.description<closeparen><lf><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space>branchFeature.setAttribute<openparen><apos>commit_count<apos><comma><space>branch.commits.totalCount<closeparen><lf><lf><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space>branchFeature.setAttribute<openparen><apos>stream_id<apos><comma><space>stream.id<closeparen><lf><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space>branchFeature.setAttribute<openparen><apos>stream_name<apos><comma><space>stream.name<closeparen><lf><lf><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space>branchFeature.setAttribute<openparen><apos>_token<apos><comma><space>token<closeparen><lf><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space>branchFeature.setAttribute<openparen><apos>_host<apos><comma><space>host<closeparen><lf><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space><space>self.pyoutput<openparen>branchFeature<closeparen><lf><lf><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space><space><space><space><space>logger.logMessageString<openparen>str<openparen>branches<closeparen><closeparen><lf><lf><lf><space><space><space><space><space><space><space><space>logger.logMessageString<openparen><apos>~~~~~~<apos><closeparen><lf><lf><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space><lf><space><space><space><space><space><space><space><space><lf><lf><space><space><space><space>def<space>close<openparen>self<closeparen>:<lf><space><space><space><space><space><space><space><space><quote><quote><quote>This<space>method<space>is<space>called<space>once<space>all<space>the<space>FME<space>Features<space>have<space>been<space>processed<lf><space><space><space><space><space><space><space><space>from<space>input<openparen><closeparen>.<lf><space><space><space><space><space><space><space><space><quote><quote><quote><lf><space><space><space><space><space><space><space><space>pass<lf><lf><space><space><space><space>def<space>process_group<openparen>self<closeparen>:<lf><space><space><space><space><space><space><space><space><quote><quote><quote>When<space><apos>Group<space>By<apos><space>attribute<openparen>s<closeparen><space>are<space>specified<comma><space>this<space>method<space>is<space>called<space><lf><space><space><space><space><space><space><space><space>once<space>all<space>the<space>FME<space>Features<space>in<space>a<space>current<space>group<space>have<space>been<space>sent<space>to<space>input<openparen><closeparen>.<lf><lf><space><space><space><space><space><space><space><space>FME<space>Features<space>sent<space>to<space>input<openparen><closeparen><space>should<space>generally<space>be<space>cached<space>for<space>group-by<space><lf><space><space><space><space><space><space><space><space>processing<space>in<space>this<space>method<space>when<space>knowledge<space>of<space>all<space>Features<space>is<space>required.<space><lf><space><space><space><space><space><space><space><space>The<space>resulting<space>Feature<openparen>s<closeparen><space>from<space>the<space>group-by<space>processing<space>should<space>be<space>emitted<space><lf><space><space><space><space><space><space><space><space>through<space>self.pyoutput<openparen><closeparen>.<lf><lf><space><space><space><space><space><space><space><space>FME<space>will<space>continue<space>calling<space>input<openparen><closeparen><space>a<space>number<space>of<space>times<space>followed<lf><space><space><space><space><space><space><space><space>by<space>process_group<openparen><closeparen><space>for<space>each<space><apos>Group<space>By<apos><space>attribute<comma><space>so<space>this<space><lf><space><space><space><space><space><space><space><space>implementation<space>should<space>reset<space>any<space>class<space>members<space>for<space>the<space>next<space>group.<lf><space><space><space><space><space><space><space><space><quote><quote><quote><lf><space><space><space><space><space><space><space><space>pass<lf> }    OUTPUT { PYOUTPUT FEATURE_TYPE SpeckleFME:Get_Branches_OUTPUT         }
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { TestFilter }    INPUT  FEATURE_TYPE SpeckleFME:Get_Branches_OUTPUT    OUTPUT FEATURE_TYPE TestFilter_TESTFILTERINPUTLINE_0
+FACTORY_DEF {*} TestFactory FACTORY_NAME TestFilter_Condition_1 INPUT FEATURE_TYPE TestFilter_TESTFILTERINPUTLINE_0 TEST { @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>commit_count<closeparen>,TestFilter) > 0 ENCODED } BOOLEAN_OPERATOR OR COMPOSITE_TEST_EXPR "1" FEATURE_TABLE_SHIM_SUPPORT Yes PRESERVE_FEATURE_ORDER PER_OUTPUT_PORT OUTPUT PASSED FEATURE_TYPE TestFilter_<at>Value<openparen>commitCount<closeparen><space><gt><space>0 OUTPUT FAILED FEATURE_TYPE TestFilter_TESTFILTERINPUTLINE_1
+FACTORY_DEF * TeeFactory FACTORY_NAME TestFilter_<lt>UNFILTERED<gt> INPUT FEATURE_TYPE TestFilter_TESTFILTERINPUTLINE_1 OUTPUT FEATURE_TYPE TestFilter_<lt>UNFILTERED<gt>
+FACTORY_DEF * TeeFactory   FACTORY_NAME "TestFilter <lt>UNFILTERED<gt> Transformer Output Nuker"   INPUT FEATURE_TYPE TestFilter_<lt>UNFILTERED<gt>
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { AttributeFilter_3 }    INPUT  FEATURE_TYPE TestFilter_<at>Value<openparen>commitCount<closeparen><space><gt><space>0    OUTPUT { FEATURE_TYPE AttributeFilter_3_FILTER }
+FACTORY_DEF {*} AttributeFilterFactory FACTORY_NAME AttributeFilter_3_Filter COMMAND_PARM_EVALUATION SINGLE_PASS INPUT FEATURE_TYPE AttributeFilter_3_FILTER FILTER_ATTRIBUTE { branch_no } FILTER_VALUES { <lt>EMPTY<gt> <lt>MISSING<gt> <lt>NULL<gt> <lt>UNFILTERED<gt> 0 1 2 3 4 5 } PRESERVE_FEATURE_ORDER PER_OUTPUT_PORT OUTPUT <lt>EMPTY<gt> FEATURE_TYPE AttributeFilter_3_<lt>EMPTY<gt> OUTPUT <lt>MISSING<gt> FEATURE_TYPE AttributeFilter_3_<lt>MISSING<gt> OUTPUT <lt>NULL<gt> FEATURE_TYPE AttributeFilter_3_<lt>NULL<gt> OUTPUT <lt>UNFILTERED<gt> FEATURE_TYPE AttributeFilter_3_<lt>UNFILTERED<gt> OUTPUT 0 FEATURE_TYPE AttributeFilter_3_0 OUTPUT 1 FEATURE_TYPE AttributeFilter_3_1 OUTPUT 2 FEATURE_TYPE AttributeFilter_3_2 OUTPUT 3 FEATURE_TYPE AttributeFilter_3_3 OUTPUT 4 FEATURE_TYPE AttributeFilter_3_4 OUTPUT 5 FEATURE_TYPE AttributeFilter_3_5
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter_3 <lt>EMPTY<gt> Transformer Output Nuker"   INPUT FEATURE_TYPE AttributeFilter_3_<lt>EMPTY<gt>
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter_3 <lt>MISSING<gt> Transformer Output Nuker"   INPUT FEATURE_TYPE AttributeFilter_3_<lt>MISSING<gt>
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter_3 <lt>NULL<gt> Transformer Output Nuker"   INPUT FEATURE_TYPE AttributeFilter_3_<lt>NULL<gt>
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter_3 <lt>UNFILTERED<gt> Transformer Output Nuker"   INPUT FEATURE_TYPE AttributeFilter_3_<lt>UNFILTERED<gt>
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter_3 0 Transformer Output Nuker"   INPUT FEATURE_TYPE AttributeFilter_3_0
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter_3 1 Transformer Output Nuker"   INPUT FEATURE_TYPE AttributeFilter_3_1
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter_3 2 Transformer Output Nuker"   INPUT FEATURE_TYPE AttributeFilter_3_2
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter_3 3 Transformer Output Nuker"   INPUT FEATURE_TYPE AttributeFilter_3_3
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter_3 4 Transformer Output Nuker"   INPUT FEATURE_TYPE AttributeFilter_3_4
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter_3 5 Transformer Output Nuker"   INPUT FEATURE_TYPE AttributeFilter_3_5
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
+
