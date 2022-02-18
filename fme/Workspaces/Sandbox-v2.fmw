@@ -30,7 +30,7 @@
 #!   HISTORY=""
 #!   IGNORE_READER_FAILURE="No"
 #!   LAST_SAVE_BUILD="FME(R) 2021.2.0.1 (20211112 - Build 21789 - macosx)"
-#!   LAST_SAVE_DATE="2022-02-17T08:48:29"
+#!   LAST_SAVE_DATE="2022-02-18T18:39:58"
 #!   LOG_FILE=""
 #!   LOG_MAX_RECORDED_FEATURES="200"
 #!   MARKDOWN_DESCRIPTION=""
@@ -49,7 +49,7 @@
 #!   TITLE=""
 #!   USAGE=""
 #!   USE_MARKDOWN=""
-#!   VIEW_POSITION="-897.009 285.003"
+#!   VIEW_POSITION="-336.003 603.006"
 #!   WARN_INVALID_XFORM_PARAM="Yes"
 #!   WORKSPACE_VERSION="1"
 #!   ZOOM_SCALE="100"
@@ -568,7 +568,7 @@
 #!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; stream_url SET_TO https:&lt;solidus&gt;&lt;solidus&gt;speckle.xyz&lt;solidus&gt;streams&lt;solidus&gt;fd1d44405d&lt;solidus&gt;objects&lt;solidus&gt;10ccf0ccdb46f79a24400319a71685b5"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; stream_url SET_TO https:&lt;solidus&gt;&lt;solidus&gt;speckle.xyz&lt;solidus&gt;streams&lt;solidus&gt;fd1d44405d&lt;solidus&gt;objects&lt;solidus&gt;6bff5bfc5b586e6c89fec5f8384af477"/>
 #!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
 #!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
 #!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
@@ -595,6 +595,55 @@
 #!     <XFORM_ATTR ATTR_NAME="userName" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="SpeckleClient_v1"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="30"
+#!   TYPE="GeometryFilter"
+#!   VERSION="7"
+#!   POSITION="1050 300"
+#!   BOUNDING_RECT="1050 300 454 71"
+#!   ORDER="500000000000030"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="21789"
+#! >
+#!     <OUTPUT_FEAT NAME="POINT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <OUTPUT_FEAT NAME="LINE"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <OUTPUT_FEAT NAME="ARC"/>
+#!     <FEAT_COLLAPSED COLLAPSED="2"/>
+#!     <OUTPUT_FEAT NAME="AREA"/>
+#!     <FEAT_COLLAPSED COLLAPSED="3"/>
+#!     <OUTPUT_FEAT NAME="ELLIPSE"/>
+#!     <FEAT_COLLAPSED COLLAPSED="4"/>
+#!     <OUTPUT_FEAT NAME="TEXT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="5"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_text_string" IS_USER_CREATED="false" FEAT_INDEX="5" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rotation" IS_USER_CREATED="false" FEAT_INDEX="5" />
+#!     <XFORM_ATTR ATTR_NAME="fme_text_size" IS_USER_CREATED="false" FEAT_INDEX="5" />
+#!     <OUTPUT_FEAT NAME="RASTER"/>
+#!     <FEAT_COLLAPSED COLLAPSED="6"/>
+#!     <OUTPUT_FEAT NAME="POINTCLOUD"/>
+#!     <FEAT_COLLAPSED COLLAPSED="7"/>
+#!     <OUTPUT_FEAT NAME="SURFACE"/>
+#!     <FEAT_COLLAPSED COLLAPSED="8"/>
+#!     <OUTPUT_FEAT NAME="SOLID"/>
+#!     <FEAT_COLLAPSED COLLAPSED="9"/>
+#!     <OUTPUT_FEAT NAME="COLLECTION"/>
+#!     <FEAT_COLLAPSED COLLAPSED="10"/>
+#!     <OUTPUT_FEAT NAME="NULL"/>
+#!     <FEAT_COLLAPSED COLLAPSED="11"/>
+#!     <OUTPUT_FEAT NAME="INSTANCE"/>
+#!     <FEAT_COLLAPSED COLLAPSED="12"/>
+#!     <OUTPUT_FEAT NAME="&lt;UNFILTERED&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="13"/>
+#!     <XFORM_PARM PARM_NAME="BREAK_AGG" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="GEOM_PORT_NAMES" PARM_VALUE="Point Line Arc Area Ellipse Text Raster &quot;Point Cloud&quot; Surface Solid Collection Null Instance"/>
+#!     <XFORM_PARM PARM_NAME="INSTANTIATE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="GeometryFilter"/>
 #! </TRANSFORMER>
 #! </TRANSFORMERS>
 #! <FEAT_LINKS>
@@ -814,7 +863,7 @@ FACTORY_DEF * TeeFactory   FACTORY_NAME "SpeckleClient_v1 Output Output Renamer/
 # -------------------------------------------------------------------------
 FACTORY_DEF * TeeFactory   FACTORY_NAME "$(WB_CURRENT_CONTEXT)_CREATOR_BRANCH_TARGET"   INPUT FEATURE_TYPE *  OUTPUT FEATURE_TYPE *
 # -------------------------------------------------------------------------
-FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME { AttributeCreator }    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE Creator_CREATED    MULTI_FEATURE_MODE { NO }    NULL_ATTR_MODE { NO_OP }    ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ATTR_ACTION { "" "stream_url" "SET_TO" "https:<solidus><solidus>speckle.xyz<solidus>streams<solidus>fd1d44405d<solidus>objects<solidus>10ccf0ccdb46f79a24400319a71685b5" }    OUTPUT { OUTPUT FEATURE_TYPE AttributeCreator_OUTPUT        }
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME { AttributeCreator }    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE Creator_CREATED    MULTI_FEATURE_MODE { NO }    NULL_ATTR_MODE { NO_OP }    ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ATTR_ACTION { "" "stream_url" "SET_TO" "https:<solidus><solidus>speckle.xyz<solidus>streams<solidus>fd1d44405d<solidus>objects<solidus>6bff5bfc5b586e6c89fec5f8384af477" }    OUTPUT { OUTPUT FEATURE_TYPE AttributeCreator_OUTPUT        }
 # -------------------------------------------------------------------------
 FME_PYTHON_PATH "$(FME_MF_DIR)"
 FACTORY_DEF {*} PythonFactory    FACTORY_NAME { PythonCaller }    FLUSH_WHEN_GROUPS_CHANGE { <Unused> }    INPUT  FEATURE_TYPE AttributeCreator_OUTPUT    SYMBOL_NAME { StreamReader }    PYTHON_NAMESPACE FMEOBJECTS    SOURCE_CODE { from<space>fme_speckle.readers<space>import<space>StreamReader }    OUTPUT { PYOUTPUT FEATURE_TYPE PythonCaller_OUTPUT         }

@@ -71,3 +71,5 @@ venv.bak/
 #FME
 fme/Workspaces/Sandbox.fmw.recover
 *.recover
+*.recover
+.gitignore.orig
