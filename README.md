@@ -36,6 +36,8 @@ These implementations will be Transformer based rather than directly into a Read
 
 Key to the FME connection to Speckle will be to maximise the usefulness of the FME part of the workflow by maximising the genericity of Features as they are read without a strong view of how this will impact on writing future re-use. i.e. Speckle > FME > Speckle prioritised over onward connections.
 
+While Speckle>Native>Speckle Object mapping will be included in time, the basic implementation will be utilising the Base displaymesh.
+
 ## Getting Started
 
 ### Installation
