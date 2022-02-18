@@ -5,7 +5,6 @@
 <h3 align="center">
     Connector for Spatial Data to and from FME
 </h3>
-<p align="center"><b>Speckle</b> is the data infrastructure for the AEC industry.</p><br/>
 
 A custom reader/writer for FME to connect and query a Speckle Server. As this is all being developed for an alpha release, the description of any steps here or any features that may emerge are in total flux.
 
