@@ -10,3 +10,18 @@ end_of_line = lf
 charset = utf-8
 trim_trailing_whitespace = false
 insert_final_newline = false
+
+root = true
+
+[{*.php,*.py}]
+indent_style = space
+
+[{*.json,.*rc,*.y*ml,*.conf}]
+indent_style = space
+indent_size = 2
+
+# https://github.com/jedmao/eclint#block_comment
+[*.{ts,scss}]
+block_comment_start = /*
+block_comment = *
+block_comment_end = */

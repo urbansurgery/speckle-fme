@@ -1,0 +1,8 @@
+<type>(optional scope): <description> ### 50 chars ###
+
+## [optional body]
+
+## [optional footer]
+
+## types: fix, feat, docs, chore, style, refactor, perf, test
+## scopes: repo, fme, reader, writer, conversion, client, objects
