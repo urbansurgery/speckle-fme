@@ -1,0 +1,11 @@
+{
+    "python.analysis.extraPaths": [
+      "/Library/FME/2021.2/fmeobjects/python38/",
+      "/Library/FME/2021.2/fmeobjects/python38/"
+    ],
+    "python.autoComplete.extraPaths": [
+      "/Library/FME/2021.2/fmeobjects/python38/",
+      "/Library/FME/2021.2/fmeobjects/python37/"
+    ],
+    "python.linting.enabled": true,
+}
