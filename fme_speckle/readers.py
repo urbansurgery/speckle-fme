@@ -157,9 +157,11 @@ class StreamReader:
           # 'renderMaterial': RenderMaterial(id: b6b8998f448a97c85c188ecc617dd453, speckle_type: Objects.Other.RenderMaterial, totalChildrenCount: 0)
         # }
 
-        print (object.__dict__)
+        # print (object.__dict__)
 
         list_of_types = ['str','float','int','bool']
+
+        print (object.speckle_type)
 
         for attribute in object.__dict__:
           print (attribute, type(object[attribute]), object[attribute])

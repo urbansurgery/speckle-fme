@@ -7,6 +7,7 @@ from specklepy.transports.server import ServerTransport
 
 logger = fmeobjects.FMELogFile()
 
+speckle_clients = []
 class DefaultClient:
   def __init__(self, *args):
 
