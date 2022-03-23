@@ -15,6 +15,7 @@ root = true
 
 [{*.php,*.py}]
 indent_style = space
+indent_size = 4
 
 [{*.json,.*rc,*.y*ml,*.conf}]
 indent_style = space

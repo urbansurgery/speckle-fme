@@ -1,14 +1,21 @@
 {
-    "python.analysis.extraPaths": [
-      "/Library/FME/2021.2/fmeobjects/python38/",
-      "/Library/FME/2021.2/fmeobjects/python38/"
-    ],
-    "python.autoComplete.extraPaths": [
-      "/Library/FME/2021.2/fmeobjects/python38/",
-      "/Library/FME/2021.2/fmeobjects/python37/"
-    ],
-    "python.linting.enabled": true,
-    "python.analysis.stubPath": "./typings",
-    "python.formatting.provider": "black",
-    "editor.formatOnSave": true,
+  "[python]": {
+    "editor.defaultFormatter": null
+  },
+  "python.analysis.extraPaths": [
+    "/Library/FME/2021.2/fmeobjects/python38/",
+    "/Library/FME/2021.2/fmeobjects/python38/"
+  ],
+  "python.autoComplete.extraPaths": [
+    "/Library/FME/2021.2/fmeobjects/python38/",
+    "/Library/FME/2021.2/fmeobjects/python37/",
+    "/Library/FME/2021.2/fmeobjects/python38/fmeobjects"
+  ],
+  "python.linting.pylintEnabled": true,
+  "python.linting.enabled": true,
+  "python.formatting.provider": "black",
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "python.analysis.stubPath": "./typings",
+  "python.analysis.typeCheckingMode": "strict"
 }

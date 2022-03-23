@@ -1,7 +1,8 @@
 # Initial conversions will be a base FME Feature
 # with Speckle display mesh
 
-from fme_speckle.converters.to_native import convert_to_fme
+from fme_speckle.converters.to_native import convert_to_native
+
 
 def get_speckle_subobjects(attr, scale, name):
     subobjects = []
@@ -10,7 +11,7 @@ def get_speckle_subobjects(attr, scale, name):
             subtype = attr[key].get("type", None)
             if subtype:
                 name = f"{name}.{key}"
-                subobject = convert_to_fme(attr[key], name)
+                subobject = convert_to_native(attr[key], name)
 
                 subobjects.append(subobject)
                 props = attr[key].get("properties", None)
@@ -20,7 +21,7 @@ def get_speckle_subobjects(attr, scale, name):
             subtype = attr[key].type
             if subtype:
                 name = "{}.{}".format(name, key)
-                subobject = convert_to_fme(attr[key], name)
+                subobject = convert_to_native(attr[key], name)
 
                 subobjects.append(subobject)
                 props = attr[key].get("properties", None)

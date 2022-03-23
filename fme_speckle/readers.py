@@ -1,4 +1,10 @@
+import fmeobjects
 import traceback
+import pprint
+import json
+
+logger = fmeobjects.FMELogFile()
+pp = pprint.PrettyPrinter(indent=2)
 
 from specklepy.api.credentials import StreamWrapper
 from specklepy.api.resources.commit import Resource
@@ -7,9 +13,7 @@ from specklepy.transports.memory import MemoryTransport
 from specklepy.api import operations
 from specklepy.objects.base import Base
 
-from fmeobjects import FMEFeature, FMELogFile
-
-logger = FMELogFile()
+from .streams import explore_commit, get_objects_collections
 
 
 class StreamReader:
@@ -42,16 +46,17 @@ class StreamReader:
 
         # logger.logMessageString(str(wrapper.type),2)
 
-        print("Stream ID: " + (stream_id if stream_id else "No Stream"))
-        print("Commit ID: " + (commit_id if commit_id else "No Commit"))
-        print("Object ID: " + (object_id if object_id else "No Object"))
-        print("Branch Name: " + (branch_name if branch_name else "No Branch"))
+        # print ("Stream ID: " + (stream_id if stream_id else "No Stream"))
+        # print ("Commit ID: " + (commit_id if commit_id else "No Commit"))
+        # print ("Object ID: " + (object_id if object_id else "No Object"))
+        # print ("Branch Name: " + (branch_name if branch_name else "No Branch"))
 
         wrapper_type = wrapper.type
 
         if stream_id:
-            streamFeature = FMEFeature()
+            streamFeature = fmeobjects.FMEFeature()
             streamFeature.setFeatureType("SpeckleStream")
+            streamFeature.setAttribute(fmeobjects.kFMEFeatureTypeAttr, "SpeckleStream")
             streamFeature.setAttribute("speckle_type", "stream")
 
             streamFeature.setAttribute("stream_id", stream_id)
@@ -72,8 +77,9 @@ class StreamReader:
             self.pyoutput(streamFeature)
 
         if commit_id:
-            commitFeature = FMEFeature()
+            commitFeature = fmeobjects.FMEFeature()
             commitFeature.setFeatureType("SpeckleCommit")
+            commitFeature.setAttribute(fmeobjects.kFMEFeatureTypeAttr, "SpeckleCommit")
             commitFeature.setAttribute("speckle_type", "commit")
             commitFeature.setAttribute("commit_id", commit_id)
 
@@ -81,28 +87,22 @@ class StreamReader:
                 commit = client.commit.get(stream_id, commit_id)
 
                 commitFeature.setAttribute("commit_message", commit.message)
-                commitFeature.setAttribute(
-                    "commit_referenced_object", commit.referencedObject
-                )
-                commitFeature.setAttribute(
-                    "commit_source_application", commit.sourceApplication
-                )
-                commitFeature.setAttribute(
-                    "commit_total_children_count", commit.totalChildrenCount
-                )
+                commitFeature.setAttribute("commit_referenced_object", commit.referencedObject)
+                commitFeature.setAttribute("commit_source_application", commit.sourceApplication)
+                commitFeature.setAttribute("commit_total_children_count", commit.totalChildrenCount)
                 commitFeature.setAttribute("commit_author_name", commit.authorName)
                 commitFeature.setAttribute("commit_author_id", commit.authorId)
                 commitFeature.setAttribute("commit_branch_name", commit.branchName)
                 commitFeature.setAttribute("commit_created_at", commit.createdAt)
                 commitFeature.setAttribute("commit_author_avatar", commit.authorAvatar)
 
-                # print("COMMIT: " + commit.message)
-                # print(commit.referencedObject)
-                # print(commit)
+                stream_data = operations.receive(commit.referencedObject, transport, MemoryTransport())
+                # speckle_objects = get_objects_collections(stream_data)
 
-                # features = parseCommitToFME(commit)
+                speckle_objects = explore_commit(stream_data)
 
-                object_id = commit.referencedObject
+                for f in speckle_objects:
+                    self.pyoutput(f)
 
             except SpeckleException as e:
                 logger.logMessageString(str(e.message), 2)
@@ -113,8 +113,9 @@ class StreamReader:
             self.pyoutput(commitFeature)
 
         if branch_name:
-            branchFeature = FMEFeature()
+            branchFeature = fmeobjects.FMEFeature()
             branchFeature.setFeatureType("SpeckleBranch")
+            branchFeature.setAttribute(fmeobjects.kFMEFeatureTypeAttr, "SpeckleBranch")
             branchFeature.setAttribute("speckle_type", "branch")
 
             branchFeature.setAttribute("branch_name", branch_name)
@@ -135,16 +136,15 @@ class StreamReader:
             self.pyoutput(branchFeature)
 
         if object_id:
-            objectFeature = FMEFeature()
+            objectFeature = fmeobjects.FMEFeature()
             objectFeature.setFeatureType("SpeckleObject")
+            objectFeature.setAttribute(fmeobjects.kFMEFeatureTypeAttr, "SpeckleObject")
             objectFeature.setAttribute("speckle_type", "object")
 
             objectFeature.setAttribute("object_id", object_id)
 
             try:
-                object = operations.receive(
-                    object_id, transport, MemoryTransport()
-                )  # type: Base
+                object_stream = operations.receive(object_id, transport, MemoryTransport())
                 # object = client.object.get(stream_id, object_id)
 
                 # {
@@ -172,11 +172,20 @@ class StreamReader:
 
                 # print (object.__dict__)
 
-                list_of_types = ["str", "float", "int", "bool"]
+                """
+        To begin with lets just get all the objects in the stream and see what we can do with them.
+        """
+
+                print(object_stream)
+                # speckle_objects = get_flattened_objects(object_stream)
+
+                # list_of_types = ['str','float','int','bool']
+
+                # print (object.speckle_type)
 
                 # for attribute in object.__dict__:
-                #     print(attribute, type(object[attribute]), object[attribute])
-                # objectFeature.setAttribute("attribute", object[attribute])
+                #   print (attribute, type(object[attribute]), object[attribute])
+                #   # objectFeature.setAttribute('attribute', object[attribute])
 
             except SpeckleException as e:
                 logger.logMessageString(str(e.message), 2)
@@ -185,15 +194,4 @@ class StreamReader:
                 objectFeature.setAttribute("RejectedReason", e.message)
 
             self.pyoutput(objectFeature)
-        pass
-
-
-def parseCommitToFME(commit: Base) -> list(FMEFeature):
-    """Receives a commit base object and parses sub objects to FMEFeatures"""
-
-    print("COMMIT AGAIN" + commit)
-
-
-class CommitParser:
-    def __init__(self):
         pass

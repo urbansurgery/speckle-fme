@@ -8,31 +8,34 @@ from specklepy.transports.server import ServerTransport
 logger = fmeobjects.FMELogFile()
 
 speckle_clients = []
+
+
 class DefaultClient:
-  def __init__(self, *args):
+    def __init__(self, *args):
 
-    account = get_default_account()
-    client = SpeckleClient()
-    client.authenticate(token=account.token)
+        account = get_default_account()
+        client = SpeckleClient()
+        client.authenticate(token=account.token)
 
-    self.client = client
-    self.account = account
-    pass
+        self.client = client
+        self.account = account
 
-  def input(self, feature):
-    client = fmeobjects.FMEFeature()
-    client.setAttribute(fmeobjects.kFMEFeatureTypeAttr, "SpeckleClient")
-    client.setFeatureType('SpeckleClient')
+        pass
 
-    client.setAttribute("_token", self.account.token)
-    client.setAttribute("_refreshToken", self.account.refreshToken)
-    client.setAttribute("_host", self.client.url)
+    def input(self, feature):
+        client = fmeobjects.FMEFeature()
+        client.setAttribute(fmeobjects.kFMEFeatureTypeAttr, "SpeckleClient")
+        client.setFeatureType("SpeckleClient")
 
-    client.setAttribute('authenticated', self.client.me is not None)
-    client.setAttribute("userId", self.account.userInfo.id)
-    client.setAttribute("userName", self.account.userInfo.name)
+        client.setAttribute("_token", self.account.token)
+        client.setAttribute("_refreshToken", self.account.refreshToken)
 
-    self.pyoutput(client)
+        client.setAttribute("host", self.client.url)
+        client.setAttribute("authenticated", self.client.me is not None)
+        client.setAttribute("userId", self.account.userInfo.id)
+        client.setAttribute("name", self.account.userInfo.name)
+        client.setAttribute("email", self.account.userInfo.email)
 
-    pass
+        self.pyoutput(client)
 
+        pass

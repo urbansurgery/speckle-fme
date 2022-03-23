@@ -13,14 +13,14 @@
 #!   DESCRIPTION=""
 #!   DESTINATION="NONE"
 #!   DESTINATION_ROUTING_FILE=""
-#!   DOC_EXTENTS="5254 2863"
-#!   DOC_TOP_LEFT="-600 -1121"
+#!   DOC_EXTENTS="5254 2413"
+#!   DOC_TOP_LEFT="-600 -671"
 #!   END_PYTHON=""
 #!   END_TCL=""
 #!   EXPLICIT_BOOKMARK_ORDER="false"
 #!   FME_BUILD_NUM="21789"
-#!   FME_DOCUMENT_GUID="a88d404b-bdc7-447c-bf5a-ff4b61050916"
-#!   FME_DOCUMENT_PRIORGUID="3053aab4-fd80-4b30-8f5a-aa296260b708,0ff6eb8c-ab35-4e4f-823d-e21eecbc4e24,82a55ec8-a689-435a-938a-2bb50b4b5e89,70d432fb-b68d-424e-9a77-024809b941ce,666b5f4a-1821-46ed-931d-99269d1155a9,7d29b847-29f5-4065-957b-b565065b3d6a,ac0410e2-e44c-44e0-b694-83ad6976b8d6,9394ac9a-9639-42e5-98ae-5b56c840f420,d483f14f-8f00-4fdb-b34a-1cb5e3572fb7,4bcf467e-7e18-4e24-8dc0-61acdbb3cffb,3cc369dd-bee8-43df-86a2-fa4cbcaa5242,e2fdb39c-1402-4d97-81cd-a8fa1cf049c4,0163d65e-f4bb-452b-9125-ea7bbaf911b4,471cb8e7-3d8b-4f2f-971e-36e291edb3a7,c5c76b64-8057-4c4e-936e-62f092bd8dc6,fdb2afad-abfa-430d-b625-081039664dee,d7fa7785-309d-4874-87e8-eabd8e7279e7,04b5564b-bfe7-4918-a4db-f4009d79c81c,d4f7d254-efb6-4f12-8ef8-290ed2f012e8"
+#!   FME_DOCUMENT_GUID="d4f7d254-efb6-4f12-8ef8-290ed2f012e8"
+#!   FME_DOCUMENT_PRIORGUID="3053aab4-fd80-4b30-8f5a-aa296260b708,0ff6eb8c-ab35-4e4f-823d-e21eecbc4e24,82a55ec8-a689-435a-938a-2bb50b4b5e89,70d432fb-b68d-424e-9a77-024809b941ce,666b5f4a-1821-46ed-931d-99269d1155a9,7d29b847-29f5-4065-957b-b565065b3d6a,ac0410e2-e44c-44e0-b694-83ad6976b8d6,9394ac9a-9639-42e5-98ae-5b56c840f420,d483f14f-8f00-4fdb-b34a-1cb5e3572fb7,4bcf467e-7e18-4e24-8dc0-61acdbb3cffb,3cc369dd-bee8-43df-86a2-fa4cbcaa5242,e2fdb39c-1402-4d97-81cd-a8fa1cf049c4,0163d65e-f4bb-452b-9125-ea7bbaf911b4,471cb8e7-3d8b-4f2f-971e-36e291edb3a7,c5c76b64-8057-4c4e-936e-62f092bd8dc6,fdb2afad-abfa-430d-b625-081039664dee,d7fa7785-309d-4874-87e8-eabd8e7279e7,04b5564b-bfe7-4918-a4db-f4009d79c81c"
 #!   FME_GEOMETRY_HANDLING="Enhanced"
 #!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
 #!   FME_NAMES_ENCODING="UTF-8"
@@ -30,7 +30,7 @@
 #!   HISTORY=""
 #!   IGNORE_READER_FAILURE="No"
 #!   LAST_SAVE_BUILD="FME(R) 2021.2.0.1 (20211112 - Build 21789 - macosx)"
-#!   LAST_SAVE_DATE="2022-03-23T12:11:35"
+#!   LAST_SAVE_DATE="2022-03-16T16:55:16"
 #!   LOG_FILE=""
 #!   LOG_MAX_RECORDED_FEATURES="200"
 #!   MARKDOWN_DESCRIPTION=""
@@ -49,10 +49,10 @@
 #!   TITLE=""
 #!   USAGE=""
 #!   USE_MARKDOWN=""
-#!   VIEW_POSITION="-1200.01 -443.248"
+#!   VIEW_POSITION="-760.202 -355.343"
 #!   WARN_INVALID_XFORM_PARAM="Yes"
 #!   WORKSPACE_VERSION="1"
-#!   ZOOM_SCALE="111"
+#!   ZOOM_SCALE="103"
 #! >
 #! <DATASETS>
 #! </DATASETS>
@@ -77,7 +77,7 @@
 #! />
 #! </GLOBAL_PARAMETERS>
 #! <USER_PARAMETERS
-#!   FORM="eyJwYXJhbWV0ZXJzIjpbeyJuYW1lIjoiUEFSQU1FVEVSIiwicGFyYW1ldGVycyI6W3siZGVmYXVsdFZhbHVlIjoiam9uYXRob25Ac3RhcmRvdGJtcC5jb20iLCJlZGl0b3IiOiJwbGFpbnRleHQiLCJuYW1lIjoiU1BFQ0tMRV9BQ0NPVU5UIiwicHJvbXB0IjoiU3BlY2tsZSBVc2VyIEFjY291bnQiLCJyZXF1aXJlZCI6dHJ1ZSwic2hvd0VkaXRCdXR0b24iOmZhbHNlLCJ0eXBlIjoidGV4dCIsInZhbHVlVHlwZSI6InN0cmluZyJ9XSwicHJvbXB0IjoiU3BlY2tsZSIsInJlcXVpcmVkIjpmYWxzZSwidHlwZSI6Imdyb3VwIiwidmFsdWVUeXBlIjoic3RyaW5nIn1dfQ=="
+#!   FORM="eyJwYXJhbWV0ZXJzIjpbeyJuYW1lIjoiUEFSQU1FVEVSIiwicGFyYW1ldGVycyI6W3siZWRpdG9yIjoicGxhaW50ZXh0IiwibmFtZSI6IlNQRUNLTEVfQUNDT1VOVCIsInByb21wdCI6IlNwZWNrbGUgVXNlciBBY2NvdW50IiwicmVxdWlyZWQiOnRydWUsInNob3dFZGl0QnV0dG9uIjpmYWxzZSwidHlwZSI6InRleHQiLCJ2YWx1ZVR5cGUiOiJzdHJpbmcifV0sInByb21wdCI6IlNwZWNrbGUiLCJyZXF1aXJlZCI6ZmFsc2UsInR5cGUiOiJncm91cCIsInZhbHVlVHlwZSI6InN0cmluZyJ9XX0="
 #! >
 #! <PARAMETER_INFO>
 #!     <INFO NAME="PARAMETER" IS_STAND_ALONE="true" />
@@ -121,8 +121,8 @@
 #!   IDENTIFIER="2"
 #!   TYPE="PythonCreator"
 #!   VERSION="3"
-#!   POSITION="300 750"
-#!   BOUNDING_RECT="300 750 543.21081560330163 71"
+#!   POSITION="150 750"
+#!   BOUNDING_RECT="150 750 863.31875000000002 71"
 #!   ORDER="500000000000001"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
@@ -509,8 +509,6 @@
 #!     <XFORM_ATTR ATTR_NAME="host" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="email" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="userId" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="userName" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; stream_url SET_TO https:&lt;solidus&gt;&lt;solidus&gt;speckle.xyz&lt;solidus&gt;streams&lt;solidus&gt;fd1d44405d&lt;solidus&gt;commits&lt;solidus&gt;1844b4c47c"/>
@@ -530,7 +528,7 @@
 #!   BOUNDING_RECT="600 -600 590.109375 71"
 #!   ORDER="500000000000000"
 #!   PARMS_EDITED="true"
-#!   ENABLED="false"
+#!   ENABLED="true"
 #!   LAST_PARM_EDIT="21789"
 #! >
 #!     <OUTPUT_FEAT NAME="SpeckleObjects"/>
@@ -539,8 +537,6 @@
 #!     <XFORM_ATTR ATTR_NAME="host" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="email" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="userId" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="userName" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="speckle_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="object_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
@@ -556,8 +552,6 @@
 #!     <XFORM_ATTR ATTR_NAME="host" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="name" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="email" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="userId" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_ATTR ATTR_NAME="userName" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="stream_id" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="stream_name" IS_USER_CREATED="false" FEAT_INDEX="1" />
@@ -567,8 +561,6 @@
 #!     <XFORM_ATTR ATTR_NAME="host" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <XFORM_ATTR ATTR_NAME="name" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <XFORM_ATTR ATTR_NAME="email" IS_USER_CREATED="false" FEAT_INDEX="2" />
-#!     <XFORM_ATTR ATTR_NAME="userId" IS_USER_CREATED="false" FEAT_INDEX="2" />
-#!     <XFORM_ATTR ATTR_NAME="userName" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <XFORM_ATTR ATTR_NAME="branch_id" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <XFORM_ATTR ATTR_NAME="description" IS_USER_CREATED="false" FEAT_INDEX="2" />
@@ -578,8 +570,6 @@
 #!     <XFORM_ATTR ATTR_NAME="host" IS_USER_CREATED="false" FEAT_INDEX="3" />
 #!     <XFORM_ATTR ATTR_NAME="name" IS_USER_CREATED="false" FEAT_INDEX="3" />
 #!     <XFORM_ATTR ATTR_NAME="email" IS_USER_CREATED="false" FEAT_INDEX="3" />
-#!     <XFORM_ATTR ATTR_NAME="userId" IS_USER_CREATED="false" FEAT_INDEX="3" />
-#!     <XFORM_ATTR ATTR_NAME="userName" IS_USER_CREATED="false" FEAT_INDEX="3" />
 #!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="3" />
 #!     <XFORM_ATTR ATTR_NAME="commit_id" IS_USER_CREATED="false" FEAT_INDEX="3" />
 #!     <XFORM_ATTR ATTR_NAME="commit_message" IS_USER_CREATED="false" FEAT_INDEX="3" />
@@ -601,54 +591,13 @@
 #!   LAST_PARM_EDIT="21789"
 #! >
 #!     <OUTPUT_FEAT NAME="Output"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
 #!     <XFORM_ATTR ATTR_NAME="authenticated" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="host" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="name" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="email" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="userId" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="userName" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="SpeckleClient_v1"/>
-#! </TRANSFORMER>
-#! <TRANSFORMER
-#!   IDENTIFIER="30"
-#!   TYPE="PythonCaller"
-#!   VERSION="4"
-#!   POSITION="0 -1050"
-#!   BOUNDING_RECT="0 -1050 499.59999999999997 71"
-#!   ORDER="500000000000026"
-#!   PARMS_EDITED="true"
-#!   ENABLED="true"
-#!   LAST_PARM_EDIT="21789"
-#! >
-#!     <OUTPUT_FEAT NAME="OUTPUT"/>
-#!     <XFORM_ATTR ATTR_NAME="authenticated" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="host" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="name" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="email" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="userId" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="userName" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="speckle_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="object_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="branch_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="commit_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="stream_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="stream_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="description" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_ATTR ATTR_NAME="commit_message" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="GROUP_BY_MODE" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="GROUP_PROCESSING_GROUP" PARM_VALUE="NO"/>
-#!     <XFORM_PARM PARM_NAME="HIDE_ATTRIBUTES" PARM_VALUE="stream_url"/>
-#!     <XFORM_PARM PARM_NAME="LIST_ATTRS" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="NEW_ATTRIBUTES" PARM_VALUE="fme_feature_type speckle_type object_id branch_id commit_id stream_id stream_name description commit_message"/>
-#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="PYTHONSOURCE" PARM_VALUE="from&lt;space&gt;fme_speckle.readers&lt;space&gt;import&lt;space&gt;CommitParser"/>
-#!     <XFORM_PARM PARM_NAME="PYTHONSYMBOL" PARM_VALUE="StreamReader"/>
-#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="ProcessSpeckleCommit"/>
 #! </TRANSFORMER>
 #! </TRANSFORMERS>
 #! <FEAT_LINKS>
@@ -773,21 +722,6 @@
 #!   EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#!   IDENTIFIER="31"
-#!   SOURCE_NODE="28"
-#!   TARGET_NODE="30"
-#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
-#!   TARGET_PORT_DESC="fi 0 "
-#!   ENABLED="true"
-#!   EXECUTION_IDX="1"
-#!   HIDDEN="false"
-#!   COLOUR="0.82352941176470584,0.82352941176470584,0.82352941176470584,1"
-#!   PEN_WIDTH="4"
-#!   PEN_STYLE="1"
-#!   LINK_STYLE_NAME="&lt;Default&gt;"
-#!   EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
 #!   IDENTIFIER="21"
 #!   SOURCE_NODE="19"
 #!   TARGET_NODE="18"
@@ -836,7 +770,7 @@
 #!   TITLE="SpeckleReceiver_v1"
 #!   USAGE=""
 #!   USE_MARKDOWN="NO"
-#!   VIEW_POSITION="-420.004 934.295"
+#!   VIEW_POSITION="-417.147 817.151"
 #!   XFORM_DEPRECATED="No"
 #!   ZOOM_SCALE="105"
 #! >
@@ -1167,7 +1101,7 @@ DEFAULT_MACRO SPECKLE_ACCOUNT jonathon@stardotbmp.com
 GUI OPTIONAL NAMEDGROUP PARAMETER SPECKLE_ACCOUNT Speckle
 GUI STRING SPECKLE_ACCOUNT Speckle User Account
 # ============================================================================
-USER_PARAMETERS eyJwYXJhbWV0ZXJzIjpbeyJuYW1lIjoiUEFSQU1FVEVSIiwicGFyYW1ldGVycyI6W3siZGVmYXVsdFZhbHVlIjoiam9uYXRob25Ac3RhcmRvdGJtcC5jb20iLCJlZGl0b3IiOiJwbGFpbnRleHQiLCJuYW1lIjoiU1BFQ0tMRV9BQ0NPVU5UIiwicHJvbXB0IjoiU3BlY2tsZSBVc2VyIEFjY291bnQiLCJyZXF1aXJlZCI6dHJ1ZSwic2hvd0VkaXRCdXR0b24iOmZhbHNlLCJ0eXBlIjoidGV4dCIsInZhbHVlVHlwZSI6InN0cmluZyJ9XSwicHJvbXB0IjoiU3BlY2tsZSIsInJlcXVpcmVkIjpmYWxzZSwidHlwZSI6Imdyb3VwIiwidmFsdWVUeXBlIjoic3RyaW5nIn1dfQ==
+USER_PARAMETERS eyJwYXJhbWV0ZXJzIjpbeyJuYW1lIjoiUEFSQU1FVEVSIiwicGFyYW1ldGVycyI6W3siZWRpdG9yIjoicGxhaW50ZXh0IiwibmFtZSI6IlNQRUNLTEVfQUNDT1VOVCIsInByb21wdCI6IlNwZWNrbGUgVXNlciBBY2NvdW50IiwicmVxdWlyZWQiOnRydWUsInNob3dFZGl0QnV0dG9uIjpmYWxzZSwidHlwZSI6InRleHQiLCJ2YWx1ZVR5cGUiOiJzdHJpbmcifV0sInByb21wdCI6IlNwZWNrbGUiLCJyZXF1aXJlZCI6ZmFsc2UsInR5cGUiOiJncm91cCIsInZhbHVlVHlwZSI6InN0cmluZyJ9XX0=
 # ============================================================================
 INCLUDE [ if {{$(SPECKLE_ACCOUNT)} == {}} { puts_real {Parameter 'SPECKLE_ACCOUNT' must be given a value.}; exit 1; }; ]
 #! START_HEADER
@@ -1216,13 +1150,35 @@ FACTORY_DEF * BranchingFactory   FACTORY_NAME "SpeckleClient_v1_Output Brancher 
 FACTORY_DEF * TeeFactory   FACTORY_NAME "$(WB_CURRENT_CONTEXT)_CREATOR_BRANCH_TARGET"   INPUT FEATURE_TYPE *  OUTPUT FEATURE_TYPE *
 # -------------------------------------------------------------------------
 FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME { StreamDetails }    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE SpeckleClient_v1_Output    MULTI_FEATURE_MODE { NO }    NULL_ATTR_MODE { NO_OP }    ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ATTR_ACTION { "" "stream_url" "SET_TO" "https:<solidus><solidus>speckle.xyz<solidus>streams<solidus>fd1d44405d<solidus>commits<solidus>1844b4c47c" }    OUTPUT { OUTPUT FEATURE_TYPE StreamDetails_OUTPUT        }
-FACTORY_DEF * TeeFactory   FACTORY_NAME "StreamDetails OUTPUT Splitter"   INPUT FEATURE_TYPE StreamDetails_OUTPUT   OUTPUT FEATURE_TYPE StreamDetails_OUTPUT_0_1Um25XIoGv8=   OUTPUT FEATURE_TYPE StreamDetails_OUTPUT_1_5D4bGohhjiE=
 # -------------------------------------------------------------------------
-FACTORY_DEF * TeeFactory   FACTORY_NAME "SpeckleReceiver_v1 (Disabled) Nuker"   INPUT FEATURE_TYPE StreamDetails_OUTPUT_0_1Um25XIoGv8=
+FACTORY_DEF * TeeFactory   FACTORY_NAME "SpeckleReceiver_v1 Speckle_URL Input Collector"   INPUT FEATURE_TYPE StreamDetails_OUTPUT   OUTPUT FEATURE_TYPE SpeckleReceiver_v1_Speckle_URL
+MACRO SpeckleReceiver_v1_WORKSPACE_NAME SpeckleReceiver_v1
+MACRO $(SpeckleReceiver_v1_WORKSPACE_NAME)_XFORMER_NAME SpeckleReceiver_v1
+MACRO $(SpeckleReceiver_v1_WORKSPACE_NAME)_TRANSFORMER_GROUP 
+MACRO $(SpeckleReceiver_v1_WORKSPACE_NAME)___COMPOUND_PARAMETERS 
+MACRO $(SpeckleReceiver_v1_WORKSPACE_NAME)_SUB_DOC_NAME SpeckleReceiver_v1
+MACRO $(SpeckleReceiver_v1_WORKSPACE_NAME)_STREAM_URL <at>Value<openparen>stream_url<closeparen>
+DEFAULT_MACRO SpeckleReceiver_v1_WORKSPACE_NAME ""
+INCLUDE [puts {MACRO WB_OLD_CONTEXT_$(SpeckleReceiver_v1_WORKSPACE_NAME) $(WB_CURRENT_CONTEXT)};          puts {MACRO WB_CURRENT_CONTEXT $(SpeckleReceiver_v1_WORKSPACE_NAME)}]
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(SpeckleReceiver_v1_WORKSPACE_NAME)_Speckle_URL1647449716 Input Splitter"   INPUT FEATURE_TYPE "$(SpeckleReceiver_v1_WORKSPACE_NAME)_Speckle_URL"   OUTPUT FEATURE_TYPE "$(SpeckleReceiver_v1_WORKSPACE_NAME)_Speckle_URL" "@EvaluateExpression(ATTR_CREATE_EXPR_PROPAGATE_MISSING_FDIV_TYPED,stream_url,$($(SpeckleReceiver_v1_WORKSPACE_NAME)_STREAM_URL),UTF8, FEATURE_TYPE)"
 # -------------------------------------------------------------------------
 FME_PYTHON_PATH "$(FME_MF_DIR)"
-FACTORY_DEF {*} PythonFactory    FACTORY_NAME { ProcessSpeckleCommit }    FLUSH_WHEN_GROUPS_CHANGE { <Unused> }    INPUT  FEATURE_TYPE StreamDetails_OUTPUT_1_5D4bGohhjiE=    SYMBOL_NAME { StreamReader }    PYTHON_NAMESPACE FMEOBJECTS    SOURCE_CODE { from<space>fme_speckle.readers<space>import<space>CommitParser }    OUTPUT { PYOUTPUT FEATURE_TYPE ProcessSpeckleCommit_OUTPUT         }
-FACTORY_DEF * TeeFactory   FACTORY_NAME "ProcessSpeckleCommit OUTPUT Transformer Output Nuker"   INPUT FEATURE_TYPE ProcessSpeckleCommit_OUTPUT
+FACTORY_DEF {*} PythonFactory    FACTORY_NAME { $(SpeckleReceiver_v1_WORKSPACE_NAME)_ProcessSpeckleCommit }    FLUSH_WHEN_GROUPS_CHANGE { <Unused> }    INPUT  FEATURE_TYPE "$(SpeckleReceiver_v1_WORKSPACE_NAME)_Speckle_URL"    SYMBOL_NAME { StreamReader }    PYTHON_NAMESPACE FMEOBJECTS    SOURCE_CODE { from<space>fme_speckle.readers<space>import<space>StreamReader }    OUTPUT { PYOUTPUT FEATURE_TYPE "$(SpeckleReceiver_v1_WORKSPACE_NAME)_ProcessSpeckleCommit_OUTPUT"         }
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { $(SpeckleReceiver_v1_WORKSPACE_NAME)_AttributeFilter }    INPUT  FEATURE_TYPE "$(SpeckleReceiver_v1_WORKSPACE_NAME)_ProcessSpeckleCommit_OUTPUT"    OUTPUT { FEATURE_TYPE $(SpeckleReceiver_v1_WORKSPACE_NAME)_AttributeFilter_FILTER }
+FACTORY_DEF {*} AttributeFilterFactory FACTORY_NAME $(SpeckleReceiver_v1_WORKSPACE_NAME)_AttributeFilter_Filter COMMAND_PARM_EVALUATION SINGLE_PASS INPUT FEATURE_TYPE $(SpeckleReceiver_v1_WORKSPACE_NAME)_AttributeFilter_FILTER FILTER_ATTRIBUTE { speckle_type } FILTER_VALUES { <lt>EMPTY<gt> <lt>MISSING<gt> <lt>NULL<gt> <lt>UNFILTERED<gt> stream branch commit } PRESERVE_FEATURE_ORDER PER_OUTPUT_PORT OUTPUT <lt>EMPTY<gt> FEATURE_TYPE $(SpeckleReceiver_v1_WORKSPACE_NAME)_AttributeFilter_<lt>EMPTY<gt> OUTPUT <lt>MISSING<gt> FEATURE_TYPE $(SpeckleReceiver_v1_WORKSPACE_NAME)_AttributeFilter_<lt>MISSING<gt> OUTPUT <lt>NULL<gt> FEATURE_TYPE $(SpeckleReceiver_v1_WORKSPACE_NAME)_AttributeFilter_<lt>NULL<gt> OUTPUT <lt>UNFILTERED<gt> FEATURE_TYPE $(SpeckleReceiver_v1_WORKSPACE_NAME)_AttributeFilter_<lt>UNFILTERED<gt> OUTPUT stream FEATURE_TYPE $(SpeckleReceiver_v1_WORKSPACE_NAME)_AttributeFilter_stream OUTPUT branch FEATURE_TYPE $(SpeckleReceiver_v1_WORKSPACE_NAME)_AttributeFilter_branch OUTPUT commit FEATURE_TYPE $(SpeckleReceiver_v1_WORKSPACE_NAME)_AttributeFilter_commit
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(SpeckleReceiver_v1_WORKSPACE_NAME)_AttributeFilter <lt>EMPTY<gt> Transformer Output Nuker"   INPUT FEATURE_TYPE "$(SpeckleReceiver_v1_WORKSPACE_NAME)_AttributeFilter_<lt>EMPTY<gt>"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(SpeckleReceiver_v1_WORKSPACE_NAME)_AttributeFilter <lt>MISSING<gt> Transformer Output Nuker"   INPUT FEATURE_TYPE "$(SpeckleReceiver_v1_WORKSPACE_NAME)_AttributeFilter_<lt>MISSING<gt>"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(SpeckleReceiver_v1_WORKSPACE_NAME)_AttributeFilter <lt>NULL<gt> Transformer Output Nuker"   INPUT FEATURE_TYPE "$(SpeckleReceiver_v1_WORKSPACE_NAME)_AttributeFilter_<lt>NULL<gt>"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(SpeckleReceiver_v1_WORKSPACE_NAME)_SpeckleObjects1647449716 Output Collector"   INPUT FEATURE_TYPE "$(SpeckleReceiver_v1_WORKSPACE_NAME)_AttributeFilter_<lt>UNFILTERED<gt>"   OUTPUT FEATURE_TYPE "$(SpeckleReceiver_v1_WORKSPACE_NAME)_SpeckleObjects"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(SpeckleReceiver_v1_WORKSPACE_NAME)_Stream1647449716 Output Collector"   INPUT FEATURE_TYPE "$(SpeckleReceiver_v1_WORKSPACE_NAME)_AttributeFilter_stream"   OUTPUT FEATURE_TYPE "$(SpeckleReceiver_v1_WORKSPACE_NAME)_Stream" @RemoveAttributes(speckle_type,object_id,branch_id,commit_id,description,commit_message)
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(SpeckleReceiver_v1_WORKSPACE_NAME)_Branch1647449716 Output Collector"   INPUT FEATURE_TYPE "$(SpeckleReceiver_v1_WORKSPACE_NAME)_AttributeFilter_branch"   OUTPUT FEATURE_TYPE "$(SpeckleReceiver_v1_WORKSPACE_NAME)_Branch" @RemoveAttributes(speckle_type,object_id,commit_id,stream_id,stream_name,commit_message)
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(SpeckleReceiver_v1_WORKSPACE_NAME)_Commit1647449716 Output Collector"   INPUT FEATURE_TYPE "$(SpeckleReceiver_v1_WORKSPACE_NAME)_AttributeFilter_commit"   OUTPUT FEATURE_TYPE "$(SpeckleReceiver_v1_WORKSPACE_NAME)_Commit" @RemoveAttributes(speckle_type,object_id,branch_id,stream_id,stream_name,description)
+INCLUDE [puts {MACRO WB_CURRENT_CONTEXT $(WB_OLD_CONTEXT_$(SpeckleReceiver_v1_WORKSPACE_NAME))}]
+FACTORY_DEF * TeeFactory   FACTORY_NAME "SpeckleReceiver_v1 SpeckleObjects Output Renamer/Nuker"   INPUT FEATURE_TYPE SpeckleReceiver_v1_SpeckleObjects
+FACTORY_DEF * TeeFactory   FACTORY_NAME "SpeckleReceiver_v1 Stream Output Renamer/Nuker"   INPUT FEATURE_TYPE SpeckleReceiver_v1_Stream
+FACTORY_DEF * TeeFactory   FACTORY_NAME "SpeckleReceiver_v1 Branch Output Renamer/Nuker"   INPUT FEATURE_TYPE SpeckleReceiver_v1_Branch
+FACTORY_DEF * TeeFactory   FACTORY_NAME "SpeckleReceiver_v1 Commit Output Renamer/Nuker"   INPUT FEATURE_TYPE SpeckleReceiver_v1_Commit
 # -------------------------------------------------------------------------
 FACTORY_DEF {*} TestFactory    FACTORY_NAME { Is_Authenticated }    INPUT  FEATURE_TYPE SpeckleFME:Get_Default_Account_Client_OUTPUT    TEST { "@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>authenticated<closeparen>,Is_Authenticated)" = Yes ENCODED }    BOOLEAN_OPERATOR { OR }    COMPOSITE_TEST_EXPR { "1" }    FEATURE_TABLE_SHIM_SUPPORT Yes    PRESERVE_FEATURE_ORDER { PER_OUTPUT_PORT }    OUTPUT { PASSED FEATURE_TYPE Is_Authenticated_PASSED         }
 # -------------------------------------------------------------------------
