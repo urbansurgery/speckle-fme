@@ -8,4 +8,7 @@
       "/Library/FME/2021.2/fmeobjects/python37/"
     ],
     "python.linting.enabled": true,
+    "python.analysis.stubPath": "./typings",
+    "python.formatting.provider": "black",
+    "editor.formatOnSave": true,
 }

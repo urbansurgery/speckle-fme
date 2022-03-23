@@ -1,4 +1,3 @@
-import fmeobjects
-logger = fmeobjects.FMELogFile()
+from fme_speckle.utilities.logging import warn, error, log
 
-print("Speckle Initializing...")
+warn("Speckle Initializing...")
