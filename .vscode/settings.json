@@ -17,5 +17,7 @@
   "editor.formatOnSave": true,
   "editor.formatOnType": true,
   "python.analysis.stubPath": "./typings",
-  "python.analysis.typeCheckingMode": "strict"
+  "python.analysis.typeCheckingMode": "basic",
+  "python.formatting.blackArgs": ["--line-length=120"],
+  "python.analysis.autoImportCompletions": false
 }
