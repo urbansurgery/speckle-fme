@@ -16,7 +16,7 @@ from specklepy.objects.base import Base
 from .streams import explore_commit, get_objects_collections
 
 
-class StreamReader:
+class StreamReader(object):
     def __init__(self):
         pass
 

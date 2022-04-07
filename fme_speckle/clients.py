@@ -5,12 +5,14 @@ from specklepy.api.credentials import get_default_account
 from specklepy.api.models import Stream
 from specklepy.transports.server import ServerTransport
 
+from fme_speckle import object
+
 logger = fmeobjects.FMELogFile()
 
 speckle_clients = []
 
 
-class DefaultClient:
+class DefaultClient(object):
     def __init__(self, *args):
 
         account = get_default_account()
