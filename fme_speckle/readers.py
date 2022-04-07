@@ -1,19 +1,36 @@
-import fmeobjects
-import traceback
-import pprint
-import json
+from math import sqrt
+from typing import Dict, List, TypedDict, Union, Tuple
+from fmeobjects import (
+    FMEFeature,
+    FMEGeometryTools,
+    FMEGeometry,
+    FMEMesh,
+    FMEAggregate,
+    FMELibrary,
+    FMEAppearance,
+    FMEPath,
+)
+from fmeobjects import (
+    FME_ATTR_STRING,
+    FME_ATTR_STRING,
+    FME_ATTR_INT64,
+    FME_ATTR_BOOLEAN,
+    FME_ATTR_REAL64,
+    kFMEFeatureTypeAttr,
+    BY_FACE,
+)
 
-logger = fmeobjects.FMELogFile()
-pp = pprint.PrettyPrinter(indent=2)
+from fme_speckle.utilities.logging import error, trace, warn, log
+from fme_speckle import object
 
 from specklepy.api.credentials import StreamWrapper
-from specklepy.api.resources.commit import Resource
 from specklepy.api.client import SpeckleException
 from specklepy.transports.memory import MemoryTransport
 from specklepy.api import operations
 from specklepy.objects.base import Base
+from specklepy.objects.geometry import Mesh, Polyline, Point
+from specklepy.objects.other import RenderMaterial
 
-from .streams import explore_commit, get_objects_collections
 
 
 class StreamReader(object):
