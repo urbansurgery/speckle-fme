@@ -1,5 +1,8 @@
+"""Helper functions for FME Speckle."""
+
 import fmeobjects
-logger = fmeobjects.FMELogFile()
+
+from fme_speckle.utilities.logging import log
 
 """
 Speckle functions
@@ -26,14 +29,14 @@ unit_scale = {
 Utility functions
 """
 
+
 def _report(msg):
-    """
-    Function for printing messages to the console
-    """
-    logger.LogMessage(str("Speckle: {}".format(msg), 1))
+    """Function for printing messages to the console."""
+    log(f"Speckle: {msg}")
 
 
 def get_scale_length(units):
+    """Get the unit scale length for the given units."""
     if units.lower() in unit_scale.keys():
         return unit_scale[units]
     _report("Units <{}> are not supported.".format(units))

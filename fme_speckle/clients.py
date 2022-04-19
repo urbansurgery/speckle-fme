@@ -1,4 +1,6 @@
-import fmeobjects
+"""Generic Client class for FME Speckle."""
+
+from fmeobjects import FMEFeature, kFMEFeatureTypeAttr
 from specklepy.api import operations
 from specklepy.api.client import SpeckleClient, SpeckleException
 from specklepy.api.credentials import get_default_account
@@ -10,11 +12,11 @@ from fme_speckle import object
 logger = fmeobjects.FMELogFile()
 
 speckle_clients = []
+class DefaultClient(FMEObject):
+    """Generic Client class for FME Speckle."""
 
-
-class DefaultClient(object):
     def __init__(self, *args):
-
+        """Constructor."""
         account = get_default_account()
         client = SpeckleClient()
         client.authenticate(token=account.token)

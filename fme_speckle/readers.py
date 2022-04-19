@@ -1,5 +1,6 @@
-from math import sqrt
-from typing import Dict, List, TypedDict, Union, Tuple
+"""Reading from a Speckle Server."""
+
+from typing import Dict, List, Union, Tuple
 from fmeobjects import (
     FMEFeature,
     FMEGeometryTools,
@@ -36,18 +37,16 @@ fme_geometry_tools = FMEGeometryTools()
 appearance_dictionary: Dict[str, int] = {}
 
 
-class StreamReader(object):
-    """Speckle Stream Reader
+class StreamReader(FMEObject):
+    """Speckle Stream Reader.
 
     For each feature with an 'speckle_url' attribute will return FME features found
     at that URL. In addition to a Feature for every object in the stream, a feature
-    will be added for any stream branch or commit referenced in the url."""
-
-    def __init__(self):
-        pass
+    will be added for any stream branch or commit referenced in the url.
+    """
 
     def input(self, fme_inbound_feature: FMEFeature):
-
+        """Process each incoming feature."""
         # if the stream_url is not set, return a rejected feature
         if fme_inbound_feature.isAttributeNull("speckle_url") or fme_inbound_feature.isAttributeMissing("speckle_url"):
             warn("No stream_url attribute found")
@@ -93,8 +92,7 @@ class StreamReader(object):
 
 
 def process_stream(stream_wrapper: StreamWrapper, resolve_branches: bool = False) -> Union[List[FMEFeature], None]:
-    """Processes a Speckle stream and populates an FMEFeature"""
-
+    """Processes a Speckle stream and populates an FMEFeature."""
     # TODO: resolve_branches is not implemented
     # TODO: In general a process for cascading to all objects from a parent stream should be implemented
 
@@ -122,7 +120,7 @@ def process_stream(stream_wrapper: StreamWrapper, resolve_branches: bool = False
 
 
 def process_branch(stream_wrapper: StreamWrapper, resolve_commits: bool = False) -> Union[List[FMEFeature], None]:
-    """Processes a Speckle branch and populates a list of FMEFeature
+    """Processes a Speckle branch and populates a list of FMEFeature.
 
     If getChildObjects is True, will also return a list of FMEFeatures for each
     object in the laatest commit for the branch.
@@ -173,7 +171,7 @@ def process_branch(stream_wrapper: StreamWrapper, resolve_commits: bool = False)
 
 
 def process_commit(stream_wrapper: StreamWrapper, process_child_objects: bool = True) -> List[FMEFeature]:
-    """Processes a Speckle commit and populates an FMEFeature
+    """Processes a Speckle commit and populates an FMEFeature.
 
     If getChildObjects is True, will also return a list of FMEFeatures within the commit
     """
@@ -219,13 +217,14 @@ def process_commit(stream_wrapper: StreamWrapper, process_child_objects: bool = 
 
 
 def process_object_stream(stream_wrapper: StreamWrapper) -> Union[List[FMEFeature], None]:
-    """
-    Processes a Speckle object stream and populates a list of FMEFeatures
+    """Processes a Speckle object stream and populates a list of FMEFeatures.
 
     Args:
-        object_id: The Speckle object ID.
-    """
+        stream_wrapper (StreamWrapper): The wrapper object
 
+    Returns:
+        list[FMEFeature]: A list of FMEFeatures
+    """
     feature_collection: list[FMEFeature] = []
 
     try:
@@ -346,13 +345,12 @@ def process_attribute(
     """Processes an attribute of an object.
 
     Args:
-        attr (str): The attribute to process.
-        obj (Base): The object to process the attribute of.
-        feature (FMEFeature): The feature to set the attribute on.
-        breadcrumbAttr (str): (Optional) The attribute name hierarchy to set. Defaults to "".
-        collection (list): (Optional) The collection to add the object to. Defaults to [].
+        attr_name (str): The attribute to process.
+        base_object (Base): The object to process the attribute of.
+        fme_feature (FMEFeature): The feature to set the attribute on.
+        hierarchical_attr (str): (Optional) The attribute name hierarchy to set. Defaults to "".
+        feature_collection (list): (Optional) The collection to add the object to. Defaults to [].
     """
-
     label = attr_name if hierarchical_attr == "" else f"{hierarchical_attr}.{attr_name}"
 
     try:
@@ -415,7 +413,16 @@ def process_attribute(
 def create_object(
     base_object: Base, feature_collection: List[FMEFeature] = [], parent_base_object: Union[Base, None] = None
 ) -> Union[List[FMEFeature], None]:
+    """Maps an incoming Speckle object to a FMEFeature.
 
+    Args:
+        base_object (Base): The object to map.
+        feature_collection (list): The collection to add the object to. Defaults to [].
+        parent_base_object (Base, optional): The parent object. Defaults to None.
+
+    Returns:
+        list[FMEFeature]: A list of FMEFeatures
+    """
     if isinstance(base_object, Base):
         fme_feature = FMEFeature()
 
@@ -435,7 +442,13 @@ def create_object(
 def flatten_objects(
     base_object: Base, feature_collection: List[FMEFeature] = [], fme_parent_id: Union[str, None] = None
 ) -> Union[List[FMEFeature], None]:
+    """Recursively maps an incoming Speckle object to FMEFeatures.
 
+    Args:
+        base_object (Base): The object to map.
+        feature_collection (list): The collection to add the object to. Defaults to [].
+        fme_parent_id (str, None, optional): The parent object. Defaults to None.
+    """
     if isinstance(base_object, Base):
 
         feature = FMEFeature()
@@ -483,14 +496,12 @@ def map_geometry(display_geometry: Union[Polyline, Mesh]) -> Union[FMEMesh, FMEP
 
 
 def display_params_to_geometry(display_geometry: Base, fme_geometry: FMEGeometry) -> None:
-    """
-    Adds any attributes adjacent to the displayValue of a speckle object to the geometry as traits.
+    """Adds any attributes adjacent to the displayValue of a speckle object to the geometry as traits.
 
     Args:
-        display (Display): The display to convert.
-        geometry (FMEGeometry): The geometry to set the display parameters on.
+        display_geometry (Display): The display to convert.
+        fme_geometry (FMEGeometry): The geometry to set the display parameters on.
     """
-
     if isinstance(display_geometry, Base) and isinstance(fme_geometry, FMEGeometry):
         attributes = display_geometry.get_member_names()
         for attr_name in attributes:
@@ -500,6 +511,7 @@ def display_params_to_geometry(display_geometry: Base, fme_geometry: FMEGeometry
 
 
 def apply_render_raterial(display_geometry: Base, render_material: RenderMaterial) -> None:
+    """Handles the different attributes that carryt the render material."""
     if not hasattr(display_geometry, "renderMaterial") or getattr(display_geometry, "renderMaterial", None) is None:
         if render_material:
             display_geometry.renderMaterial = render_material
@@ -513,11 +525,11 @@ def build_display_eometry(
     """Converts the displayValue from speckle Base object to an FME geometry and adds it to the feature.
 
     Args:
-        display (Union[Polyline, List[Polyline], Mesh, List[Mesh]]): Speckle has either a single Value
+        display_geometry (Union[Polyline, List[Polyline], Mesh, List[Mesh]]): Speckle has either a single Value
             or a list of values. Values discovered so far are Polyline and Mesh.
-        feature (FMEFeature): The FME feature to add the geometry to.
+        fme_feature (FMEFeature): The FME feature to add the geometry to.
+        renderMaterial (Union[RenderMaterial, None], optional): The render material to apply to the geometry.
     """
-
     if not isinstance(display_geometry, list):
         if renderMaterial:
             apply_render_raterial(display_geometry, renderMaterial)

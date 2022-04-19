@@ -1,3 +1,5 @@
+"""Helpers for writing to the FME log file."""
+
 import traceback
 from types import TracebackType
 from typing import Union
@@ -20,6 +22,15 @@ def warn(message: str) -> None:
 
 def error(message: str) -> None:
     """Logs an error message."""
+    log(str(message), FME_ERROR)
+
+
+def important(message: str) -> None:
+    """Logs an important message.
+
+    Technically this breaks the FME log file conventions but semantically better
+    than describing important logs as errors. Should be used sparingly.
+    """
     log(str(message), FME_ERROR)
 
 

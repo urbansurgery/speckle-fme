@@ -1,3 +1,5 @@
+"""Testing stream processing functions."""
+
 from functools import reduce
 import string
 import fmeobjects
@@ -17,7 +19,14 @@ OBJECTS_BY_TYPE = {}  # type: Dict[str, List[Base]]
 
 
 def explore_commit(base: Base) -> List:
+    """Process a base commit object and explore its dynamic data.
 
+    Args:
+        base (Base): The base commit object.
+
+    Returns:
+        List: A list of objects.
+    """
     objects = []
     counter = 0
 
@@ -74,7 +83,8 @@ def explore_commit(base: Base) -> List:
     return objects
 
 
-def process_display(p: string, v: any) -> List:
+def process_display(p: str, v: any) -> List:  # type: ignore
+    """New API Display property should be a list of display values."""
     if isinstance(v, List):
         return v
     if p == "displayMesh":
@@ -157,7 +167,7 @@ def create_collection(name):
 
 
 def get_objects_nested_lists(items, parent_collection=None) -> List:
-    """returns the Lists from within nested lists"""
+    """Returns the Lists from within nested list."""
     objects = []
 
     if isinstance(items[0], list):
