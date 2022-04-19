@@ -11,4 +11,4 @@ class FMEObject:
         """The Default output function."""
 
 
-error("Speckle Initializing...")
+important("Speckle Initializing...")

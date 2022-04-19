@@ -531,7 +531,7 @@ def build_mesh(mesh: Mesh, fme_mesh: FMEMesh) -> None:
 
             fme_appearance.setAlpha(render_material.opacity)
             fme_appearance.setColorDiffuse(diffuse["r"], diffuse["g"], diffuse["b"])
-            fme_appearance.setColorAmbient(diffuse["r"] / 2, diffuse["g"] / 2, diffuse["b"] / 2)
+            fme_appearance.setColorAmbient(diffuse["r"] / 1.25, diffuse["g"] / 1.25, diffuse["b"] / 1.25)
             fme_appearance.setColorEmissive(emmisive["r"], emmisive["g"], emmisive["b"])
             fme_appearance.setShininess(render_material.metalness)
 

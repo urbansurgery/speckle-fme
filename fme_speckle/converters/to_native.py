@@ -7,14 +7,14 @@ from specklepy.objects.geometry import *
 
 SUPPORTED_CURVES = ()
 
-CAN_CONVERT_TO_NATIVE = (
+CONVERSION_TYPES_FROM_SPECKLE_TO_FME = (
     Mesh,
     *SUPPORTED_CURVES,
 )
 
 
 def can_convert_to_native(speckle_object):
-    if type(speckle_object) in CAN_CONVERT_TO_NATIVE:
+    if type(speckle_object) in CONVERSION_TYPES_FROM_SPECKLE_TO_FME:
         return True
     display = getattr(speckle_object, "displayMesh", getattr(speckle_object, "displayValue", None))
     if display:
@@ -29,7 +29,7 @@ def convert_to_native(speckle_object, name=None, fme_object=None):
     speckle_name = (
         name or getattr(speckle_object, "name", None) or speckle_object.speckle_type + f" -- {speckle_object.id}"
     )
-    if speckle_type not in CAN_CONVERT_TO_NATIVE:
+    if speckle_type not in CONVERSION_TYPES_FROM_SPECKLE_TO_FME:
         display = getattr(speckle_object, "displayMesh", getattr(speckle_object, "displayValue", None))
         if not display:
             logger.logMessageString(f"Could not convert unsupported Speckle object: {speckle_object}")

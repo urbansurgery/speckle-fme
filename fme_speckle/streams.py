@@ -41,7 +41,8 @@ def explore_commit(base: Base) -> List:
 
                     feature.setAttribute(fmeobjects.kFMEFeatureTypeAttr, item.speckle_type)
                     feature.setAttribute("speckle_type", item.speckle_type)
-                    feature.setAttribute("speckle.id", item.id)
+                    if item.id:
+                        feature.setAttribute("speckle.id", item.id)
                     feature.setAttribute("commit.hierarchy_id", counter)
 
                     for prop in item.get_member_names():
@@ -102,13 +103,13 @@ def merge_meshes(a: FMEMesh, b) -> FMEMesh:
 
 def construct_mesh(meshValue) -> FMEMesh:
     """Construct a FME mesh from a Speckle mesh."""
-    mesh = FMEMesh()
-    mesh = add_vertices(mesh, meshValue)
-    mesh = add_faces(mesh, meshValue)
-    pass
+    fme_mesh = FMEMesh()
+    add_vertices(fme_mesh, meshValue)
+    add_faces(fme_mesh, meshValue)
+    return fme_mesh
 
 
-def add_vertices(fme_mesh: FMEMesh, speckle_mesh) -> FMEMesh:
+def add_vertices(fme_mesh: FMEMesh, speckle_mesh) -> None:
     """Add vertices to a FME mesh."""
     s_vertices = speckle_mesh.__getattribute__("vertices")
 
@@ -117,9 +118,8 @@ def add_vertices(fme_mesh: FMEMesh, speckle_mesh) -> FMEMesh:
             fme_mesh.appendVertex(s_vertices[i], s_vertices[i + 1], s_vertices[i + 2])
 
 
-def add_faces(fme_mesh: FMEMesh, speckle_mesh) -> FMEMesh:
+def add_faces(fme_mesh: FMEMesh, speckle_mesh) -> None:
     """Add faces to a FME mesh."""
-
     s_faces = speckle_mesh.__getattribute__("faces")
 
     if s_faces and len(s_faces) > 0:

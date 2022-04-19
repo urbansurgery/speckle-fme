@@ -7,11 +7,9 @@ from specklepy.api.credentials import get_default_account
 from specklepy.api.models import Stream
 from specklepy.transports.server import ServerTransport
 
-from fme_speckle import object
+from fme_speckle import FMEObject
 
-logger = fmeobjects.FMELogFile()
 
-speckle_clients = []
 class DefaultClient(FMEObject):
     """Generic Client class for FME Speckle."""
 
@@ -27,8 +25,9 @@ class DefaultClient(FMEObject):
         pass
 
     def input(self, feature):
-        client = fmeobjects.FMEFeature()
-        client.setAttribute(fmeobjects.kFMEFeatureTypeAttr, "SpeckleClient")
+        """Process each feature."""
+        client = FMEFeature()
+        client.setAttribute(kFMEFeatureTypeAttr, "SpeckleClient")
         client.setFeatureType("SpeckleClient")
 
         client.setAttribute("_token", self.account.token)
