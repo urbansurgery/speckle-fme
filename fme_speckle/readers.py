@@ -11,18 +11,16 @@ from fmeobjects import (
     FMEAppearance,
     FMEPath,
 )
-from fmeobjects import (
-    FME_ATTR_STRING,
-    FME_ATTR_STRING,
-    FME_ATTR_INT64,
-    FME_ATTR_BOOLEAN,
-    FME_ATTR_REAL64,
-    kFMEFeatureTypeAttr,
-    BY_FACE,
-)
+from fme_speckle.converters.properties import rgba_from_argb_int
 
 from fme_speckle.utilities.logging import error, trace, warn, log
-from fme_speckle import object
+from fme_speckle.features import (
+    set_feature_attribute,
+    set_feature_list_attribute,
+    set_feature_rejection,
+    set_speckle_feature_type,
+)
+from fme_speckle import FMEObject
 
 from specklepy.api.credentials import StreamWrapper
 from specklepy.api.client import SpeckleException
@@ -133,7 +131,6 @@ def process_branch(stream_wrapper: StreamWrapper, resolve_commits: bool = False)
     Returns:
         list[FMEFeature]: A list of FMEFeatures
     """
-
     feature_collection: list[FMEFeature] = []
     fme_branch_feature = FMEFeature()
 
@@ -246,93 +243,6 @@ def process_object_stream(stream_wrapper: StreamWrapper) -> Union[List[FMEFeatur
         trace(exception.__traceback__)
 
     return feature_collection
-
-
-def set_speckle_feature_type(fme_feature: FMEFeature, feature_type: str = "Base") -> None:
-    """Set the Speckle feature type"""
-    fme_feature.setFeatureType(feature_type)
-    fme_feature.setAttribute(kFMEFeatureTypeAttr, feature_type)
-
-
-def set_feature_attribute(
-    fme_feature: FMEFeature, attr_name: str, attr_value, attr_type: type = str, is_list: bool = False
-) -> None:
-    """Sets the attribute of the feature or Null if the value is None.
-
-    If None then optionally type set the attribute.
-
-    Args:
-        feature (FMEFeature): The feature to set the attribute on.
-        attrName (str): The name of the attribute to set.
-        attrValue (object): The value of the attribute to set.
-        attrType (type): (Optional) The type of the attribute. Defaults to str.
-        isList(bool): (Optional) Whether the attribute is a list. Defaults to False.
-
-    Raises:
-        FMEException: If something goes wrong.
-    """
-
-    attr_name = attr_name.replace(" ", "␣")
-
-    type_map: Dict[type, int] = {
-        str: FME_ATTR_STRING,
-        int: FME_ATTR_INT64,
-        bool: FME_ATTR_BOOLEAN,
-        float: FME_ATTR_REAL64,
-    }
-
-    fme_attr_type = type_map[attr_type] or FME_ATTR_STRING
-
-    if attr_value is None:
-        fme_feature.setAttributeNullWithType(attr_name, fme_attr_type)
-    else:
-        if is_list:
-            value = attr_value if type(attr_value) is list else [attr_value]
-            old_list: list = fme_feature.getAttribute(attr_name)  # type: ignore
-            if old_list:
-                old_list.extend(value)
-                fme_feature.setAttribute(attr_name, old_list)
-            else:
-                fme_feature.setAttribute(attr_name, value)
-        else:
-            fme_feature.setAttribute(attr_name, attr_value)
-
-
-def set_feature_list_attribute(
-    fme_feature: FMEFeature,
-    attr_name: str,
-    attr_value,  # type: ignore
-    propName: str = "",
-) -> None:
-    """Sets the attribute of the feature as a list.
-
-    Args:
-        feature (FMEFeature): The feature to set the attribute on.
-        attrName (str): The name of the attribute to set.
-        attrValue (object): The value of the attribute to set.
-        propName (str): (Optional) The name of the property to set. Defaults to "".
-    """
-
-    value = attr_value if type(attr_value) is list else [attr_value]
-
-    list_attribute = fme_feature.getAttribute(attr_name)
-
-    new_list = list_attribute if type(list_attribute) is list else []
-    new_list.extend(value)
-
-    fme_feature.setAttribute(attr_name, new_list)
-
-    # TODO propName is not used - need to test the setting of a dict to a fme list attribute
-
-
-def set_feature_rejection(fme_feature: FMEFeature, reason: str) -> None:
-    """Sets the rejection reason of the feature.
-
-    Args:
-        feature (FMEFeature): The feature to set the rejection reason on.
-        reason (str): The reason for the rejection.
-    """
-    set_feature_attribute(fme_feature, "REJECTED", reason)
 
 
 def process_attribute(
@@ -482,7 +392,6 @@ def map_geometry(display_geometry: Union[Polyline, Mesh]) -> Union[FMEMesh, FMEP
     Raises:
         TypeError: The fallback of FMEGeometry is an abstract class only and cant be instantiated.
     """
-
     if isinstance(display_geometry, Mesh):
         fme_geometry = FMEMesh()
         build_mesh(display_geometry, fme_geometry)
@@ -569,7 +478,6 @@ def points_to_tuple(point: Point) -> Tuple[float, float, float]:
     Returns:
         (float, float, float): The converted point. The tuple is (x, y, z).
     """
-
     return (point.x, point.y, point.z)
 
 
@@ -648,58 +556,3 @@ def build_mesh(mesh: Mesh, fme_mesh: FMEMesh) -> None:
 
     fme_mesh.optimizeVertexPool
     fme_mesh.resolvePartDefaults
-
-
-class RGBA(TypedDict):
-    r: float
-    g: float
-    b: float
-    a: float
-
-
-def unit_color(color: int) -> float:
-    """Convert a colour from 0-255 to 0-1.
-
-    Args:
-        colour (int): The colour to convert.
-
-    Returns:
-        float: The converted colour.
-    """
-
-    return color / 255.0
-
-
-def rgba_from_argb_int(argb_int: int) -> Dict[str, float]:
-    """Translate signed integer argb color to float rgba color.
-
-    Args:
-        argb_int (int): _description_
-
-    Returns:
-        Tuple[float, float, float, float]: _description_
-    """
-
-    alpha_mask = 0xFF000000
-    red_mask = 0xFF0000
-    green_mask = 0xFF00
-    blue_mask = 0xFF
-
-    alpha = (argb_int & alpha_mask) >> 24
-    red = (argb_int & red_mask) >> 16
-    green = (argb_int & green_mask) >> 8
-    blue = argb_int & blue_mask
-
-    return {
-        "r": unit_color(red),
-        "g": unit_color(green),
-        "b": unit_color(blue),
-        "a": unit_color(alpha),
-    }
-
-
-def render_material_to_appearance(
-    render_material: RenderMaterial, fme_appearance: FMEAppearance
-) -> Dict[str, Union[int, float]]:
-    """Converts a Metalness map to an FME Appearance"""
-    ...
