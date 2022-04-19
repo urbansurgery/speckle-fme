@@ -488,9 +488,8 @@ def build_path(path: Polyline, fme_path: FMEPath) -> None:
 
     Args:
         path (Polyline): _description_
-        geom (FMEPath): _description_
+        fme_path (FMEPath): _description_
     """
-
     points_list = list(map(points_to_tuple, path.as_points()))
 
     fme_path.extendToPointsXYZ(points_list)
@@ -507,10 +506,9 @@ def build_mesh(mesh: Mesh, fme_mesh: FMEMesh) -> None:
     material id from speckle.
 
     Args:
-        mesh (Mesh): The mesh to build the geometry from.
-        geom (FMEMesh): The FMEMesh to add the geometry to.
+        fme_mesh (Mesh): The mesh to build the geometry from.
+        mesh (FMEMesh): The FMEMesh to add the geometry to.
     """
-
     mesh_faces = getattr(mesh, "faces")
     mesh_vertices = getattr(mesh, "vertices")
     render_material = getattr(mesh, "renderMaterial", None)
