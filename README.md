@@ -36,7 +36,17 @@ These implementations will be Transformer based rather than directly into a Read
 
 Key to the FME connection to Speckle will be to maximise the usefulness of the FME part of the workflow by maximising the genericity of Features as they are read without a strong view of how this will impact on writing future re-use. i.e. Speckle > FME > Speckle prioritised over onward connections.
 
-While Speckle>Native>Speckle Object mapping will be included in time, the basic implementation will be utilising the Base displaymesh.
+**what is different**
+
+In addition to the UI difference to other visual node programming examples like Sverchok/Blender, Grasshopper or Dynamo, FME also handles data and data flow in a quite different manner.
+
+FME can handle many different datatypes, but all are held as properties within "features". In FME everything is a Feature (consider a row in a table) and no data is not in a feature*.
+
+As such the wiring and consecutive blending of datatypes is fundamentally different. In Grasshopper a Node can have separate entry points for strings, numbers, boolean flags and geometry, etc. In FME, transformers we handle features. In the OOTB python callers, there is a single point of entry for a stream of features. The transformation may have logic within it that is selective but in essence every transformer acts on every feature in the stream.
+
+For specke-fme, this is worked around by building custom tranformers which are in fact packaged mini workbooks that allow the parent transformer to have, say, a speckle-client feature in one port, a list of stream features in another and the complexity of blending these two squirreled away inside. What FME cannot do is pass a Client "object" to another transformer only the transformed results from another.
+
+* *There are global variables for some simple datatypes. These are immutable once the workflow is instantiated.
 
 ## Getting Started
 
