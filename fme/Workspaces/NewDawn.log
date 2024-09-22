@@ -1,0 +1,155 @@
+2024-09-22 17:06:50|   0.0|  0.0|WARN  |Debug logging is enabled (FME_DEBUG MAPPING_FILE BADNEWS UNGROUPED UNCORRELATED DUMP_SCHEMA XSD_VERBOSE HTTP_DEBUG FTP_DEBUG STASH). This may affect performance
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|Current FME version: FME 2024.1.2.0 (20240830 - Build 24622 - WIN64)
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|System Time: 20240922160651 UTC
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|FME_HOME is 'C:\Program Files\FME\'
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|FME Form Fixed (node locked-crc)
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|Serial Number: XNGM-FP4S-215Q
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|Temporary License: 101 days left.
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|Machine host name is: DISCO-JBR
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|OS Locale Name     : en_GB
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|OS Locale Encoding : UTF-8
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|Process Encoding   : UTF-8
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|FME API version: '4.0 20240212'
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|FME Configuration: FME_BASE is 'no'
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|FME Configuration: FME_MF_DIR is 'D:\Repos\jsdbroughton\speckle-fme\fme\Workspaces/'
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|FME Configuration: FME_MF_NAME is 'NewDawn.fmw'
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|FME Configuration: FME_PRODUCT_NAME is 'FME(R) 2024.1.2.0'
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|Operating System: Microsoft Windows 11 64-bit  (Build 22631)
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|FME Platform: WIN64
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|System Status: 153.18 GB of disk space available in the FME temporary folder (C:\Users\JSDBRO~1\AppData\Local\Temp\wbrun_1726985898137_51288\fmetmp_c)
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|System Status: 127.75 GB of physical memory available
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|System Status: 510.99 GB of virtual memory available
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|START - ProcessID: 35932, peak process memory usage: 41408 kB, current process memory usage: 40128 kB
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|FME Configuration: Command line arguments are `C:\Program Files\FME\fme.exe' `D:\Repos\jsdbroughton\speckle-fme\fme\Workspaces\wb-xlate-1727021210501_51288' `LOG_STANDARDOUT' `YES' `LOG_TIMINGS' `YES' `LogCountServerName' `52992' `LOG_STANDARDOUT' `No' `WORKBENCH_LOG_SERVER' `50419' `FME_DEBUG' `EXTRA'
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|FME Configuration: Connection Storage: 'C:\Users\jsdbroughton\AppData\Roaming\Safe Software\FME\'
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|Using Python interpreter from `C:\Program Files\FME\fmepython312\python312.dll' with PYTHONHOME `C:\Program Files\FME\fmepython312'
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|Python version 3.12 loaded successfully
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|Adding folder `D:\Repos\jsdbroughton\speckle-fme\fme\Workspaces\' to the python path
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|FME_BEGIN_PYTHON: evaluating python script from string...
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|FME_BEGIN_PYTHON: python script execution complete.
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|Shared folders for formats are : C:\Program Files\FME\datasources;J:\jsdbroughton\Documents\FME\Formats
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|Shared folders for transformers are : C:\Users\jsdbroughton\AppData\Roaming\Safe Software\FME\Packages\24622-win64\transformers;C:\Program Files\FME\transformers;C:\Users\jsdbroughton\AppData\Roaming\Safe Software\FME\FME Store\Transformers
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|Shared folders for coordinate systems are : J:\jsdbroughton\Documents\FME\CoordinateSystems
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|Shared folders for coordinate system exceptions are : J:\jsdbroughton\Documents\FME\CoordinateSystemExceptions
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|Shared folders for coordinate system grid overrides are : J:\jsdbroughton\Documents\FME\CoordinateSystemGridOverrides
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|Shared folders for CS-MAP transformation exceptions are : J:\jsdbroughton\Documents\FME\CsmapTransformationExceptions
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|Shared folders for transformer categories are : J:\jsdbroughton\Documents\FME\TransformerCategories
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|FME Configuration: Reader Keyword is `MULTI_READER'
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|FME Configuration: Writer Keyword is `MULTI_DEST'
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|FME Configuration: Writer Group Definition Keyword is `MULTI_DEST_DEF'
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|FME Configuration: Reader type is `MULTI_READER'
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|FME Configuration: Writer type is `MULTI_WRITER'
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|FME Configuration: No destination coordinate system set
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|FME Configuration: Current working folder is `D:\Repos\jsdbroughton\speckle-fme\fme\Workspaces'
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|FME Configuration: Temporary folder is `C:\Users\JSDBRO~1\AppData\Local\Temp\wbrun_1726985898137_51288\fmetmp_c', set from environment variable `FME_TEMP'
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|FME Configuration: Cache folder is 'C:\Users\JSDBRO~1\AppData\Local\Temp'
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|FME Configuration: FME_HOME is `C:\Program Files\FME\'
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|FME Configuration: Start freeing memory when the process exceeds 383.24 GB or address space exceeds 16777216.00 TB
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|FME Configuration: Stop freeing memory when the process is below 287.43 GB and address space is below 16777216.00 TB
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|FME Configuration: Logging ungrouped output features
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|FME Configuration: Logging uncorrelated input features
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|FME Configuration: Dumping mapping file
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|FME Temporary Folder: C:\Users\JSDBRO~1\AppData\Local\Temp\wbrun_1726985898137_51288\fmetmp_c
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|mapping file Line 0: FME_PYTHON_VERSION 310
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|mapping file Line 1: ARCGIS_COMPATIBILITY ARCGIS_AUTO
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|mapping file Line 2: READER_TYPE MULTI_READER
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|mapping file Line 3: WRITER_TYPE MULTI_WRITER
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|mapping file Line 4: WRITER_KEYWORD MULTI_DEST
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|mapping file Line 5: MULTI_DEST_DATASET null
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|mapping file Line 6: LOG_END_BANNER (occurrence 1 of 5 for keyword 'LOG_END_BANNER')
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|mapping file Line 7: LOG_END_BANNER Feature caches have been recorded at every stage of the translation. (occurrence 2 of 5 for keyword 'LOG_END_BANNER')
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|mapping file Line 8: LOG_END_BANNER To inspect the recorded features, (occurrence 3 of 5 for keyword 'LOG_END_BANNER')
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|mapping file Line 9: LOG_END_BANNER click the feature cache icons next to the ports. (occurrence 4 of 5 for keyword 'LOG_END_BANNER')
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|mapping file Line 10: LOG_END_BANNER (occurrence 5 of 5 for keyword 'LOG_END_BANNER')
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|mapping file Line 11: LOG_FILENAME D:\Repos\jsdbroughton\speckle-fme\fme\Workspaces/NewDawn.log
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|mapping file Line 12: LOG_APPEND YES
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|mapping file Line 13: LOG_MAX_FEATURES 200
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|mapping file Line 14: LOG_MAX_RECORDED_FEATURES 200
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|mapping file Line 15: FME_REPROJECTION_ENGINE FME
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|mapping file Line 16: FME_IMPLICIT_CSMAP_REPROJECTION_MODE Auto
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|mapping file Line 17: FME_GEOMETRY_HANDLING Enhanced
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|mapping file Line 18: FME_STROKE_MAX_DEVIATION 0
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|mapping file Line 19: FME_NAMES_ENCODING UTF-8
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|mapping file Line 20: FME_BULK_MODE_THRESHOLD 2000
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|mapping file Line 21: MULTI_READER_CONTINUE_ON_READER_FAILURE No
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|mapping file Line 22: FME_BEGIN_PYTHON_ENC import<space>sys<lf>sys.path.append<openparen><quote>D:<solidus>Repos<solidus>jsdbroughton<solidus>speckle-fme<quote><closeparen>
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|mapping file Line 23: .metadata XFORMER_BEGIN PythonCreator;2:Main (occurrence 1 of 2 for keyword '.metadata')
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|mapping file Line 24: FME_PYTHON_PATH D:\Repos\jsdbroughton\speckle-fme\fme\Workspaces/
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|mapping file Line 25: FACTORY_DEF {*} CreationFactory FACTORY_NAME { PythonCreator_Creator } OUTPUT { FEATURE_TYPE _____CREATED_PYTHON__ } (occurrence 1 of 7 for keyword 'FACTORY_DEF')
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|mapping file Line 26: FACTORY_DEF {*} PythonFactory FACTORY_NAME { PythonCreator } INPUT FEATURE_TYPE _____CREATED_PYTHON__ SYMBOL_NAME { FeatureCreator } SOURCE_CODE { import<space>fmeobjects<lf>from<space>fme_speckle.readers<space>import<space>StreamReader<lf><lf><lf>class<space>FeatureCreator<openparen>object<closeparen>:<lf><space><space><space><space><quote><quote><quote>Template<space>Class<space>Interface:<lf><space><space><space><space>When<space>using<space>this<space>class<comma><space>make<space>sure<space>its<space>name<space>is<space>set<space>as<space>the<space>value<space>of<space>the<space><apos>Class<space>to<space>Process<space>Features<apos><lf><space><space><space><space>transformer<space>parameter.<lf><space><space><space><space><quote><quote><quote><lf><space><space><space><space><lf><space><space><space><space>def<space>__init__<openparen>self<closeparen>:<lf><space><space><space><space><space><space><space><space><quote><quote><quote>Base<space>constructor<space>for<space>class<space>members.<quote><quote><quote><lf><space><space><space><space><space><space><space><space>pass<lf><space><space><space><space><space><space><space><space><lf><space><space><space><space>def<space>input<openparen>self<comma><space>feature:<space>fmeobjects.FMEFeature<closeparen>:<lf><space><space><space><space><space><space><space><space><quote><quote><quote>This<space>method<space>is<space>called<space>once<space>by<space>FME<space>to<space>initiate<space>feature<space>creation.<lf><space><space><space><space><space><space><space><space>Any<space>number<space>of<space>features<space>can<space>be<space>created<space>and<space>emitted<space>by<space>the<space>self.pyoutput<openparen><closeparen><space>method.<lf><space><space><space><space><space><space><space><space>The<space>initial<space>feature<space>argument<space>is<space>a<space>placeholder<space>and<space>can<space>be<space>ignored.<lf><space><space><space><space><space><space><space><space><quote><quote><quote><lf><space><space><space><space><space><space><space><space>newFeature<space>=<space>fmeobjects.FMEFeature<openparen><closeparen><lf><space><space><space><space><space><space><space><space>self.pyoutput<openparen>newFeature<closeparen><lf><space><space><space><space><space><space><space><space><lf><space><space><space><space>def<space>close<openparen>self<closeparen>:<lf><space><space><space><space><space><space><space><space><quote><quote><quote>This<space>method<space>is<space>called<space>at<space>the<space>end<space>of<space>the<space>class.<quote><quote><quote><lf><space><space><space><space><space><space><space><space>pass<lf> } OUTPUT { PYOUTPUT FEATURE_TYPE PythonCreator_OUTPUT @SupplyAttributes(?,fme_feature_type,PythonCreator) } (occurrence 2 of 7 for keyword 'FACTORY_DEF')
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|mapping file Line 27: FACTORY_DEF {*} RecorderFactory FACTORY_NAME PythonCreator_OUTPUT Feature Recorder -1 2147549186 INPUT FEATURE_TYPE PythonCreator_OUTPUT FEATURE_FILE { C:/Users/JSDBRO~1/AppData/Local/Temp/wb-cache-NewDawn-CCMIIu/Main_PythonCreator -1 2 fo 0 OUTPUT  0  88b297fe7389d46b6ef344fafd944a6205b36c84.ffsupdating } MODE RECORD_PASS_THROUGH STORE_SCANNED_SCHEMA YES NORMALIZE_LIST_ATTRIBUTES_ON_SCHEMA YES CREATE_SPATIAL_INDEX YES INSPECTOR YES RECORD_DIRECTLY_TO_DISK YES FSC_SCHEMA { } FEAT_TYPE_DISPLAY_NAME { PythonCreator:<space>Output } STORE_SCANNED_METADATA PASS_THROUGH_FME_TYPE LARGE_GEOMETRY_DATA_STORAGE REFERENCE NO_LOGGING OUTPUT RECORDED FEATURE_TYPE * (occurrence 3 of 7 for keyword 'FACTORY_DEF')
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|mapping file Line 28: .metadata XFORMER_END PythonCreator;2:Main (occurrence 2 of 2 for keyword '.metadata')
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|mapping file Line 29: FACTORY_DEF * TeeFactory FACTORY_NAME PythonCreator_OUTPUT Feature Counter -1 2147549186 INPUT FEATURE_TYPE PythonCreator_OUTPUT @LogCount(PORT -1 2147549186) NO_LOGGING (occurrence 4 of 7 for keyword 'FACTORY_DEF')
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|mapping file Line 30: FACTORY_DEF * TeeFactory FACTORY_NAME _CREATOR_BRANCH_TARGET INPUT FEATURE_TYPE * OUTPUT FEATURE_TYPE * (occurrence 5 of 7 for keyword 'FACTORY_DEF')
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|mapping file Line 31: FACTORY_DEF * RoutingFactory FACTORY_NAME Destination Feature Type Routing Correlator COMMAND_PARM_EVALUATION SINGLE_PASS INPUT FEATURE_TYPE * FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__ OUTPUT ROUTED FEATURE_TYPE * OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2(FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn) (occurrence 6 of 7 for keyword 'FACTORY_DEF')
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|mapping file Line 32: FACTORY_DEF * TeeFactory FACTORY_NAME Final Output Nuker INPUT FEATURE_TYPE __nuke_me__ (occurrence 7 of 7 for keyword 'FACTORY_DEF')
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|mapping file Line 33: FME_USER_PYTHON Yes
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|mapping file Line 34: LOG_TIMINGS YES
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|mapping file Line 35: LogCountServerName 52992
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|mapping file Line 36: LOG_STANDARDOUT No
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|mapping file Line 37: WORKBENCH_LOG_SERVER 50419
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|mapping file Line 38: FME_DEBUG FME_DEBUG MAPPING_FILE BADNEWS UNGROUPED UNCORRELATED DUMP_SCHEMA XSD_VERBOSE HTTP_DEBUG FTP_DEBUG STASH
+2024-09-22 17:06:50|   0.0|  0.0|INFORM|mapping file Line 39: FME_HOME C:\Program Files\FME\
+2024-09-22 17:06:51|   0.0|  0.0|INFORM|Creating writer for format: 
+2024-09-22 17:06:51|   0.0|  0.0|INFORM|Creating reader for format: 
+2024-09-22 17:06:51|   0.0|  0.0|INFORM|MULTI_READER(MULTI_READER): Will fail with first member reader failure
+2024-09-22 17:06:51|   0.0|  0.0|WARN  |No readers were found to be part of the Multi-Reader, so no data will be read.
+2024-09-22 17:06:51|   0.0|  0.0|INFORM|Using Multi Reader with keyword `MULTI_READER' to read multiple datasets
+2024-09-22 17:06:51|   0.0|  0.0|INFORM|Using MultiWriter with keyword `MULTI_DEST' to output data (ID_ATTRIBUTE is `multi_writer_id')
+2024-09-22 17:06:51|   0.0|  0.0|INFORM|Loaded module 'PythonFactory' from file 'C:\Program Files\FME\plugins/PythonFactory.dll'
+2024-09-22 17:06:51|   0.0|  0.0|INFORM|FME API version of module 'PythonFactory' matches current internal version (4.0 20240212)
+2024-09-22 17:06:51|   0.0|  0.0|INFORM|Loaded module 'LogCount_func' from file 'C:\Program Files\FME\plugins/LogCount_func.dll'
+2024-09-22 17:06:51|   0.0|  0.0|INFORM|FME API version of module 'LogCount_func' matches current internal version (4.0 20240212)
+2024-09-22 17:06:51|   0.0|  0.0|INFORM|Emptying factory pipeline
+2024-09-22 17:06:51|   0.0|  0.0|INFORM|Speckle Initializing...
+2024-09-22 17:06:51|   0.1|  0.1|ERROR |Message Type: fme::internal::_v0::py::Exception
+2024-09-22 17:06:51|   0.1|  0.0|ERROR |(<string>:3) <module>
+2024-09-22 17:06:51|   0.1|  0.0|ERROR |(D:\Repos/jsdbroughton/speckle-fme\fme_speckle\readers.py:6) <module>
+    from specklepy.api.credentials import StreamWrapper
+2024-09-22 17:06:51|   0.1|  0.0|ERROR |Python Exception <ModuleNotFoundError>: No module named 'specklepy'
+2024-09-22 17:06:51|   0.1|  0.0|ERROR |Error executing string `import fmeobjects
+from fme_speckle.readers import StreamReader
+
+
+class FeatureCreator(object):
+    """Template Class Interface:
+    When using this class, make sure its name is set as the value of the 'Class to Process Features'
+    transformer parameter.
+    """
+    
+    def __init__(self):
+        """Base constructor for class members."""
+        pass
+        
+    def input(self, feature: fmeobjects.FMEFeature):
+        """This method is called once by FME to initiate feature creation.
+        Any number of features can be created and emitted by the self.pyoutput() method.
+        The initial feature argument is a placeholder and can be ignored.
+        """
+        newFeature = fmeobjects.FMEFeature()
+        self.pyoutput(newFeature)
+        
+    def close(self):
+        """This method is called at the end of the class."""
+        pass
+'
+2024-09-22 17:06:51|   0.1|  0.0|FATAL |Factory proxy not initialized
+2024-09-22 17:06:51|   0.1|  0.0|FATAL |PythonCreator (PythonFactory): PythonFactory failed to process feature
+2024-09-22 17:06:51|   0.1|  0.0|WARN  |An error has occurred. Check the logfile above for details
+2024-09-22 17:06:51|   0.1|  0.0|WARN  |(D:\code\fme\source\engine\engine_api_impl\cpp\pluginbuilder\dynafact.cpp:446) class StatusInfo __cdecl STFDynamicFactory::process(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>)
+2024-09-22 17:06:51|   0.1|  0.0|WARN  |(D:\code\fme\source\engine\engine_api_impl\cpp\pluginbuilder\dynafact.cpp:446) class StatusInfo __cdecl STFDynamicFactory::process(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>)
+2024-09-22 17:06:51|   0.1|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\factory.cpp:567) class StatusInfo __cdecl STFFactory::acceptFeature(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>)
+2024-09-22 17:06:51|   0.1|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\groupbyfactory.cpp:198) class StatusInfo __cdecl STFGroupByFactory::acceptFeature(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>)
+2024-09-22 17:06:51|   0.1|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\pipeline.cpp:1162) class StatusInfo __cdecl STFFactoryPipeline::processFeatureWithSpecAndFactory(class STFSpec *,class STFFactory &,class STFFeature *&)
+2024-09-22 17:06:51|   0.1|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\pipeline.cpp:1112) class StatusInfo __cdecl STFFactoryPipeline::searchForNextFactoryAndProcessFeature(class STFFeature *&,class STFFactoryPipeline::FactoryRef *)
+2024-09-22 17:06:51|   0.1|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\pipeline.cpp:1502) class StatusInfo __cdecl STFFactoryPipeline::sendFeatureToDownstreamFactory(class STFFeature *&)
+2024-09-22 17:06:51|   0.1|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\factory.cpp:1159) class StatusInfo __cdecl STFFactory::completed(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>) const
+2024-09-22 17:06:51|   0.1|  0.0|WARN  |(D:\code\fme\source\engine\core\engine\stfspec.h:268) class StatusInfo __cdecl STFSpec::doForwardFuncsOnFeatureAndProcess<class STFCreationFactory::CompletedFunctor>(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>,const class STFCreationFactory::CompletedFunctor &)
+2024-09-22 17:06:51|   0.1|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\fctcreat.cpp:381) class StatusInfo __cdecl STFCreationFactory::createSome(class STFCoordSys)
+2024-09-22 17:06:51|   0.1|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\fctcreat.cpp:91) class StatusInfo __cdecl STFCreationFactory::allDone(void)
+2024-09-22 17:06:51|   0.1|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\pipeline.cpp:1307) class StatusInfo __cdecl STFFactoryPipeline::allDone(void)
+2024-09-22 17:06:51|   0.1|  0.0|WARN  |(D:\code\fme\source\engine\core\kernel\simptran.cpp:677) class StatusInfo __cdecl STFSimpleTranslator::convert(void)
+2024-09-22 17:06:51|   0.1|  0.0|WARN  |(D:\code\fme\source\engine\core\engine\stftrans.cpp:127) class StatusInfo __cdecl STFTranslator::translate(void)
+2024-09-22 17:06:51|   0.1|  0.0|INFORM|Translation FAILED with 5 error(s) and 3 warning(s) (0 feature(s) output)
+2024-09-22 17:06:51|   0.1|  0.0|INFORM|FME Session Duration: 0.7 seconds. (CPU: 0.1s user, 0.0s system)
+2024-09-22 17:06:51|   0.1|  0.0|INFORM|END - ProcessID: 35932, peak process memory usage: 74268 kB, current process memory usage: 71040 kB

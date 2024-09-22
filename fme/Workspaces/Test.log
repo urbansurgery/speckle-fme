@@ -1,0 +1,595 @@
+2024-09-22 16:32:20|   0.0|  0.0|WARN  |Debug logging is enabled (FME_DEBUG MAPPING_FILE BADNEWS UNGROUPED UNCORRELATED DUMP_SCHEMA XSD_VERBOSE HTTP_DEBUG FTP_DEBUG STASH). This may affect performance
+2024-09-22 16:32:20|   0.0|  0.0|INFORM|Current FME version: FME 2024.1.2.0 (20240830 - Build 24622 - WIN64)
+2024-09-22 16:32:20|   0.0|  0.0|INFORM|System Time: 20240922153221 UTC
+2024-09-22 16:32:20|   0.0|  0.0|INFORM|FME_HOME is 'C:\Program Files\FME\'
+2024-09-22 16:32:20|   0.0|  0.0|INFORM|FME Form Fixed (node locked-crc)
+2024-09-22 16:32:20|   0.0|  0.0|INFORM|Serial Number: XNGM-FP4S-215Q
+2024-09-22 16:32:20|   0.0|  0.0|INFORM|Temporary License: 101 days left.
+2024-09-22 16:32:20|   0.0|  0.0|INFORM|Machine host name is: DISCO-JBR
+2024-09-22 16:32:21|   0.0|  0.0|INFORM|OS Locale Name     : en_GB
+2024-09-22 16:32:21|   0.0|  0.0|INFORM|OS Locale Encoding : UTF-8
+2024-09-22 16:32:21|   0.0|  0.0|INFORM|Process Encoding   : UTF-8
+2024-09-22 16:32:21|   0.0|  0.0|INFORM|FME API version: '4.0 20240212'
+2024-09-22 16:32:21|   0.0|  0.0|INFORM|FME Configuration: FME_BASE is 'no'
+2024-09-22 16:32:21|   0.0|  0.0|INFORM|FME Configuration: FME_MF_DIR is 'D:\Repos\jsdbroughton\speckle-fme\fme\Workspaces/'
+2024-09-22 16:32:21|   0.0|  0.0|INFORM|FME Configuration: FME_MF_NAME is 'Test.fmw'
+2024-09-22 16:32:21|   0.0|  0.0|INFORM|FME Configuration: FME_PRODUCT_NAME is 'FME(R) 2024.1.2.0'
+2024-09-22 16:32:21|   0.0|  0.0|INFORM|Operating System: Microsoft Windows 11 64-bit  (Build 22631)
+2024-09-22 16:32:21|   0.0|  0.0|INFORM|FME Platform: WIN64
+2024-09-22 16:32:21|   0.0|  0.0|INFORM|System Status: 153.19 GB of disk space available in the FME temporary folder (C:\Users\JSDBRO~1\AppData\Local\Temp\wbrun_1726985898137_51288\fmetmp_1)
+2024-09-22 16:32:21|   0.0|  0.0|INFORM|System Status: 127.75 GB of physical memory available
+2024-09-22 16:32:21|   0.0|  0.0|INFORM|System Status: 510.99 GB of virtual memory available
+2024-09-22 16:32:21|   0.0|  0.0|INFORM|START - ProcessID: 6888, peak process memory usage: 42032 kB, current process memory usage: 40780 kB
+2024-09-22 16:32:21|   0.0|  0.0|INFORM|FME Configuration: Command line arguments are `C:\Program Files\FME\fme.exe' `D:\Repos\jsdbroughton\speckle-fme\fme\Workspaces\wb-xlate-1727019140754_51288' `LOG_STANDARDOUT' `YES' `LOG_TIMINGS' `YES' `LogCountServerName' `52992' `LOG_STANDARDOUT' `No' `WORKBENCH_LOG_SERVER' `50419' `FME_DEBUG' `EXTRA'
+2024-09-22 16:32:21|   0.0|  0.0|INFORM|FME Configuration: Connection Storage: 'C:\Users\jsdbroughton\AppData\Roaming\Safe Software\FME\'
+2024-09-22 16:32:21|   0.0|  0.0|INFORM|Using Python interpreter from `C:\Program Files\FME\fmepython312\python312.dll' with PYTHONHOME `C:\Program Files\FME\fmepython312'
+2024-09-22 16:32:21|   0.0|  0.0|INFORM|Python version 3.12 loaded successfully
+2024-09-22 16:32:21|   0.0|  0.0|INFORM|Adding folder `D:\Repos\jsdbroughton\speckle-fme\fme\Workspaces\' to the python path
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|FME_BEGIN_PYTHON: evaluating python script from string...
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|FME_BEGIN_PYTHON: python script execution complete.
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|Shared folders for formats are : C:\Program Files\FME\datasources;J:\jsdbroughton\Documents\FME\Formats
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|Shared folders for transformers are : C:\Users\jsdbroughton\AppData\Roaming\Safe Software\FME\Packages\24622-win64\transformers;C:\Program Files\FME\transformers;C:\Users\jsdbroughton\AppData\Roaming\Safe Software\FME\FME Store\Transformers
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|Shared folders for coordinate systems are : J:\jsdbroughton\Documents\FME\CoordinateSystems
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|Shared folders for coordinate system exceptions are : J:\jsdbroughton\Documents\FME\CoordinateSystemExceptions
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|Shared folders for coordinate system grid overrides are : J:\jsdbroughton\Documents\FME\CoordinateSystemGridOverrides
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|Shared folders for CS-MAP transformation exceptions are : J:\jsdbroughton\Documents\FME\CsmapTransformationExceptions
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|Shared folders for transformer categories are : J:\jsdbroughton\Documents\FME\TransformerCategories
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|FME Configuration: Reader Keyword is `MULTI_READER'
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|FME Configuration: Writer Keyword is `PRIMARY_DEST'
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|FME Configuration: Writer Group Definition Keyword is `PRIMARY_DEST_DEF'
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|FME Configuration: Reader type is `MULTI_READER'
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|FME Configuration: Writer type is `MULTI_WRITER'
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|FME Configuration: No destination coordinate system set
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|FME Configuration: Current working folder is `D:\Repos\jsdbroughton\speckle-fme\fme\Workspaces'
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|FME Configuration: Temporary folder is `C:\Users\JSDBRO~1\AppData\Local\Temp\wbrun_1726985898137_51288\fmetmp_1', set from environment variable `FME_TEMP'
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|FME Configuration: Cache folder is 'C:\Users\JSDBRO~1\AppData\Local\Temp'
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|FME Configuration: FME_HOME is `C:\Program Files\FME\'
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|FME Configuration: Start freeing memory when the process exceeds 383.24 GB or address space exceeds 16777216.00 TB
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|FME Configuration: Stop freeing memory when the process is below 287.43 GB and address space is below 16777216.00 TB
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|FME Configuration: Logging ungrouped output features
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|FME Configuration: Logging uncorrelated input features
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|FME Configuration: Dumping mapping file
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|FME Temporary Folder: C:\Users\JSDBRO~1\AppData\Local\Temp\wbrun_1726985898137_51288\fmetmp_1
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 0: FME_PYTHON_VERSION 38
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 1: ARCGIS_COMPATIBILITY ARCGIS_AUTO
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 2: GUI IGNORE DestDataset_GLTF_1,GLTF_OUT_FME_GROUP_NAMED1_GLTF_1,GLTF_OUT_GLTF_VERSION_GLTF_1,GLTF_OUT_GLTF_VARIANT_GLTF_1,GLTF_OUT_FME_GROUP_NAMED2_GLTF_1,GLTF_OUT_TEXTURE_OUTPUT_DIR_GLTF_1,GLTF_OUT_TEXTURE_FORMAT_CHOICES_GLTF_1,GLTF_OUT_TEXTURE_OUTPUT_FORMAT_GLTF_1,GLTF_OUT_FORMATTING_GROUP_GLTF_1,GLTF_OUT_PRETTY_PRINT_GLTF_1,GLTF_OUT_INDENT_SIZE_GLTF_1,GLTF_OUT_FME_GROUP_NAMED3_GLTF_1,GLTF_OUT_MOVE_TO_LOCAL_COORDSYS_GLTF_1,DestDataset_PDF_1,PDF_OUT_FME_GROUP_NAMED1_PDF_1,PDF_OUT_DISPLAY_NAVIGATION_UI_PDF_1,PDF_OUT_BACKGROUND_COLOR_PDF_1,PDF_OUT_FME_GROUP_NAMED2_PDF_1,PDF_OUT_MOVE_TO_LOCAL_COORDSYS_PDF_1,PDF_OUT_FME_GROUP_NAMED3_PDF_1,PDF_OUT_ROOT_NODE_NAME_PDF_1,PDF_OUT_MERGE_FEATURE_AND_GEOMETRY_NODES_PDF_1,PDF_OUT_PDF_WRT_ADV_PARM_GROUP_PDF_1,PDF_OUT_PAGE_SIZE_PDF_1 (occurrence 1 of 25 for keyword 'GUI')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 3: READER_TYPE MULTI_READER
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 4: WRITER_TYPE MULTI_WRITER
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 5: WRITER_KEYWORD PRIMARY_DEST
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 6: PRIMARY_DEST_DATASET_ORDER BY_ID
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 7: PRIMARY_DEST_FIRST_WRITER_ID 0
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 8: PRIMARY_DEST_TYPE{0} NULL
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 9: PRIMARY_DEST_KEYWORD{0} GLTF_1
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 10: PRIMARY_DEST_TYPE{1} NULL
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 11: PRIMARY_DEST_KEYWORD{1} PDF_1
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 12: GUI DIRNAME DestDataset_GLTF_1 Destination glTF Folder: (occurrence 2 of 25 for keyword 'GUI')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 13: GUI OPTIONAL DISCLOSUREGROUP GLTF_OUT_FME_GROUP_NAMED1_GLTF_1 GLTF_OUT_GLTF_VERSION_GLTF_1%GLTF_OUT_GLTF_VARIANT_GLTF_1 glTF (occurrence 3 of 25 for keyword 'GUI')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 14: GLTF_1_GLTF_VERSION 2_0
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 15: GUI ACTIVECHOICE_LOOKUP GLTF_OUT_GLTF_VERSION_GLTF_1 1.0,1_0,GLTF_OUT_TEXTURE_FORMAT_CHOICES_GLTF_1%2.0,2_0, glTF Version (occurrence 4 of 25 for keyword 'GUI')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 16: GLTF_1_GLTF_VARIANT BINARY
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 17: GUI ACTIVECHOICE_LOOKUP GLTF_OUT_GLTF_VARIANT_GLTF_1 Normal<space>(textures<space>and<space>binary<space>data<space>are<space>stored<space>in<space>separate<space>files),VANILLA%Single<space>JSON<space>file<space>(textures<space>and<space>binary<space>data<space>are<space>stored<space>as<space>base64<space>strings),EMBEDDED,GLTF_OUT_TEXTURE_OUTPUT_DIR_GLTF_1%Single<space>binary<space>file<space>(using<space>the<space>KHR_binary_glTF<space>extension),BINARY,GLTF_OUT_TEXTURE_OUTPUT_DIR_GLTF_1,GLTF_OUT_FORMATTING_GROUP_GLTF_1 glTF File Format (occurrence 5 of 25 for keyword 'GUI')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 18: GUI OPTIONAL DISCLOSUREGROUP GLTF_OUT_FME_GROUP_NAMED2_GLTF_1 GLTF_OUT_TEXTURE_OUTPUT_DIR_GLTF_1%GLTF_OUT_TEXTURE_FORMAT_CHOICES_GLTF_1%GLTF_OUT_TEXTURE_OUTPUT_FORMAT_GLTF_1 Texture/Material (occurrence 6 of 25 for keyword 'GUI')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 19: GLTF_1_TEXTURE_OUTPUT_DIR <Unused>
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 20: GUI OPTIONAL DIRNAME GLTF_OUT_TEXTURE_OUTPUT_DIR_GLTF_1 Output Texture Folder: (occurrence 7 of 25 for keyword 'GUI')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 21: GLTF_1_TEXTURE_FORMAT_CHOICES TRADITIONAL
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 22: GUI ACTIVECHOICE_LOOKUP GLTF_OUT_TEXTURE_FORMAT_CHOICES_GLTF_1 "Traditional Only",TRADITIONAL%"WebP Only",WEBP,GLTF_OUT_TEXTURE_OUTPUT_FORMAT_GLTF_1%"WebP and Traditional",BOTH Texture Formats: (occurrence 8 of 25 for keyword 'GUI')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 23: GLTF_1_TEXTURE_OUTPUT_FORMAT NONE
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 24: GUI LOOKUP_CHOICE GLTF_OUT_TEXTURE_OUTPUT_FORMAT_GLTF_1 Auto,NONE%PNG,PNGRASTER%JPEG%GIF,GIFRASTER%BMP Preferred Traditional Texture Format: (occurrence 9 of 25 for keyword 'GUI')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 25: GUI OPTIONAL DISCLOSUREGROUP GLTF_OUT_FORMATTING_GROUP_GLTF_1 GLTF_OUT_PRETTY_PRINT_GLTF_1%GLTF_OUT_INDENT_SIZE_GLTF_1 JSON Formatting (occurrence 10 of 25 for keyword 'GUI')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 26: GLTF_1_PRETTY_PRINT <Unused>
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 27: GUI ACTIVECHOICE_LOOKUP GLTF_OUT_PRETTY_PRINT_GLTF_1 Pretty<space>Print,YES%Linear,NO,GLTF_OUT_INDENT_SIZE_GLTF_1 Formatting Type: (occurrence 11 of 25 for keyword 'GUI')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 28: GLTF_1_INDENT_SIZE <Unused>
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 29: GUI LOOKUP_CHOICE GLTF_OUT_INDENT_SIZE_GLTF_1 Tabs,0%1<space>space,1%2<space>spaces,2%3<space>spaces,3%4<space>spaces,4%5<space>spaces,5%6<space>spaces,6%7<space>spaces,7%8<space>spaces,8 Indent Size: (occurrence 12 of 25 for keyword 'GUI')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 30: GLTF_1_LOCAL_COORDSYS_TRANSFORMATION OFFSET_CENTROID_TO_ORIGIN
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 31: GUI OPTIONAL DISCLOSUREGROUP GLTF_OUT_FME_GROUP_NAMED3_GLTF_1 GLTF_OUT_MOVE_TO_LOCAL_COORDSYS_GLTF_1 Coordinate System (occurrence 13 of 25 for keyword 'GUI')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 32: GLTF_1_MOVE_TO_LOCAL_COORDSYS No
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 33: GUI LOOKUP_CHOICE GLTF_OUT_MOVE_TO_LOCAL_COORDSYS_GLTF_1 Yes,Yes%No,No%"Create Projection File Only",PRJ_ONLY%"Transform Coordinates Only",COORDINATES_ONLY Move to Local Coordinate System: (occurrence 14 of 25 for keyword 'GUI')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 34: GLTF_1_DESTINATION_DATASETTYPE_VALIDATION Yes
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 35: GLTF_1_GENERATE_FME_BUILD_NUM 21789
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 36: GLTF_1_DATASET /Users/jonathonbroughton/Downloads/sdfsdfsdfsdfsdf
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 37: GUI FILENAME DestDataset_PDF_1 PDF_Files(*.pdf)|*.pdf|All_files(*)|* Destination Adobe 3D PDF File: (occurrence 15 of 25 for keyword 'GUI')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 38: GUI OPTIONAL DISCLOSUREGROUP PDF_OUT_FME_GROUP_NAMED1_PDF_1 PDF_OUT_DISPLAY_NAVIGATION_UI_PDF_1%PDF_OUT_BACKGROUND_COLOR_PDF_1 Document Options (occurrence 16 of 25 for keyword 'GUI')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 39: PDF_1_DISPLAY_NAVIGATION_UI Yes
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 40: GUI OPTIONAL CHECKBOX PDF_OUT_DISPLAY_NAVIGATION_UI_PDF_1 Yes%No Display Navigation UI: (occurrence 17 of 25 for keyword 'GUI')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 41: PDF_1_BACKGROUND_COLOR 0.2,0.2,0.2
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 42: GUI OPTIONAL COLOR_PICK PDF_OUT_BACKGROUND_COLOR_PDF_1 Background Color: (occurrence 18 of 25 for keyword 'GUI')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 43: PDF_1_2D_FEATURE_HANDLING REORIENT
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 44: GUI OPTIONAL DISCLOSUREGROUP PDF_OUT_FME_GROUP_NAMED2_PDF_1 PDF_OUT_MOVE_TO_LOCAL_COORDSYS_PDF_1 Coordinate System (occurrence 19 of 25 for keyword 'GUI')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 45: PDF_1_MOVE_TO_LOCAL_COORDSYS No
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 46: GUI LOOKUP_CHOICE PDF_OUT_MOVE_TO_LOCAL_COORDSYS_PDF_1 No,No%"Transform Coordinates Only",COORDINATES_ONLY Move to Local Coordinate System: (occurrence 20 of 25 for keyword 'GUI')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 47: GUI OPTIONAL DISCLOSUREGROUP PDF_OUT_FME_GROUP_NAMED3_PDF_1 PDF_OUT_ROOT_NODE_NAME_PDF_1%PDF_OUT_MERGE_FEATURE_AND_GEOMETRY_NODES_PDF_1 Nodes (occurrence 21 of 25 for keyword 'GUI')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 48: PDF_1_ROOT_NODE_NAME 
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 49: GUI OPTIONAL STRING_ENCODED PDF_OUT_ROOT_NODE_NAME_PDF_1 Root Node Name: (occurrence 22 of 25 for keyword 'GUI')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 50: PDF_1_MERGE_FEATURE_AND_GEOMETRY_NODES NO
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 51: GUI LOOKUP_CHOICE PDF_OUT_MERGE_FEATURE_AND_GEOMETRY_NODES_PDF_1 Yes,YES%No,NO Merge Feature and Root Geometry Nodes: (occurrence 23 of 25 for keyword 'GUI')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 52: GUI OPTIONAL DISCLOSUREGROUP PDF_OUT_PDF_WRT_ADV_PARM_GROUP_PDF_1 PDF_OUT_PAGE_SIZE_PDF_1 Advanced (occurrence 24 of 25 for keyword 'GUI')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 53: PDF_1_PAGE_SIZE 600 600
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 54: GUI OPTIONAL TEXT PDF_OUT_PAGE_SIZE_PDF_1 Page size: (occurrence 25 of 25 for keyword 'GUI')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 55: PDF_1_NODE_CREATION_LIST 
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 56: PDF_1_3D_FILE_TYPE prc
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 57: PDF_1_LOCAL_COORDSYS_TRANSFORMATION OFFSET_CENTROID_TO_ORIGIN
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 58: PDF_1_DESTINATION_DATASETTYPE_VALIDATION Yes
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 59: PDF_1_GENERATE_FME_BUILD_NUM 21789
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 60: PDF_1_DATASET /Users/jonathonbroughton/Downloads/sdfsdf.pdf
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 61: LOG_END_BANNER (occurrence 1 of 5 for keyword 'LOG_END_BANNER')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 62: LOG_END_BANNER Feature caches have been recorded at every stage of the translation. (occurrence 2 of 5 for keyword 'LOG_END_BANNER')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 63: LOG_END_BANNER To inspect the recorded features, (occurrence 3 of 5 for keyword 'LOG_END_BANNER')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 64: LOG_END_BANNER click the feature cache icons next to the ports. (occurrence 4 of 5 for keyword 'LOG_END_BANNER')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 65: LOG_END_BANNER (occurrence 5 of 5 for keyword 'LOG_END_BANNER')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 66: LOG_FILENAME D:\Repos\jsdbroughton\speckle-fme\fme\Workspaces/Test.log
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 67: LOG_APPEND YES
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 68: LOG_MAX_FEATURES 200
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 69: LOG_MAX_RECORDED_FEATURES 200
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 70: FME_REPROJECTION_ENGINE FME
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 71: FME_IMPLICIT_CSMAP_REPROJECTION_MODE Auto
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 72: FME_GEOMETRY_HANDLING Enhanced
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 73: FME_STROKE_MAX_DEVIATION 0
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 74: FME_NAMES_ENCODING UTF-8
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 75: FME_BULK_MODE_THRESHOLD
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 76: MULTI_READER_CONTINUE_ON_READER_FAILURE No
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 77: FME_BEGIN_PYTHON_ENC import<space>sys<lf>sys.path.append<openparen><quote><solidus>Users<solidus>jonathonbroughton<solidus>Projects<solidus>jsdbroughton<solidus>speckle-fme<quote><closeparen>
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 78: .metadata XFORMER_BEGIN Creator;4:Main (occurrence 1 of 18 for keyword '.metadata')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 79: Tcl2 proc Creator_CoordSysRemover {} { global FME_CoordSys; set FME_CoordSys {}; }
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 80: FACTORY_DEF {*} CreationFactory FACTORY_NAME { Creator_XML_Creator } CREATE_AT_END { no } OUTPUT { FEATURE_TYPE _____CREATED______ @Geometry(FROM_ENCODED_STRING,<lt>?xml<space>version=<quote>1.0<quote><space>encoding=<quote>US_ASCII<quote><space>standalone=<quote>no<quote><space>?<gt><lt>geometry<gt><lt>null<solidus><gt><lt><solidus>geometry<gt>) } (occurrence 1 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 81: FACTORY_DEF {NOT_ACTIVATED} CreationFactory FACTORY_NAME { Creator_CLASSIC_Creator } 2D_GEOMETRY { <Unused> } CREATE_AT_END { no } OUTPUT { FEATURE_TYPE _____CREATED______ } (occurrence 2 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 82: FACTORY_DEF {*} TeeFactory FACTORY_NAME { Creator_Cloner } INPUT FEATURE_TYPE _____CREATED______ @Tcl2(Creator_CoordSysRemover) @CoordSys() NUMBER_OF_COPIES { 1 } COPY_NUMBER_ATTRIBUTE { _creation_instance } OUTPUT { FEATURE_TYPE Creator_CREATED fme_feature_type Creator } (occurrence 3 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 83: FACTORY_DEF {*} RecorderFactory FACTORY_NAME Creator_CREATED Feature Recorder -1 2147549188 INPUT FEATURE_TYPE Creator_CREATED FEATURE_FILE { C:/Users/JSDBRO~1/AppData/Local/Temp/wb-cache-Test-BzTFWh/Main_Creator -1 4 fo 0 CREATED  0  16662fb7ebd478e954b18f814b1360c7a1050f39.ffsupdating } MODE RECORD_PASS_THROUGH STORE_SCANNED_SCHEMA YES NORMALIZE_LIST_ATTRIBUTES_ON_SCHEMA YES CREATE_SPATIAL_INDEX YES INSPECTOR YES RECORD_DIRECTLY_TO_DISK YES FSC_SCHEMA { _creation_instance,uint64 } FEAT_TYPE_DISPLAY_NAME { Creator:<space>Created } STORE_SCANNED_METADATA PASS_THROUGH_FME_TYPE LARGE_GEOMETRY_DATA_STORAGE REFERENCE NO_LOGGING OUTPUT RECORDED FEATURE_TYPE * (occurrence 4 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 84: FACTORY_DEF * TeeFactory FACTORY_NAME Creator CREATED Splitter INPUT FEATURE_TYPE Creator_CREATED OUTPUT FEATURE_TYPE Creator_CREATED_0_mPutgLjb5VA= OUTPUT FEATURE_TYPE Creator_CREATED_1_a9O7mOLLBJ4= OUTPUT FEATURE_TYPE Creator_CREATED_2_xj1o+5vwLoE= OUTPUT FEATURE_TYPE Creator_CREATED_3_RIBirdvcBA0= OUTPUT FEATURE_TYPE Creator_CREATED_4_go26Lp9/TYM= OUTPUT FEATURE_TYPE Creator_CREATED_5_lxcni3KuqJw= OUTPUT FEATURE_TYPE Creator_CREATED_6_Ac+hrxN3XNI= (occurrence 5 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 85: .metadata XFORMER_END Creator;4:Main (occurrence 2 of 18 for keyword '.metadata')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 86: FACTORY_DEF * TeeFactory FACTORY_NAME Creator_CREATED_0_mPutgLjb5VA= Feature Counter -1 7 INPUT FEATURE_TYPE Creator_CREATED_0_mPutgLjb5VA= NO_LOGGING OUTPUT FEATURE_TYPE * @LogCount(LINK -1 7) (occurrence 6 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 87: FACTORY_DEF * BranchingFactory FACTORY_NAME Creator_CREATED_0_mPutgLjb5VA= Brancher -1 7 INPUT FEATURE_TYPE Creator_CREATED_0_mPutgLjb5VA= TARGET_FACTORY _CREATOR_BRANCH_TARGET MAXIMUM_COUNT None OUTPUT PASSED FEATURE_TYPE * (occurrence 7 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 88: FACTORY_DEF * TeeFactory FACTORY_NAME Creator_CREATED_1_a9O7mOLLBJ4= Feature Counter -1 14 INPUT FEATURE_TYPE Creator_CREATED_1_a9O7mOLLBJ4= NO_LOGGING OUTPUT FEATURE_TYPE * @LogCount(LINK -1 14) (occurrence 8 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 89: FACTORY_DEF * BranchingFactory FACTORY_NAME Creator_CREATED_1_a9O7mOLLBJ4= Brancher -1 14 INPUT FEATURE_TYPE Creator_CREATED_1_a9O7mOLLBJ4= TARGET_FACTORY _CREATOR_BRANCH_TARGET MAXIMUM_COUNT None OUTPUT PASSED FEATURE_TYPE * (occurrence 9 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 90: FACTORY_DEF * TeeFactory FACTORY_NAME Creator_CREATED_2_xj1o+5vwLoE= Feature Counter -1 18 INPUT FEATURE_TYPE Creator_CREATED_2_xj1o+5vwLoE= NO_LOGGING OUTPUT FEATURE_TYPE * @LogCount(LINK -1 18) (occurrence 10 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 91: FACTORY_DEF * BranchingFactory FACTORY_NAME Creator_CREATED_2_xj1o+5vwLoE= Brancher -1 18 INPUT FEATURE_TYPE Creator_CREATED_2_xj1o+5vwLoE= TARGET_FACTORY _CREATOR_BRANCH_TARGET MAXIMUM_COUNT None OUTPUT PASSED FEATURE_TYPE * (occurrence 11 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 92: FACTORY_DEF * TeeFactory FACTORY_NAME Creator_CREATED_3_RIBirdvcBA0= Feature Counter -1 27 INPUT FEATURE_TYPE Creator_CREATED_3_RIBirdvcBA0= NO_LOGGING OUTPUT FEATURE_TYPE * @LogCount(LINK -1 27) (occurrence 12 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 93: FACTORY_DEF * BranchingFactory FACTORY_NAME Creator_CREATED_3_RIBirdvcBA0= Brancher -1 27 INPUT FEATURE_TYPE Creator_CREATED_3_RIBirdvcBA0= TARGET_FACTORY _CREATOR_BRANCH_TARGET MAXIMUM_COUNT None OUTPUT PASSED FEATURE_TYPE * (occurrence 13 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 94: FACTORY_DEF * TeeFactory FACTORY_NAME Creator_CREATED_4_go26Lp9/TYM= Feature Counter -1 32 INPUT FEATURE_TYPE Creator_CREATED_4_go26Lp9/TYM= NO_LOGGING OUTPUT FEATURE_TYPE * @LogCount(LINK -1 32) (occurrence 14 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 95: FACTORY_DEF * BranchingFactory FACTORY_NAME Creator_CREATED_4_go26Lp9/TYM= Brancher -1 32 INPUT FEATURE_TYPE Creator_CREATED_4_go26Lp9/TYM= TARGET_FACTORY _CREATOR_BRANCH_TARGET MAXIMUM_COUNT None OUTPUT PASSED FEATURE_TYPE * (occurrence 15 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 96: FACTORY_DEF * TeeFactory FACTORY_NAME Creator_CREATED_5_lxcni3KuqJw= Feature Counter -1 35 INPUT FEATURE_TYPE Creator_CREATED_5_lxcni3KuqJw= NO_LOGGING OUTPUT FEATURE_TYPE * @LogCount(LINK -1 35) (occurrence 16 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 97: FACTORY_DEF * BranchingFactory FACTORY_NAME Creator_CREATED_5_lxcni3KuqJw= Brancher -1 35 INPUT FEATURE_TYPE Creator_CREATED_5_lxcni3KuqJw= TARGET_FACTORY _CREATOR_BRANCH_TARGET MAXIMUM_COUNT None OUTPUT PASSED FEATURE_TYPE * (occurrence 17 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 98: FACTORY_DEF * TeeFactory FACTORY_NAME Creator_CREATED_6_Ac+hrxN3XNI= Feature Counter -1 66 INPUT FEATURE_TYPE Creator_CREATED_6_Ac+hrxN3XNI= NO_LOGGING OUTPUT FEATURE_TYPE * @LogCount(LINK -1 66) (occurrence 18 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 99: FACTORY_DEF * BranchingFactory FACTORY_NAME Creator_CREATED_6_Ac+hrxN3XNI= Brancher -1 66 INPUT FEATURE_TYPE Creator_CREATED_6_Ac+hrxN3XNI= TARGET_FACTORY _CREATOR_BRANCH_TARGET MAXIMUM_COUNT None OUTPUT PASSED FEATURE_TYPE * (occurrence 19 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 100: FACTORY_DEF * TeeFactory FACTORY_NAME _CREATOR_BRANCH_TARGET INPUT FEATURE_TYPE * OUTPUT FEATURE_TYPE * (occurrence 20 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 101: .metadata XFORMER_BEGIN AttributeCreator;6:Main (occurrence 3 of 18 for keyword '.metadata')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 102: FACTORY_DEF * TeeFactory FACTORY_NAME AttributeCreator (Disabled) Nuker INPUT FEATURE_TYPE Creator_CREATED_0_mPutgLjb5VA= (occurrence 21 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 103: .metadata XFORMER_END AttributeCreator;6:Main (occurrence 4 of 18 for keyword '.metadata')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 104: FACTORY_DEF * TeeFactory FACTORY_NAME AttributeCreator_OUTPUT Feature Counter -1 8 INPUT FEATURE_TYPE AttributeCreator_OUTPUT NO_LOGGING OUTPUT FEATURE_TYPE * @LogCount(LINK -1 8) (occurrence 22 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 105: .metadata XFORMER_BEGIN AttributeCreator_2;13:Main (occurrence 5 of 18 for keyword '.metadata')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 106: FACTORY_DEF * TeeFactory FACTORY_NAME AttributeCreator_2 (Disabled) Nuker INPUT FEATURE_TYPE Creator_CREATED_1_a9O7mOLLBJ4= (occurrence 23 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 107: .metadata XFORMER_END AttributeCreator_2;13:Main (occurrence 6 of 18 for keyword '.metadata')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 108: FACTORY_DEF * TeeFactory FACTORY_NAME AttributeCreator_2_OUTPUT Feature Counter -1 15 INPUT FEATURE_TYPE AttributeCreator_2_OUTPUT NO_LOGGING OUTPUT FEATURE_TYPE * @LogCount(LINK -1 15) (occurrence 24 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 109: .metadata XFORMER_BEGIN AttributeCreator_3;17:Main (occurrence 7 of 18 for keyword '.metadata')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 110: FACTORY_DEF * TeeFactory FACTORY_NAME AttributeCreator_3 (Disabled) Nuker INPUT FEATURE_TYPE Creator_CREATED_2_xj1o+5vwLoE= (occurrence 25 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 111: .metadata XFORMER_END AttributeCreator_3;17:Main (occurrence 8 of 18 for keyword '.metadata')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 112: FACTORY_DEF * TeeFactory FACTORY_NAME AttributeCreator_3_OUTPUT Feature Counter -1 19 INPUT FEATURE_TYPE AttributeCreator_3_OUTPUT NO_LOGGING OUTPUT FEATURE_TYPE * @LogCount(LINK -1 19) (occurrence 26 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 113: .metadata XFORMER_BEGIN AttributeCreator_4;26:Main (occurrence 9 of 18 for keyword '.metadata')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 114: FACTORY_DEF * TeeFactory FACTORY_NAME AttributeCreator_4 (Disabled) Nuker INPUT FEATURE_TYPE Creator_CREATED_3_RIBirdvcBA0= (occurrence 27 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 115: .metadata XFORMER_END AttributeCreator_4;26:Main (occurrence 10 of 18 for keyword '.metadata')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 116: FACTORY_DEF * TeeFactory FACTORY_NAME AttributeCreator_4_OUTPUT Feature Counter -1 30 INPUT FEATURE_TYPE AttributeCreator_4_OUTPUT NO_LOGGING OUTPUT FEATURE_TYPE * @LogCount(LINK -1 30) (occurrence 28 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 117: .metadata XFORMER_BEGIN AttributeCreator_5;31:Main (occurrence 11 of 18 for keyword '.metadata')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 118: FACTORY_DEF * TeeFactory FACTORY_NAME AttributeCreator_5 (Disabled) Nuker INPUT FEATURE_TYPE Creator_CREATED_4_go26Lp9/TYM= (occurrence 29 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 119: .metadata XFORMER_END AttributeCreator_5;31:Main (occurrence 12 of 18 for keyword '.metadata')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 120: FACTORY_DEF * TeeFactory FACTORY_NAME AttributeCreator_5_OUTPUT Feature Counter -1 33 INPUT FEATURE_TYPE AttributeCreator_5_OUTPUT NO_LOGGING OUTPUT FEATURE_TYPE * @LogCount(LINK -1 33) (occurrence 30 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 121: .metadata XFORMER_BEGIN AttributeCreator_6;34:Main (occurrence 13 of 18 for keyword '.metadata')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 122: FACTORY_DEF * TeeFactory FACTORY_NAME AttributeCreator_6 (Disabled) Nuker INPUT FEATURE_TYPE Creator_CREATED_5_lxcni3KuqJw= (occurrence 31 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 123: .metadata XFORMER_END AttributeCreator_6;34:Main (occurrence 14 of 18 for keyword '.metadata')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 124: FACTORY_DEF * TeeFactory FACTORY_NAME AttributeCreator_6_OUTPUT_0_36mpdlxs3Hw= Feature Counter -1 36 INPUT FEATURE_TYPE AttributeCreator_6_OUTPUT_0_36mpdlxs3Hw= NO_LOGGING OUTPUT FEATURE_TYPE * @LogCount(LINK -1 36) (occurrence 32 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 125: FACTORY_DEF * TeeFactory FACTORY_NAME AttributeCreator_6_OUTPUT_1_oQoTqVTacaA= Feature Counter -1 42 INPUT FEATURE_TYPE AttributeCreator_6_OUTPUT_1_oQoTqVTacaA= NO_LOGGING OUTPUT FEATURE_TYPE * @LogCount(LINK -1 42) (occurrence 33 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 126: .metadata XFORMER_BEGIN AttributeCreator_7;64:Main (occurrence 15 of 18 for keyword '.metadata')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 127: FACTORY_DEF {*} AttrSetFactory FACTORY_NAME { AttributeCreator_7 } COMMAND_PARM_EVALUATION SINGLE_PASS INPUT FEATURE_TYPE Creator_CREATED_6_Ac+hrxN3XNI= MULTI_FEATURE_MODE { NO } NULL_ATTR_MODE { NO_OP } ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV ATTR_ACTION {  speckle_url SET_TO https:<solidus><solidus>speckle.xyz<solidus>streams<solidus>fd1d44405d<solidus>objects<solidus>9c93d55cfb37415b70154f64e31b0201 } OUTPUT { OUTPUT FEATURE_TYPE AttributeCreator_7_OUTPUT } (occurrence 34 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 128: FACTORY_DEF {*} RecorderFactory FACTORY_NAME AttributeCreator_7_OUTPUT Feature Recorder -1 2147614784 INPUT FEATURE_TYPE AttributeCreator_7_OUTPUT FEATURE_FILE { C:/Users/JSDBRO~1/AppData/Local/Temp/wb-cache-Test-BzTFWh/Main_AttributeCreator_7 -1 64 fo 0 OUTPUT  0  484179e7577a1db0c29301f6cc221f5f1299bd28.ffsupdating } MODE RECORD_PASS_THROUGH STORE_SCANNED_SCHEMA YES NORMALIZE_LIST_ATTRIBUTES_ON_SCHEMA YES CREATE_SPATIAL_INDEX YES INSPECTOR YES RECORD_DIRECTLY_TO_DISK YES FSC_SCHEMA { speckle_url,varchar<openparen>200<closeparen>,_creation_instance,uint64 } FEAT_TYPE_DISPLAY_NAME { AttributeCreator_7:<space>Output } STORE_SCANNED_METADATA PASS_THROUGH_FME_TYPE LARGE_GEOMETRY_DATA_STORAGE REFERENCE NO_LOGGING OUTPUT RECORDED FEATURE_TYPE * (occurrence 35 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 129: .metadata XFORMER_END AttributeCreator_7;64:Main (occurrence 16 of 18 for keyword '.metadata')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 130: FACTORY_DEF * TeeFactory FACTORY_NAME AttributeCreator_7_OUTPUT Feature Counter -1 65 INPUT FEATURE_TYPE AttributeCreator_7_OUTPUT NO_LOGGING OUTPUT FEATURE_TYPE * @LogCount(LINK -1 65) (occurrence 36 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 131: .metadata XFORMER_BEGIN PythonCaller;3:Main (occurrence 17 of 18 for keyword '.metadata')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 132: FME_PYTHON_PATH D:\Repos\jsdbroughton\speckle-fme\fme\Workspaces/
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 133: FACTORY_DEF {*} PythonFactory FACTORY_NAME { PythonCaller } FLUSH_WHEN_GROUPS_CHANGE { <Unused> } INPUT FEATURE_TYPE AttributeCreator_OUTPUT INPUT FEATURE_TYPE AttributeCreator_2_OUTPUT INPUT FEATURE_TYPE AttributeCreator_3_OUTPUT INPUT FEATURE_TYPE AttributeCreator_4_OUTPUT INPUT FEATURE_TYPE AttributeCreator_5_OUTPUT INPUT FEATURE_TYPE AttributeCreator_6_OUTPUT_0_36mpdlxs3Hw= INPUT FEATURE_TYPE AttributeCreator_7_OUTPUT SYMBOL_NAME { StreamReader } SOURCE_CODE { from<space>fme_speckle.readers<space>import<space>StreamReader } OUTPUT { PYOUTPUT FEATURE_TYPE PythonCaller_OUTPUT } (occurrence 37 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 134: FACTORY_DEF {*} RecorderFactory FACTORY_NAME PythonCaller_OUTPUT Feature Recorder -1 2147614723 INPUT FEATURE_TYPE PythonCaller_OUTPUT FEATURE_FILE { C:/Users/JSDBRO~1/AppData/Local/Temp/wb-cache-Test-BzTFWh/Main_PythonCaller -1 3 fo 0 OUTPUT  0  8ddac141173d63dc3e4873c6ef20c50dd474003b.ffsupdating } MODE RECORD_PASS_THROUGH STORE_SCANNED_SCHEMA YES NORMALIZE_LIST_ATTRIBUTES_ON_SCHEMA YES CREATE_SPATIAL_INDEX YES INSPECTOR YES RECORD_DIRECTLY_TO_DISK YES FSC_SCHEMA { speckle_type<comma>,buffer,REJECTED,buffer } FEAT_TYPE_DISPLAY_NAME { PythonCaller:<space>Output } STORE_SCANNED_METADATA PASS_THROUGH_FME_TYPE LARGE_GEOMETRY_DATA_STORAGE REFERENCE NO_LOGGING OUTPUT RECORDED FEATURE_TYPE * (occurrence 38 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 135: .metadata XFORMER_END PythonCaller;3:Main (occurrence 18 of 18 for keyword '.metadata')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 136: FACTORY_DEF * TeeFactory FACTORY_NAME PythonCaller_OUTPUT Feature Counter -1 10 INPUT FEATURE_TYPE PythonCaller_OUTPUT NO_LOGGING OUTPUT FEATURE_TYPE * @LogCount(LINK -1 10) (occurrence 39 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 137: FACTORY_DEF * RoutingFactory FACTORY_NAME Destination Feature Type Routing Correlator COMMAND_PARM_EVALUATION SINGLE_PASS INPUT FEATURE_TYPE * FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__ OUTPUT ROUTED FEATURE_TYPE * OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2(FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn) (occurrence 40 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 138: FACTORY_DEF * TeeFactory FACTORY_NAME Final Output Nuker INPUT FEATURE_TYPE __nuke_me__ (occurrence 41 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 139: FME_USER_PYTHON Yes
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 140: LOG_TIMINGS YES
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 141: LogCountServerName 52992
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 142: LOG_STANDARDOUT No
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 143: WORKBENCH_LOG_SERVER 50419
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 144: FME_DEBUG FME_DEBUG MAPPING_FILE BADNEWS UNGROUPED UNCORRELATED DUMP_SCHEMA XSD_VERBOSE HTTP_DEBUG FTP_DEBUG STASH
+2024-09-22 16:32:22|   0.0|  0.0|INFORM|mapping file Line 145: FME_HOME C:\Program Files\FME\
+2024-09-22 16:32:23|   0.0|  0.0|INFORM|Creating writer for format: 
+2024-09-22 16:32:23|   0.0|  0.0|INFORM|Creating reader for format: 
+2024-09-22 16:32:23|   0.0|  0.0|INFORM|MULTI_READER(MULTI_READER): Will fail with first member reader failure
+2024-09-22 16:32:23|   0.0|  0.0|WARN  |No readers were found to be part of the Multi-Reader, so no data will be read.
+2024-09-22 16:32:23|   0.0|  0.0|INFORM|Using Multi Reader with keyword `MULTI_READER' to read multiple datasets
+2024-09-22 16:32:23|   0.0|  0.0|INFORM|Using MultiWriter with keyword `PRIMARY_DEST' to output data (ID_ATTRIBUTE is `multi_writer_id')
+2024-09-22 16:32:23|   0.0|  0.0|INFORM|Writer output will be ordered by value of multi_writer_id
+2024-09-22 16:32:23|   0.0|  0.0|INFORM|Loaded module 'Geometry_func' from file 'C:\Program Files\FME\plugins/Geometry_func.dll'
+2024-09-22 16:32:23|   0.0|  0.0|INFORM|FME API version of module 'Geometry_func' matches current internal version (4.0 20240212)
+2024-09-22 16:32:23|   0.0|  0.0|INFORM|Loaded module 'LogCount_func' from file 'C:\Program Files\FME\plugins/LogCount_func.dll'
+2024-09-22 16:32:23|   0.0|  0.0|INFORM|FME API version of module 'LogCount_func' matches current internal version (4.0 20240212)
+2024-09-22 16:32:23|   0.0|  0.0|INFORM|Loaded module 'PythonFactory' from file 'C:\Program Files\FME\plugins/PythonFactory.dll'
+2024-09-22 16:32:23|   0.0|  0.0|INFORM|FME API version of module 'PythonFactory' matches current internal version (4.0 20240212)
+2024-09-22 16:32:23|   0.0|  0.0|INFORM|Emptying factory pipeline
+2024-09-22 16:32:26|   0.0|  0.0|ERROR |Message Type: fme::internal::_v0::py::Exception
+2024-09-22 16:32:26|   0.0|  0.0|ERROR |(<string>:2) <module>
+2024-09-22 16:32:26|   0.0|  0.0|ERROR |Python Exception <ModuleNotFoundError>: No module named 'fme_speckle'
+2024-09-22 16:32:26|   0.0|  0.0|ERROR |Error executing string `from fme_speckle.readers import StreamReader'
+2024-09-22 16:32:26|   0.0|  0.0|FATAL |Factory proxy not initialized
+2024-09-22 16:32:26|   0.0|  0.0|FATAL |PythonCaller (PythonFactory): PythonFactory failed to process feature
+2024-09-22 16:32:26|   0.0|  0.0|WARN  |An error has occurred. Check the logfile above for details
+2024-09-22 16:32:26|   0.0|  0.0|WARN  |(D:\code\fme\source\engine\engine_api_impl\cpp\pluginbuilder\dynafact.cpp:446) class StatusInfo __cdecl STFDynamicFactory::process(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>)
+2024-09-22 16:32:26|   0.0|  0.0|WARN  |(D:\code\fme\source\engine\engine_api_impl\cpp\pluginbuilder\dynafact.cpp:446) class StatusInfo __cdecl STFDynamicFactory::process(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>)
+2024-09-22 16:32:26|   0.0|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\factory.cpp:567) class StatusInfo __cdecl STFFactory::acceptFeature(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>)
+2024-09-22 16:32:26|   0.0|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\groupbyfactory.cpp:198) class StatusInfo __cdecl STFGroupByFactory::acceptFeature(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>)
+2024-09-22 16:32:26|   0.0|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\pipeline.cpp:1162) class StatusInfo __cdecl STFFactoryPipeline::processFeatureWithSpecAndFactory(class STFSpec *,class STFFactory &,class STFFeature *&)
+2024-09-22 16:32:26|   0.0|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\pipeline.cpp:1112) class StatusInfo __cdecl STFFactoryPipeline::searchForNextFactoryAndProcessFeature(class STFFeature *&,class STFFactoryPipeline::FactoryRef *)
+2024-09-22 16:32:26|   0.0|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\pipeline.cpp:1502) class StatusInfo __cdecl STFFactoryPipeline::sendFeatureToDownstreamFactory(class STFFeature *&)
+2024-09-22 16:32:26|   0.0|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\factory.cpp:1159) class StatusInfo __cdecl STFFactory::completed(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>) const
+2024-09-22 16:32:26|   0.0|  0.0|WARN  |(D:\code\fme\source\engine\core\engine\stfspec.h:268) class StatusInfo __cdecl STFSpec::doForwardFuncsOnFeatureAndProcess<class STFFactory::CompleteFunctor>(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>,const class STFFactory::CompleteFunctor &)
+2024-09-22 16:32:26|   0.0|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\factory.cpp:538) class StatusInfo __cdecl STFFactory::acceptFeature(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>)
+2024-09-22 16:32:26|   0.0|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\factory.cpp:567) class StatusInfo __cdecl STFFactory::acceptFeature(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>)
+2024-09-22 16:32:26|   0.0|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\pipeline.cpp:1162) class StatusInfo __cdecl STFFactoryPipeline::processFeatureWithSpecAndFactory(class STFSpec *,class STFFactory &,class STFFeature *&)
+2024-09-22 16:32:26|   0.0|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\pipeline.cpp:1112) class StatusInfo __cdecl STFFactoryPipeline::searchForNextFactoryAndProcessFeature(class STFFeature *&,class STFFactoryPipeline::FactoryRef *)
+2024-09-22 16:32:26|   0.0|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\pipeline.cpp:1502) class StatusInfo __cdecl STFFactoryPipeline::sendFeatureToDownstreamFactory(class STFFeature *&)
+2024-09-22 16:32:26|   0.0|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\factory.cpp:544) class StatusInfo __cdecl STFFactory::acceptFeature(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>)
+2024-09-22 16:32:26|   0.0|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\factory.cpp:567) class StatusInfo __cdecl STFFactory::acceptFeature(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>)
+2024-09-22 16:32:26|   0.0|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\pipeline.cpp:1162) class StatusInfo __cdecl STFFactoryPipeline::processFeatureWithSpecAndFactory(class STFSpec *,class STFFactory &,class STFFeature *&)
+2024-09-22 16:32:26|   0.0|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\pipeline.cpp:1112) class StatusInfo __cdecl STFFactoryPipeline::searchForNextFactoryAndProcessFeature(class STFFeature *&,class STFFactoryPipeline::FactoryRef *)
+2024-09-22 16:32:26|   0.0|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\pipeline.cpp:1502) class StatusInfo __cdecl STFFactoryPipeline::sendFeatureToDownstreamFactory(class STFFeature *&)
+2024-09-22 16:32:26|   0.0|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\factory.cpp:1159) class StatusInfo __cdecl STFFactory::completed(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>) const
+2024-09-22 16:32:26|   0.0|  0.0|WARN  |(D:\code\fme\source\engine\core\engine\stfspec.h:268) class StatusInfo __cdecl STFSpec::doForwardFuncsOnFeatureAndProcess<class STFFactory::CompleteFunctor>(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>,const class STFFactory::CompleteFunctor &)
+2024-09-22 16:32:26|   0.0|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\factory.cpp:1187) class StatusInfo __cdecl STFFactory::applySpecAndComplete(const class STFTagName,class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>) const
+2024-09-22 16:32:26|   0.0|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\fctattrset.cpp:911) class StatusInfo __cdecl STFAttrSetFactory::process(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>)
+2024-09-22 16:32:26|   0.0|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\factory.cpp:567) class StatusInfo __cdecl STFFactory::acceptFeature(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>)
+2024-09-22 16:32:26|   0.0|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\pipeline.cpp:1162) class StatusInfo __cdecl STFFactoryPipeline::processFeatureWithSpecAndFactory(class STFSpec *,class STFFactory &,class STFFeature *&)
+2024-09-22 16:32:26|   0.0|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\pipeline.cpp:1112) class StatusInfo __cdecl STFFactoryPipeline::searchForNextFactoryAndProcessFeature(class STFFeature *&,class STFFactoryPipeline::FactoryRef *)
+2024-09-22 16:32:26|   0.0|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\pipeline.cpp:1502) class StatusInfo __cdecl STFFactoryPipeline::sendFeatureToDownstreamFactory(class STFFeature *&)
+2024-09-22 16:32:26|   0.0|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\factory.cpp:1159) class StatusInfo __cdecl STFFactory::completed(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>) const
+2024-09-22 16:32:26|   0.0|  0.0|WARN  |(D:\code\fme\source\engine\core\engine\stfspec.h:268) class StatusInfo __cdecl STFSpec::doForwardFuncsOnFeatureAndProcess<class STFFactory::CompleteFunctor>(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>,const class STFFactory::CompleteFunctor &)
+2024-09-22 16:32:26|   0.0|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\factory.cpp:538) class StatusInfo __cdecl STFFactory::acceptFeature(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>)
+2024-09-22 16:32:26|   0.0|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\factory.cpp:567) class StatusInfo __cdecl STFFactory::acceptFeature(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>)
+2024-09-22 16:32:26|   0.0|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\pipeline.cpp:1162) class StatusInfo __cdecl STFFactoryPipeline::processFeatureWithSpecAndFactory(class STFSpec *,class STFFactory &,class STFFeature *&)
+2024-09-22 16:32:26|   0.0|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\pipeline.cpp:1112) class StatusInfo __cdecl STFFactoryPipeline::searchForNextFactoryAndProcessFeature(class STFFeature *&,class STFFactoryPipeline::FactoryRef *)
+2024-09-22 16:32:26|   0.0|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\pipeline.cpp:673) class StatusInfo __cdecl STFFactoryPipeline::processFeature(class STFFeature *&,unsigned int,const class stk::ex::UString<0> &,const class stk::ex::UString<0> &)
+2024-09-22 16:32:26|   0.0|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\fctbrnch.cpp:373) class StatusInfo __cdecl STFBranchingFactory::ProcessFeatureFunctor::operator ()(class FMEScopedPtr<class STFFeature,struct STFFeatureDestructor>) const
+2024-09-22 16:32:26|   0.0|  0.0|WARN  |(D:\code\fme\source\engine\core\engine\stfspec.h:268) class StatusInfo __cdecl STFSpec::doForwardFuncsOnFeatureAndProcess<class STFBranchingFactory::ProcessFeatureFunctor>(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>,const class STFBranchingFactory::ProcessFeatureFunctor &)
+2024-09-22 16:32:26|   0.0|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\fctbrnch.cpp:513) class StatusInfo __cdecl STFBranchingFactory::process(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>)
+2024-09-22 16:32:26|   0.0|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\factory.cpp:567) class StatusInfo __cdecl STFFactory::acceptFeature(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>)
+2024-09-22 16:32:26|   0.0|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\pipeline.cpp:1162) class StatusInfo __cdecl STFFactoryPipeline::processFeatureWithSpecAndFactory(class STFSpec *,class STFFactory &,class STFFeature *&)
+2024-09-22 16:32:26|   0.0|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\pipeline.cpp:1112) class StatusInfo __cdecl STFFactoryPipeline::searchForNextFactoryAndProcessFeature(class STFFeature *&,class STFFactoryPipeline::FactoryRef *)
+2024-09-22 16:32:26|   0.0|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\pipeline.cpp:1502) class StatusInfo __cdecl STFFactoryPipeline::sendFeatureToDownstreamFactory(class STFFeature *&)
+2024-09-22 16:32:26|   0.0|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\factory.cpp:1159) class StatusInfo __cdecl STFFactory::completed(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>) const
+2024-09-22 16:32:26|   0.0|  0.0|WARN  |(D:\code\fme\source\engine\core\engine\stfspec.h:268) class StatusInfo __cdecl STFSpec::doForwardFuncsOnFeatureAndProcess<class STFFactory::CompleteFunctor>(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>,const class STFFactory::CompleteFunctor &)
+2024-09-22 16:32:26|   0.0|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\factory.cpp:538) class StatusInfo __cdecl STFFactory::acceptFeature(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>)
+2024-09-22 16:32:26|   0.0|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\factory.cpp:567) class StatusInfo __cdecl STFFactory::acceptFeature(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>)
+2024-09-22 16:32:26|   0.0|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\pipeline.cpp:1162) class StatusInfo __cdecl STFFactoryPipeline::processFeatureWithSpecAndFactory(class STFSpec *,class STFFactory &,class STFFeature *&)
+2024-09-22 16:32:26|   0.0|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\pipeline.cpp:1112) class StatusInfo __cdecl STFFactoryPipeline::searchForNextFactoryAndProcessFeature(class STFFeature *&,class STFFactoryPipeline::FactoryRef *)
+2024-09-22 16:32:26|   0.0|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\pipeline.cpp:1502) class StatusInfo __cdecl STFFactoryPipeline::sendFeatureToDownstreamFactory(class STFFeature *&)
+2024-09-22 16:32:26|   0.0|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\factory.cpp:1159) class StatusInfo __cdecl STFFactory::completed(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>) const
+2024-09-22 16:32:26|   0.0|  0.0|WARN  |(D:\code\fme\source\engine\core\engine\stfspec.h:268) class StatusInfo __cdecl STFSpec::doForwardFuncsOnFeatureAndProcess<class STFFactory::CompleteFunctor>(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>,const class STFFactory::CompleteFunctor &)
+2024-09-22 16:32:26|   0.0|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\fcttee.cpp:454) class StatusInfo __cdecl STFTeeFactory::outputFeature(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>,unsigned __int64,class STFSpec &,bool)
+2024-09-22 16:32:26|   0.0|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\fcttee.cpp:427) class StatusInfo __cdecl STFTeeFactory::process(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>)
+2024-09-22 16:32:26|   0.0|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\factory.cpp:567) class StatusInfo __cdecl STFFactory::acceptFeature(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>)
+2024-09-22 16:32:26|   0.0|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\pipeline.cpp:1162) class StatusInfo __cdecl STFFactoryPipeline::processFeatureWithSpecAndFactory(class STFSpec *,class STFFactory &,class STFFeature *&)
+2024-09-22 16:32:26|   0.0|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\pipeline.cpp:1112) class StatusInfo __cdecl STFFactoryPipeline::searchForNextFactoryAndProcessFeature(class STFFeature *&,class STFFactoryPipeline::FactoryRef *)
+2024-09-22 16:32:26|   0.0|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\pipeline.cpp:1502) class StatusInfo __cdecl STFFactoryPipeline::sendFeatureToDownstreamFactory(class STFFeature *&)
+2024-09-22 16:32:26|   0.0|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\factory.cpp:544) class StatusInfo __cdecl STFFactory::acceptFeature(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>)
+2024-09-22 16:32:26|   0.0|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\factory.cpp:567) class StatusInfo __cdecl STFFactory::acceptFeature(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>)
+2024-09-22 16:32:26|   0.0|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\pipeline.cpp:1162) class StatusInfo __cdecl STFFactoryPipeline::processFeatureWithSpecAndFactory(class STFSpec *,class STFFactory &,class STFFeature *&)
+2024-09-22 16:32:26|   0.0|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\pipeline.cpp:1112) class StatusInfo __cdecl STFFactoryPipeline::searchForNextFactoryAndProcessFeature(class STFFeature *&,class STFFactoryPipeline::FactoryRef *)
+2024-09-22 16:32:26|   0.0|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\pipeline.cpp:1502) class StatusInfo __cdecl STFFactoryPipeline::sendFeatureToDownstreamFactory(class STFFeature *&)
+2024-09-22 16:32:26|   0.0|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\factory.cpp:1159) class StatusInfo __cdecl STFFactory::completed(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>) const
+2024-09-22 16:32:26|   0.0|  0.0|WARN  |(D:\code\fme\source\engine\core\engine\stfspec.h:268) class StatusInfo __cdecl STFSpec::doForwardFuncsOnFeatureAndProcess<class STFFactory::CompleteFunctor>(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>,const class STFFactory::CompleteFunctor &)
+2024-09-22 16:32:26|   0.0|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\factory.cpp:538) class StatusInfo __cdecl STFFactory::acceptFeature(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>)
+2024-09-22 16:32:26|   0.0|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\factory.cpp:567) class StatusInfo __cdecl STFFactory::acceptFeature(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>)
+2024-09-22 16:32:26|   0.0|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\pipeline.cpp:1162) class StatusInfo __cdecl STFFactoryPipeline::processFeatureWithSpecAndFactory(class STFSpec *,class STFFactory &,class STFFeature *&)
+2024-09-22 16:32:26|   0.0|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\pipeline.cpp:1112) class StatusInfo __cdecl STFFactoryPipeline::searchForNextFactoryAndProcessFeature(class STFFeature *&,class STFFactoryPipeline::FactoryRef *)
+2024-09-22 16:32:26|   0.0|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\pipeline.cpp:1502) class StatusInfo __cdecl STFFactoryPipeline::sendFeatureToDownstreamFactory(class STFFeature *&)
+2024-09-22 16:32:26|   0.0|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\factory.cpp:1159) class StatusInfo __cdecl STFFactory::completed(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>) const
+2024-09-22 16:32:26|   0.0|  0.0|WARN  |(D:\code\fme\source\engine\core\engine\stfspec.h:268) class StatusInfo __cdecl STFSpec::doForwardFuncsOnFeatureAndProcess<class STFCreationFactory::CompletedFunctor>(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>,const class STFCreationFactory::CompletedFunctor &)
+2024-09-22 16:32:26|   0.0|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\fctcreat.cpp:381) class StatusInfo __cdecl STFCreationFactory::createSome(class STFCoordSys)
+2024-09-22 16:32:26|   0.0|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\fctcreat.cpp:91) class StatusInfo __cdecl STFCreationFactory::allDone(void)
+2024-09-22 16:32:26|   0.0|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\pipeline.cpp:1307) class StatusInfo __cdecl STFFactoryPipeline::allDone(void)
+2024-09-22 16:32:26|   0.0|  0.0|WARN  |(D:\code\fme\source\engine\core\kernel\simptran.cpp:677) class StatusInfo __cdecl STFSimpleTranslator::convert(void)
+2024-09-22 16:32:26|   0.0|  0.0|WARN  |(D:\code\fme\source\engine\core\engine\stftrans.cpp:127) class StatusInfo __cdecl STFTranslator::translate(void)
+2024-09-22 16:32:26|   0.0|  0.0|INFORM|Translation FAILED with 5 error(s) and 3 warning(s) (0 feature(s) output)
+2024-09-22 16:32:26|   0.0|  0.0|INFORM|FME Session Duration: 5.3 seconds. (CPU: 0.0s user, 0.0s system)
+2024-09-22 16:32:26|   0.0|  0.0|INFORM|END - ProcessID: 6888, peak process memory usage: 78272 kB, current process memory usage: 76492 kB
+2024-09-22 16:51:40|   0.0|  0.0|WARN  |Debug logging is enabled (FME_DEBUG MAPPING_FILE BADNEWS UNGROUPED UNCORRELATED DUMP_SCHEMA XSD_VERBOSE HTTP_DEBUG FTP_DEBUG STASH). This may affect performance
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|Current FME version: FME 2024.1.2.0 (20240830 - Build 24622 - WIN64)
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|System Time: 20240922155141 UTC
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|FME_HOME is 'C:\Program Files\FME\'
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|FME Form Fixed (node locked-crc)
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|Serial Number: XNGM-FP4S-215Q
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|Temporary License: 101 days left.
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|Machine host name is: DISCO-JBR
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|OS Locale Name     : en_GB
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|OS Locale Encoding : UTF-8
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|Process Encoding   : UTF-8
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|FME API version: '4.0 20240212'
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|FME Configuration: FME_BASE is 'no'
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|FME Configuration: FME_MF_DIR is 'D:\Repos\jsdbroughton\speckle-fme\fme\Workspaces/'
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|FME Configuration: FME_MF_NAME is 'Test.fmw'
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|FME Configuration: FME_PRODUCT_NAME is 'FME(R) 2024.1.2.0'
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|Operating System: Microsoft Windows 11 64-bit  (Build 22631)
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|FME Platform: WIN64
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|System Status: 153.20 GB of disk space available in the FME temporary folder (C:\Users\JSDBRO~1\AppData\Local\Temp\wbrun_1726985898137_51288\fmetmp_2)
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|System Status: 127.75 GB of physical memory available
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|System Status: 510.99 GB of virtual memory available
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|START - ProcessID: 50616, peak process memory usage: 41972 kB, current process memory usage: 41972 kB
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|FME Configuration: Command line arguments are `C:\Program Files\FME\fme.exe' `D:\Repos\jsdbroughton\speckle-fme\fme\Workspaces\wb-xlate-1727020300293_51288' `LOG_STANDARDOUT' `YES' `LOG_TIMINGS' `YES' `LogCountServerName' `52992' `LOG_STANDARDOUT' `No' `WORKBENCH_LOG_SERVER' `50419' `FME_DEBUG' `EXTRA'
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|FME Configuration: Connection Storage: 'C:\Users\jsdbroughton\AppData\Roaming\Safe Software\FME\'
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|Using Python interpreter from `C:\Program Files\FME\fmepython312\python312.dll' with PYTHONHOME `C:\Program Files\FME\fmepython312'
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|Python version 3.12 loaded successfully
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|Adding folder `D:\Repos\jsdbroughton\speckle-fme\fme\Workspaces\' to the python path
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|FME_BEGIN_PYTHON: evaluating python script from string...
+2024-09-22 16:51:40|   0.0|  0.0|ERROR |<string>:3: SyntaxWarning: invalid escape sequence '\R'
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|FME_BEGIN_PYTHON: python script execution complete.
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|Shared folders for formats are : C:\Program Files\FME\datasources;J:\jsdbroughton\Documents\FME\Formats
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|Shared folders for transformers are : C:\Users\jsdbroughton\AppData\Roaming\Safe Software\FME\Packages\24622-win64\transformers;C:\Program Files\FME\transformers;C:\Users\jsdbroughton\AppData\Roaming\Safe Software\FME\FME Store\Transformers
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|Shared folders for coordinate systems are : J:\jsdbroughton\Documents\FME\CoordinateSystems
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|Shared folders for coordinate system exceptions are : J:\jsdbroughton\Documents\FME\CoordinateSystemExceptions
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|Shared folders for coordinate system grid overrides are : J:\jsdbroughton\Documents\FME\CoordinateSystemGridOverrides
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|Shared folders for CS-MAP transformation exceptions are : J:\jsdbroughton\Documents\FME\CsmapTransformationExceptions
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|Shared folders for transformer categories are : J:\jsdbroughton\Documents\FME\TransformerCategories
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|FME Configuration: Reader Keyword is `MULTI_READER'
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|FME Configuration: Writer Keyword is `PRIMARY_DEST'
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|FME Configuration: Writer Group Definition Keyword is `PRIMARY_DEST_DEF'
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|FME Configuration: Reader type is `MULTI_READER'
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|FME Configuration: Writer type is `MULTI_WRITER'
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|FME Configuration: No destination coordinate system set
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|FME Configuration: Current working folder is `D:\Repos\jsdbroughton\speckle-fme\fme\Workspaces'
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|FME Configuration: Temporary folder is `C:\Users\JSDBRO~1\AppData\Local\Temp\wbrun_1726985898137_51288\fmetmp_2', set from environment variable `FME_TEMP'
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|FME Configuration: Cache folder is 'C:\Users\JSDBRO~1\AppData\Local\Temp'
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|FME Configuration: FME_HOME is `C:\Program Files\FME\'
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|FME Configuration: Start freeing memory when the process exceeds 383.24 GB or address space exceeds 16777216.00 TB
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|FME Configuration: Stop freeing memory when the process is below 287.43 GB and address space is below 16777216.00 TB
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|FME Configuration: Logging ungrouped output features
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|FME Configuration: Logging uncorrelated input features
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|FME Configuration: Dumping mapping file
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|FME Temporary Folder: C:\Users\JSDBRO~1\AppData\Local\Temp\wbrun_1726985898137_51288\fmetmp_2
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 0: FME_PYTHON_VERSION 312
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 1: ARCGIS_COMPATIBILITY ARCGIS_AUTO
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 2: GUI IGNORE DestDataset_GLTF_1,GLTF_OUT_FME_GROUP_NAMED1_GLTF_1,GLTF_OUT_GLTF_VERSION_GLTF_1,GLTF_OUT_GLTF_VARIANT_GLTF_1,GLTF_OUT_FME_GROUP_NAMED2_GLTF_1,GLTF_OUT_TEXTURE_OUTPUT_DIR_GLTF_1,GLTF_OUT_TEXTURE_FORMAT_CHOICES_GLTF_1,GLTF_OUT_TEXTURE_OUTPUT_FORMAT_GLTF_1,GLTF_OUT_FORMATTING_GROUP_GLTF_1,GLTF_OUT_PRETTY_PRINT_GLTF_1,GLTF_OUT_INDENT_SIZE_GLTF_1,GLTF_OUT_FME_GROUP_NAMED3_GLTF_1,GLTF_OUT_MOVE_TO_LOCAL_COORDSYS_GLTF_1,DestDataset_PDF_1,PDF_OUT_FME_GROUP_NAMED1_PDF_1,PDF_OUT_DISPLAY_NAVIGATION_UI_PDF_1,PDF_OUT_BACKGROUND_COLOR_PDF_1,PDF_OUT_FME_GROUP_NAMED2_PDF_1,PDF_OUT_MOVE_TO_LOCAL_COORDSYS_PDF_1,PDF_OUT_FME_GROUP_NAMED3_PDF_1,PDF_OUT_ROOT_NODE_NAME_PDF_1,PDF_OUT_MERGE_FEATURE_AND_GEOMETRY_NODES_PDF_1,PDF_OUT_PDF_WRT_ADV_PARM_GROUP_PDF_1,PDF_OUT_PAGE_SIZE_PDF_1 (occurrence 1 of 25 for keyword 'GUI')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 3: READER_TYPE MULTI_READER
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 4: WRITER_TYPE MULTI_WRITER
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 5: WRITER_KEYWORD PRIMARY_DEST
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 6: PRIMARY_DEST_DATASET_ORDER BY_ID
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 7: PRIMARY_DEST_FIRST_WRITER_ID 0
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 8: PRIMARY_DEST_TYPE{0} NULL
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 9: PRIMARY_DEST_KEYWORD{0} GLTF_1
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 10: PRIMARY_DEST_TYPE{1} NULL
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 11: PRIMARY_DEST_KEYWORD{1} PDF_1
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 12: GUI DIRNAME DestDataset_GLTF_1 Destination glTF Folder: (occurrence 2 of 25 for keyword 'GUI')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 13: GUI OPTIONAL DISCLOSUREGROUP GLTF_OUT_FME_GROUP_NAMED1_GLTF_1 GLTF_OUT_GLTF_VERSION_GLTF_1%GLTF_OUT_GLTF_VARIANT_GLTF_1 glTF (occurrence 3 of 25 for keyword 'GUI')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 14: GLTF_1_GLTF_VERSION 2_0
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 15: GUI ACTIVECHOICE_LOOKUP GLTF_OUT_GLTF_VERSION_GLTF_1 1.0,1_0,GLTF_OUT_TEXTURE_FORMAT_CHOICES_GLTF_1%2.0,2_0, glTF Version (occurrence 4 of 25 for keyword 'GUI')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 16: GLTF_1_GLTF_VARIANT BINARY
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 17: GUI ACTIVECHOICE_LOOKUP GLTF_OUT_GLTF_VARIANT_GLTF_1 Normal<space>(textures<space>and<space>binary<space>data<space>are<space>stored<space>in<space>separate<space>files),VANILLA%Single<space>JSON<space>file<space>(textures<space>and<space>binary<space>data<space>are<space>stored<space>as<space>base64<space>strings),EMBEDDED,GLTF_OUT_TEXTURE_OUTPUT_DIR_GLTF_1%Single<space>binary<space>file<space>(using<space>the<space>KHR_binary_glTF<space>extension),BINARY,GLTF_OUT_TEXTURE_OUTPUT_DIR_GLTF_1,GLTF_OUT_FORMATTING_GROUP_GLTF_1 glTF File Format (occurrence 5 of 25 for keyword 'GUI')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 18: GUI OPTIONAL DISCLOSUREGROUP GLTF_OUT_FME_GROUP_NAMED2_GLTF_1 GLTF_OUT_TEXTURE_OUTPUT_DIR_GLTF_1%GLTF_OUT_TEXTURE_FORMAT_CHOICES_GLTF_1%GLTF_OUT_TEXTURE_OUTPUT_FORMAT_GLTF_1 Texture/Material (occurrence 6 of 25 for keyword 'GUI')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 19: GLTF_1_TEXTURE_OUTPUT_DIR <Unused>
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 20: GUI OPTIONAL DIRNAME GLTF_OUT_TEXTURE_OUTPUT_DIR_GLTF_1 Output Texture Folder: (occurrence 7 of 25 for keyword 'GUI')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 21: GLTF_1_TEXTURE_FORMAT_CHOICES TRADITIONAL
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 22: GUI ACTIVECHOICE_LOOKUP GLTF_OUT_TEXTURE_FORMAT_CHOICES_GLTF_1 "Traditional Only",TRADITIONAL%"WebP Only",WEBP,GLTF_OUT_TEXTURE_OUTPUT_FORMAT_GLTF_1%"WebP and Traditional",BOTH Texture Formats: (occurrence 8 of 25 for keyword 'GUI')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 23: GLTF_1_TEXTURE_OUTPUT_FORMAT NONE
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 24: GUI LOOKUP_CHOICE GLTF_OUT_TEXTURE_OUTPUT_FORMAT_GLTF_1 Auto,NONE%PNG,PNGRASTER%JPEG%GIF,GIFRASTER%BMP Preferred Traditional Texture Format: (occurrence 9 of 25 for keyword 'GUI')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 25: GUI OPTIONAL DISCLOSUREGROUP GLTF_OUT_FORMATTING_GROUP_GLTF_1 GLTF_OUT_PRETTY_PRINT_GLTF_1%GLTF_OUT_INDENT_SIZE_GLTF_1 JSON Formatting (occurrence 10 of 25 for keyword 'GUI')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 26: GLTF_1_PRETTY_PRINT <Unused>
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 27: GUI ACTIVECHOICE_LOOKUP GLTF_OUT_PRETTY_PRINT_GLTF_1 Pretty<space>Print,YES%Linear,NO,GLTF_OUT_INDENT_SIZE_GLTF_1 Formatting Type: (occurrence 11 of 25 for keyword 'GUI')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 28: GLTF_1_INDENT_SIZE <Unused>
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 29: GUI LOOKUP_CHOICE GLTF_OUT_INDENT_SIZE_GLTF_1 Tabs,0%1<space>space,1%2<space>spaces,2%3<space>spaces,3%4<space>spaces,4%5<space>spaces,5%6<space>spaces,6%7<space>spaces,7%8<space>spaces,8 Indent Size: (occurrence 12 of 25 for keyword 'GUI')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 30: GLTF_1_LOCAL_COORDSYS_TRANSFORMATION OFFSET_CENTROID_TO_ORIGIN
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 31: GUI OPTIONAL DISCLOSUREGROUP GLTF_OUT_FME_GROUP_NAMED3_GLTF_1 GLTF_OUT_MOVE_TO_LOCAL_COORDSYS_GLTF_1 Coordinate System (occurrence 13 of 25 for keyword 'GUI')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 32: GLTF_1_MOVE_TO_LOCAL_COORDSYS No
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 33: GUI LOOKUP_CHOICE GLTF_OUT_MOVE_TO_LOCAL_COORDSYS_GLTF_1 Yes,Yes%No,No%"Create Projection File Only",PRJ_ONLY%"Transform Coordinates Only",COORDINATES_ONLY Move to Local Coordinate System: (occurrence 14 of 25 for keyword 'GUI')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 34: GLTF_1_DESTINATION_DATASETTYPE_VALIDATION Yes
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 35: GLTF_1_GENERATE_FME_BUILD_NUM 21789
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 36: GLTF_1_DATASET /Users/jonathonbroughton/Downloads/sdfsdfsdfsdfsdf
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 37: GUI FILENAME DestDataset_PDF_1 PDF_Files(*.pdf)|*.pdf|All_files(*)|* Destination Adobe 3D PDF File: (occurrence 15 of 25 for keyword 'GUI')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 38: GUI OPTIONAL DISCLOSUREGROUP PDF_OUT_FME_GROUP_NAMED1_PDF_1 PDF_OUT_DISPLAY_NAVIGATION_UI_PDF_1%PDF_OUT_BACKGROUND_COLOR_PDF_1 Document Options (occurrence 16 of 25 for keyword 'GUI')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 39: PDF_1_DISPLAY_NAVIGATION_UI Yes
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 40: GUI OPTIONAL CHECKBOX PDF_OUT_DISPLAY_NAVIGATION_UI_PDF_1 Yes%No Display Navigation UI: (occurrence 17 of 25 for keyword 'GUI')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 41: PDF_1_BACKGROUND_COLOR 0.2,0.2,0.2
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 42: GUI OPTIONAL COLOR_PICK PDF_OUT_BACKGROUND_COLOR_PDF_1 Background Color: (occurrence 18 of 25 for keyword 'GUI')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 43: PDF_1_2D_FEATURE_HANDLING REORIENT
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 44: GUI OPTIONAL DISCLOSUREGROUP PDF_OUT_FME_GROUP_NAMED2_PDF_1 PDF_OUT_MOVE_TO_LOCAL_COORDSYS_PDF_1 Coordinate System (occurrence 19 of 25 for keyword 'GUI')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 45: PDF_1_MOVE_TO_LOCAL_COORDSYS No
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 46: GUI LOOKUP_CHOICE PDF_OUT_MOVE_TO_LOCAL_COORDSYS_PDF_1 No,No%"Transform Coordinates Only",COORDINATES_ONLY Move to Local Coordinate System: (occurrence 20 of 25 for keyword 'GUI')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 47: GUI OPTIONAL DISCLOSUREGROUP PDF_OUT_FME_GROUP_NAMED3_PDF_1 PDF_OUT_ROOT_NODE_NAME_PDF_1%PDF_OUT_MERGE_FEATURE_AND_GEOMETRY_NODES_PDF_1 Nodes (occurrence 21 of 25 for keyword 'GUI')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 48: PDF_1_ROOT_NODE_NAME 
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 49: GUI OPTIONAL STRING_ENCODED PDF_OUT_ROOT_NODE_NAME_PDF_1 Root Node Name: (occurrence 22 of 25 for keyword 'GUI')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 50: PDF_1_MERGE_FEATURE_AND_GEOMETRY_NODES NO
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 51: GUI LOOKUP_CHOICE PDF_OUT_MERGE_FEATURE_AND_GEOMETRY_NODES_PDF_1 Yes,YES%No,NO Merge Feature and Root Geometry Nodes: (occurrence 23 of 25 for keyword 'GUI')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 52: GUI OPTIONAL DISCLOSUREGROUP PDF_OUT_PDF_WRT_ADV_PARM_GROUP_PDF_1 PDF_OUT_PAGE_SIZE_PDF_1 Advanced (occurrence 24 of 25 for keyword 'GUI')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 53: PDF_1_PAGE_SIZE 600 600
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 54: GUI OPTIONAL TEXT PDF_OUT_PAGE_SIZE_PDF_1 Page size: (occurrence 25 of 25 for keyword 'GUI')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 55: PDF_1_NODE_CREATION_LIST 
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 56: PDF_1_3D_FILE_TYPE prc
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 57: PDF_1_LOCAL_COORDSYS_TRANSFORMATION OFFSET_CENTROID_TO_ORIGIN
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 58: PDF_1_DESTINATION_DATASETTYPE_VALIDATION Yes
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 59: PDF_1_GENERATE_FME_BUILD_NUM 21789
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 60: PDF_1_DATASET /Users/jonathonbroughton/Downloads/sdfsdf.pdf
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 61: LOG_END_BANNER (occurrence 1 of 5 for keyword 'LOG_END_BANNER')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 62: LOG_END_BANNER Feature caches have been recorded at every stage of the translation. (occurrence 2 of 5 for keyword 'LOG_END_BANNER')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 63: LOG_END_BANNER To inspect the recorded features, (occurrence 3 of 5 for keyword 'LOG_END_BANNER')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 64: LOG_END_BANNER click the feature cache icons next to the ports. (occurrence 4 of 5 for keyword 'LOG_END_BANNER')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 65: LOG_END_BANNER (occurrence 5 of 5 for keyword 'LOG_END_BANNER')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 66: LOG_FILENAME D:\Repos\jsdbroughton\speckle-fme\fme\Workspaces/Test.log
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 67: LOG_APPEND YES
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 68: LOG_MAX_FEATURES 200
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 69: LOG_MAX_RECORDED_FEATURES 200
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 70: FME_REPROJECTION_ENGINE FME
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 71: FME_IMPLICIT_CSMAP_REPROJECTION_MODE Auto
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 72: FME_GEOMETRY_HANDLING Enhanced
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 73: FME_STROKE_MAX_DEVIATION 0
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 74: FME_NAMES_ENCODING UTF-8
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 75: FME_BULK_MODE_THRESHOLD
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 76: MULTI_READER_CONTINUE_ON_READER_FAILURE No
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 77: FME_BEGIN_PYTHON_ENC import<space>sys<lf>sys.path.append<openparen><quote>D:<backslash>Repos<backslash>jsdbroughton<backslash>speckle-fme<backslash>src<backslash>fme_speckle<quote><closeparen>
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 78: .metadata XFORMER_BEGIN Creator;4:Main (occurrence 1 of 18 for keyword '.metadata')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 79: Tcl2 proc Creator_CoordSysRemover {} { global FME_CoordSys; set FME_CoordSys {}; }
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 80: FACTORY_DEF {*} CreationFactory FACTORY_NAME { Creator_XML_Creator } CREATE_AT_END { no } OUTPUT { FEATURE_TYPE _____CREATED______ @Geometry(FROM_ENCODED_STRING,<lt>?xml<space>version=<quote>1.0<quote><space>encoding=<quote>US_ASCII<quote><space>standalone=<quote>no<quote><space>?<gt><lt>geometry<gt><lt>null<solidus><gt><lt><solidus>geometry<gt>) } (occurrence 1 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 81: FACTORY_DEF {NOT_ACTIVATED} CreationFactory FACTORY_NAME { Creator_CLASSIC_Creator } 2D_GEOMETRY { <Unused> } CREATE_AT_END { no } OUTPUT { FEATURE_TYPE _____CREATED______ } (occurrence 2 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 82: FACTORY_DEF {*} TeeFactory FACTORY_NAME { Creator_Cloner } INPUT FEATURE_TYPE _____CREATED______ @Tcl2(Creator_CoordSysRemover) @CoordSys() NUMBER_OF_COPIES { 1 } COPY_NUMBER_ATTRIBUTE { _creation_instance } OUTPUT { FEATURE_TYPE Creator_CREATED fme_feature_type Creator } (occurrence 3 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 83: FACTORY_DEF {*} RecorderFactory FACTORY_NAME Creator_CREATED Feature Recorder -1 2147549188 INPUT FEATURE_TYPE Creator_CREATED FEATURE_FILE { C:/Users/JSDBRO~1/AppData/Local/Temp/wb-cache-Test-BzTFWh/Main_Creator -1 4 fo 0 CREATED  0  806dc3c1654ecfd7b9a2fadcc38906718261771b.ffsupdating } MODE RECORD_PASS_THROUGH STORE_SCANNED_SCHEMA YES NORMALIZE_LIST_ATTRIBUTES_ON_SCHEMA YES CREATE_SPATIAL_INDEX YES INSPECTOR YES RECORD_DIRECTLY_TO_DISK YES FSC_SCHEMA { _creation_instance,uint64 } FEAT_TYPE_DISPLAY_NAME { Creator:<space>Created } STORE_SCANNED_METADATA PASS_THROUGH_FME_TYPE LARGE_GEOMETRY_DATA_STORAGE REFERENCE NO_LOGGING OUTPUT RECORDED FEATURE_TYPE * (occurrence 4 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 84: FACTORY_DEF * TeeFactory FACTORY_NAME Creator CREATED Splitter INPUT FEATURE_TYPE Creator_CREATED OUTPUT FEATURE_TYPE Creator_CREATED_0_mPutgLjb5VA= OUTPUT FEATURE_TYPE Creator_CREATED_1_a9O7mOLLBJ4= OUTPUT FEATURE_TYPE Creator_CREATED_2_xj1o+5vwLoE= OUTPUT FEATURE_TYPE Creator_CREATED_3_RIBirdvcBA0= OUTPUT FEATURE_TYPE Creator_CREATED_4_go26Lp9/TYM= OUTPUT FEATURE_TYPE Creator_CREATED_5_lxcni3KuqJw= OUTPUT FEATURE_TYPE Creator_CREATED_6_Ac+hrxN3XNI= (occurrence 5 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 85: .metadata XFORMER_END Creator;4:Main (occurrence 2 of 18 for keyword '.metadata')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 86: FACTORY_DEF * TeeFactory FACTORY_NAME Creator_CREATED_0_mPutgLjb5VA= Feature Counter -1 7 INPUT FEATURE_TYPE Creator_CREATED_0_mPutgLjb5VA= NO_LOGGING OUTPUT FEATURE_TYPE * @LogCount(LINK -1 7) (occurrence 6 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 87: FACTORY_DEF * BranchingFactory FACTORY_NAME Creator_CREATED_0_mPutgLjb5VA= Brancher -1 7 INPUT FEATURE_TYPE Creator_CREATED_0_mPutgLjb5VA= TARGET_FACTORY _CREATOR_BRANCH_TARGET MAXIMUM_COUNT None OUTPUT PASSED FEATURE_TYPE * (occurrence 7 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 88: FACTORY_DEF * TeeFactory FACTORY_NAME Creator_CREATED_1_a9O7mOLLBJ4= Feature Counter -1 14 INPUT FEATURE_TYPE Creator_CREATED_1_a9O7mOLLBJ4= NO_LOGGING OUTPUT FEATURE_TYPE * @LogCount(LINK -1 14) (occurrence 8 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 89: FACTORY_DEF * BranchingFactory FACTORY_NAME Creator_CREATED_1_a9O7mOLLBJ4= Brancher -1 14 INPUT FEATURE_TYPE Creator_CREATED_1_a9O7mOLLBJ4= TARGET_FACTORY _CREATOR_BRANCH_TARGET MAXIMUM_COUNT None OUTPUT PASSED FEATURE_TYPE * (occurrence 9 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 90: FACTORY_DEF * TeeFactory FACTORY_NAME Creator_CREATED_2_xj1o+5vwLoE= Feature Counter -1 18 INPUT FEATURE_TYPE Creator_CREATED_2_xj1o+5vwLoE= NO_LOGGING OUTPUT FEATURE_TYPE * @LogCount(LINK -1 18) (occurrence 10 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 91: FACTORY_DEF * BranchingFactory FACTORY_NAME Creator_CREATED_2_xj1o+5vwLoE= Brancher -1 18 INPUT FEATURE_TYPE Creator_CREATED_2_xj1o+5vwLoE= TARGET_FACTORY _CREATOR_BRANCH_TARGET MAXIMUM_COUNT None OUTPUT PASSED FEATURE_TYPE * (occurrence 11 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 92: FACTORY_DEF * TeeFactory FACTORY_NAME Creator_CREATED_3_RIBirdvcBA0= Feature Counter -1 27 INPUT FEATURE_TYPE Creator_CREATED_3_RIBirdvcBA0= NO_LOGGING OUTPUT FEATURE_TYPE * @LogCount(LINK -1 27) (occurrence 12 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 93: FACTORY_DEF * BranchingFactory FACTORY_NAME Creator_CREATED_3_RIBirdvcBA0= Brancher -1 27 INPUT FEATURE_TYPE Creator_CREATED_3_RIBirdvcBA0= TARGET_FACTORY _CREATOR_BRANCH_TARGET MAXIMUM_COUNT None OUTPUT PASSED FEATURE_TYPE * (occurrence 13 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 94: FACTORY_DEF * TeeFactory FACTORY_NAME Creator_CREATED_4_go26Lp9/TYM= Feature Counter -1 32 INPUT FEATURE_TYPE Creator_CREATED_4_go26Lp9/TYM= NO_LOGGING OUTPUT FEATURE_TYPE * @LogCount(LINK -1 32) (occurrence 14 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 95: FACTORY_DEF * BranchingFactory FACTORY_NAME Creator_CREATED_4_go26Lp9/TYM= Brancher -1 32 INPUT FEATURE_TYPE Creator_CREATED_4_go26Lp9/TYM= TARGET_FACTORY _CREATOR_BRANCH_TARGET MAXIMUM_COUNT None OUTPUT PASSED FEATURE_TYPE * (occurrence 15 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 96: FACTORY_DEF * TeeFactory FACTORY_NAME Creator_CREATED_5_lxcni3KuqJw= Feature Counter -1 35 INPUT FEATURE_TYPE Creator_CREATED_5_lxcni3KuqJw= NO_LOGGING OUTPUT FEATURE_TYPE * @LogCount(LINK -1 35) (occurrence 16 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 97: FACTORY_DEF * BranchingFactory FACTORY_NAME Creator_CREATED_5_lxcni3KuqJw= Brancher -1 35 INPUT FEATURE_TYPE Creator_CREATED_5_lxcni3KuqJw= TARGET_FACTORY _CREATOR_BRANCH_TARGET MAXIMUM_COUNT None OUTPUT PASSED FEATURE_TYPE * (occurrence 17 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 98: FACTORY_DEF * TeeFactory FACTORY_NAME Creator_CREATED_6_Ac+hrxN3XNI= Feature Counter -1 66 INPUT FEATURE_TYPE Creator_CREATED_6_Ac+hrxN3XNI= NO_LOGGING OUTPUT FEATURE_TYPE * @LogCount(LINK -1 66) (occurrence 18 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 99: FACTORY_DEF * BranchingFactory FACTORY_NAME Creator_CREATED_6_Ac+hrxN3XNI= Brancher -1 66 INPUT FEATURE_TYPE Creator_CREATED_6_Ac+hrxN3XNI= TARGET_FACTORY _CREATOR_BRANCH_TARGET MAXIMUM_COUNT None OUTPUT PASSED FEATURE_TYPE * (occurrence 19 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 100: FACTORY_DEF * TeeFactory FACTORY_NAME _CREATOR_BRANCH_TARGET INPUT FEATURE_TYPE * OUTPUT FEATURE_TYPE * (occurrence 20 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 101: .metadata XFORMER_BEGIN AttributeCreator;6:Main (occurrence 3 of 18 for keyword '.metadata')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 102: FACTORY_DEF * TeeFactory FACTORY_NAME AttributeCreator (Disabled) Nuker INPUT FEATURE_TYPE Creator_CREATED_0_mPutgLjb5VA= (occurrence 21 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 103: .metadata XFORMER_END AttributeCreator;6:Main (occurrence 4 of 18 for keyword '.metadata')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 104: FACTORY_DEF * TeeFactory FACTORY_NAME AttributeCreator_OUTPUT Feature Counter -1 8 INPUT FEATURE_TYPE AttributeCreator_OUTPUT NO_LOGGING OUTPUT FEATURE_TYPE * @LogCount(LINK -1 8) (occurrence 22 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 105: .metadata XFORMER_BEGIN AttributeCreator_2;13:Main (occurrence 5 of 18 for keyword '.metadata')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 106: FACTORY_DEF * TeeFactory FACTORY_NAME AttributeCreator_2 (Disabled) Nuker INPUT FEATURE_TYPE Creator_CREATED_1_a9O7mOLLBJ4= (occurrence 23 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 107: .metadata XFORMER_END AttributeCreator_2;13:Main (occurrence 6 of 18 for keyword '.metadata')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 108: FACTORY_DEF * TeeFactory FACTORY_NAME AttributeCreator_2_OUTPUT Feature Counter -1 15 INPUT FEATURE_TYPE AttributeCreator_2_OUTPUT NO_LOGGING OUTPUT FEATURE_TYPE * @LogCount(LINK -1 15) (occurrence 24 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 109: .metadata XFORMER_BEGIN AttributeCreator_3;17:Main (occurrence 7 of 18 for keyword '.metadata')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 110: FACTORY_DEF * TeeFactory FACTORY_NAME AttributeCreator_3 (Disabled) Nuker INPUT FEATURE_TYPE Creator_CREATED_2_xj1o+5vwLoE= (occurrence 25 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 111: .metadata XFORMER_END AttributeCreator_3;17:Main (occurrence 8 of 18 for keyword '.metadata')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 112: FACTORY_DEF * TeeFactory FACTORY_NAME AttributeCreator_3_OUTPUT Feature Counter -1 19 INPUT FEATURE_TYPE AttributeCreator_3_OUTPUT NO_LOGGING OUTPUT FEATURE_TYPE * @LogCount(LINK -1 19) (occurrence 26 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 113: .metadata XFORMER_BEGIN AttributeCreator_4;26:Main (occurrence 9 of 18 for keyword '.metadata')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 114: FACTORY_DEF * TeeFactory FACTORY_NAME AttributeCreator_4 (Disabled) Nuker INPUT FEATURE_TYPE Creator_CREATED_3_RIBirdvcBA0= (occurrence 27 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 115: .metadata XFORMER_END AttributeCreator_4;26:Main (occurrence 10 of 18 for keyword '.metadata')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 116: FACTORY_DEF * TeeFactory FACTORY_NAME AttributeCreator_4_OUTPUT Feature Counter -1 30 INPUT FEATURE_TYPE AttributeCreator_4_OUTPUT NO_LOGGING OUTPUT FEATURE_TYPE * @LogCount(LINK -1 30) (occurrence 28 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 117: .metadata XFORMER_BEGIN AttributeCreator_5;31:Main (occurrence 11 of 18 for keyword '.metadata')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 118: FACTORY_DEF * TeeFactory FACTORY_NAME AttributeCreator_5 (Disabled) Nuker INPUT FEATURE_TYPE Creator_CREATED_4_go26Lp9/TYM= (occurrence 29 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 119: .metadata XFORMER_END AttributeCreator_5;31:Main (occurrence 12 of 18 for keyword '.metadata')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 120: FACTORY_DEF * TeeFactory FACTORY_NAME AttributeCreator_5_OUTPUT Feature Counter -1 33 INPUT FEATURE_TYPE AttributeCreator_5_OUTPUT NO_LOGGING OUTPUT FEATURE_TYPE * @LogCount(LINK -1 33) (occurrence 30 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 121: .metadata XFORMER_BEGIN AttributeCreator_6;34:Main (occurrence 13 of 18 for keyword '.metadata')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 122: FACTORY_DEF * TeeFactory FACTORY_NAME AttributeCreator_6 (Disabled) Nuker INPUT FEATURE_TYPE Creator_CREATED_5_lxcni3KuqJw= (occurrence 31 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 123: .metadata XFORMER_END AttributeCreator_6;34:Main (occurrence 14 of 18 for keyword '.metadata')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 124: FACTORY_DEF * TeeFactory FACTORY_NAME AttributeCreator_6_OUTPUT_0_36mpdlxs3Hw= Feature Counter -1 36 INPUT FEATURE_TYPE AttributeCreator_6_OUTPUT_0_36mpdlxs3Hw= NO_LOGGING OUTPUT FEATURE_TYPE * @LogCount(LINK -1 36) (occurrence 32 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 125: FACTORY_DEF * TeeFactory FACTORY_NAME AttributeCreator_6_OUTPUT_1_oQoTqVTacaA= Feature Counter -1 42 INPUT FEATURE_TYPE AttributeCreator_6_OUTPUT_1_oQoTqVTacaA= NO_LOGGING OUTPUT FEATURE_TYPE * @LogCount(LINK -1 42) (occurrence 33 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 126: .metadata XFORMER_BEGIN AttributeCreator_7;64:Main (occurrence 15 of 18 for keyword '.metadata')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 127: FACTORY_DEF {*} AttrSetFactory FACTORY_NAME { AttributeCreator_7 } COMMAND_PARM_EVALUATION SINGLE_PASS INPUT FEATURE_TYPE Creator_CREATED_6_Ac+hrxN3XNI= MULTI_FEATURE_MODE { NO } NULL_ATTR_MODE { NO_OP } ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV ATTR_ACTION {  speckle_url SET_TO https:<solidus><solidus>speckle.xyz<solidus>streams<solidus>fd1d44405d<solidus>objects<solidus>9c93d55cfb37415b70154f64e31b0201 } OUTPUT { OUTPUT FEATURE_TYPE AttributeCreator_7_OUTPUT } (occurrence 34 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 128: FACTORY_DEF {*} RecorderFactory FACTORY_NAME AttributeCreator_7_OUTPUT Feature Recorder -1 2147614784 INPUT FEATURE_TYPE AttributeCreator_7_OUTPUT FEATURE_FILE { C:/Users/JSDBRO~1/AppData/Local/Temp/wb-cache-Test-BzTFWh/Main_AttributeCreator_7 -1 64 fo 0 OUTPUT  0  0deefa29443e453eebdd017f3cd30becc52da655.ffsupdating } MODE RECORD_PASS_THROUGH STORE_SCANNED_SCHEMA YES NORMALIZE_LIST_ATTRIBUTES_ON_SCHEMA YES CREATE_SPATIAL_INDEX YES INSPECTOR YES RECORD_DIRECTLY_TO_DISK YES FSC_SCHEMA { speckle_url,varchar<openparen>200<closeparen>,_creation_instance,uint64 } FEAT_TYPE_DISPLAY_NAME { AttributeCreator_7:<space>Output } STORE_SCANNED_METADATA PASS_THROUGH_FME_TYPE LARGE_GEOMETRY_DATA_STORAGE REFERENCE NO_LOGGING OUTPUT RECORDED FEATURE_TYPE * (occurrence 35 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 129: .metadata XFORMER_END AttributeCreator_7;64:Main (occurrence 16 of 18 for keyword '.metadata')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 130: FACTORY_DEF * TeeFactory FACTORY_NAME AttributeCreator_7_OUTPUT Feature Counter -1 65 INPUT FEATURE_TYPE AttributeCreator_7_OUTPUT NO_LOGGING OUTPUT FEATURE_TYPE * @LogCount(LINK -1 65) (occurrence 36 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 131: .metadata XFORMER_BEGIN PythonCaller;3:Main (occurrence 17 of 18 for keyword '.metadata')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 132: FME_PYTHON_PATH D:\Repos\jsdbroughton\speckle-fme\fme\Workspaces/
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 133: FACTORY_DEF {*} PythonFactory FACTORY_NAME { PythonCaller } FLUSH_WHEN_GROUPS_CHANGE { <Unused> } INPUT FEATURE_TYPE AttributeCreator_OUTPUT INPUT FEATURE_TYPE AttributeCreator_2_OUTPUT INPUT FEATURE_TYPE AttributeCreator_3_OUTPUT INPUT FEATURE_TYPE AttributeCreator_4_OUTPUT INPUT FEATURE_TYPE AttributeCreator_5_OUTPUT INPUT FEATURE_TYPE AttributeCreator_6_OUTPUT_0_36mpdlxs3Hw= INPUT FEATURE_TYPE AttributeCreator_7_OUTPUT SYMBOL_NAME { StreamReader } SOURCE_CODE { from<space>fme_speckle.readers<space>import<space>StreamReader } OUTPUT { PYOUTPUT FEATURE_TYPE PythonCaller_OUTPUT } (occurrence 37 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 134: FACTORY_DEF {*} RecorderFactory FACTORY_NAME PythonCaller_OUTPUT Feature Recorder -1 2147614723 INPUT FEATURE_TYPE PythonCaller_OUTPUT FEATURE_FILE { C:/Users/JSDBRO~1/AppData/Local/Temp/wb-cache-Test-BzTFWh/Main_PythonCaller -1 3 fo 0 OUTPUT  0  624ca969aa3fdd138b3fddfcad6c03addf52c851.ffsupdating } MODE RECORD_PASS_THROUGH STORE_SCANNED_SCHEMA YES NORMALIZE_LIST_ATTRIBUTES_ON_SCHEMA YES CREATE_SPATIAL_INDEX YES INSPECTOR YES RECORD_DIRECTLY_TO_DISK YES FSC_SCHEMA { speckle_type<comma>,buffer,REJECTED,buffer } FEAT_TYPE_DISPLAY_NAME { PythonCaller:<space>Output } STORE_SCANNED_METADATA PASS_THROUGH_FME_TYPE LARGE_GEOMETRY_DATA_STORAGE REFERENCE NO_LOGGING OUTPUT RECORDED FEATURE_TYPE * (occurrence 38 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 135: .metadata XFORMER_END PythonCaller;3:Main (occurrence 18 of 18 for keyword '.metadata')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 136: FACTORY_DEF * TeeFactory FACTORY_NAME PythonCaller_OUTPUT Feature Counter -1 10 INPUT FEATURE_TYPE PythonCaller_OUTPUT NO_LOGGING OUTPUT FEATURE_TYPE * @LogCount(LINK -1 10) (occurrence 39 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 137: FACTORY_DEF * RoutingFactory FACTORY_NAME Destination Feature Type Routing Correlator COMMAND_PARM_EVALUATION SINGLE_PASS INPUT FEATURE_TYPE * FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__ OUTPUT ROUTED FEATURE_TYPE * OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2(FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn) (occurrence 40 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 138: FACTORY_DEF * TeeFactory FACTORY_NAME Final Output Nuker INPUT FEATURE_TYPE __nuke_me__ (occurrence 41 of 41 for keyword 'FACTORY_DEF')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 139: FME_USER_PYTHON Yes
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 140: LOG_TIMINGS YES
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 141: LogCountServerName 52992
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 142: LOG_STANDARDOUT No
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 143: WORKBENCH_LOG_SERVER 50419
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 144: FME_DEBUG FME_DEBUG MAPPING_FILE BADNEWS UNGROUPED UNCORRELATED DUMP_SCHEMA XSD_VERBOSE HTTP_DEBUG FTP_DEBUG STASH
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|mapping file Line 145: FME_HOME C:\Program Files\FME\
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|Creating writer for format: 
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|Creating reader for format: 
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|MULTI_READER(MULTI_READER): Will fail with first member reader failure
+2024-09-22 16:51:40|   0.0|  0.0|WARN  |No readers were found to be part of the Multi-Reader, so no data will be read.
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|Using Multi Reader with keyword `MULTI_READER' to read multiple datasets
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|Using MultiWriter with keyword `PRIMARY_DEST' to output data (ID_ATTRIBUTE is `multi_writer_id')
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|Writer output will be ordered by value of multi_writer_id
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|Loaded module 'Geometry_func' from file 'C:\Program Files\FME\plugins/Geometry_func.dll'
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|FME API version of module 'Geometry_func' matches current internal version (4.0 20240212)
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|Loaded module 'LogCount_func' from file 'C:\Program Files\FME\plugins/LogCount_func.dll'
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|FME API version of module 'LogCount_func' matches current internal version (4.0 20240212)
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|Loaded module 'PythonFactory' from file 'C:\Program Files\FME\plugins/PythonFactory.dll'
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|FME API version of module 'PythonFactory' matches current internal version (4.0 20240212)
+2024-09-22 16:51:40|   0.0|  0.0|INFORM|Emptying factory pipeline
+2024-09-22 16:51:41|   0.2|  0.2|ERROR |Message Type: fme::internal::_v0::py::Exception
+2024-09-22 16:51:41|   0.2|  0.0|ERROR |(<string>:2) <module>
+2024-09-22 16:51:41|   0.2|  0.0|ERROR |Python Exception <ModuleNotFoundError>: No module named 'fme_speckle'
+2024-09-22 16:51:41|   0.2|  0.0|ERROR |Error executing string `from fme_speckle.readers import StreamReader'
+2024-09-22 16:51:41|   0.2|  0.0|FATAL |Factory proxy not initialized
+2024-09-22 16:51:41|   0.2|  0.0|FATAL |PythonCaller (PythonFactory): PythonFactory failed to process feature
+2024-09-22 16:51:41|   0.2|  0.0|WARN  |An error has occurred. Check the logfile above for details
+2024-09-22 16:51:41|   0.2|  0.0|WARN  |(D:\code\fme\source\engine\engine_api_impl\cpp\pluginbuilder\dynafact.cpp:446) class StatusInfo __cdecl STFDynamicFactory::process(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>)
+2024-09-22 16:51:41|   0.2|  0.0|WARN  |(D:\code\fme\source\engine\engine_api_impl\cpp\pluginbuilder\dynafact.cpp:446) class StatusInfo __cdecl STFDynamicFactory::process(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>)
+2024-09-22 16:51:41|   0.2|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\factory.cpp:567) class StatusInfo __cdecl STFFactory::acceptFeature(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>)
+2024-09-22 16:51:41|   0.2|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\groupbyfactory.cpp:198) class StatusInfo __cdecl STFGroupByFactory::acceptFeature(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>)
+2024-09-22 16:51:41|   0.2|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\pipeline.cpp:1162) class StatusInfo __cdecl STFFactoryPipeline::processFeatureWithSpecAndFactory(class STFSpec *,class STFFactory &,class STFFeature *&)
+2024-09-22 16:51:41|   0.2|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\pipeline.cpp:1112) class StatusInfo __cdecl STFFactoryPipeline::searchForNextFactoryAndProcessFeature(class STFFeature *&,class STFFactoryPipeline::FactoryRef *)
+2024-09-22 16:51:41|   0.2|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\pipeline.cpp:1502) class StatusInfo __cdecl STFFactoryPipeline::sendFeatureToDownstreamFactory(class STFFeature *&)
+2024-09-22 16:51:41|   0.2|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\factory.cpp:1159) class StatusInfo __cdecl STFFactory::completed(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>) const
+2024-09-22 16:51:41|   0.2|  0.0|WARN  |(D:\code\fme\source\engine\core\engine\stfspec.h:268) class StatusInfo __cdecl STFSpec::doForwardFuncsOnFeatureAndProcess<class STFFactory::CompleteFunctor>(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>,const class STFFactory::CompleteFunctor &)
+2024-09-22 16:51:41|   0.2|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\factory.cpp:538) class StatusInfo __cdecl STFFactory::acceptFeature(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>)
+2024-09-22 16:51:41|   0.2|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\factory.cpp:567) class StatusInfo __cdecl STFFactory::acceptFeature(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>)
+2024-09-22 16:51:41|   0.2|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\pipeline.cpp:1162) class StatusInfo __cdecl STFFactoryPipeline::processFeatureWithSpecAndFactory(class STFSpec *,class STFFactory &,class STFFeature *&)
+2024-09-22 16:51:41|   0.2|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\pipeline.cpp:1112) class StatusInfo __cdecl STFFactoryPipeline::searchForNextFactoryAndProcessFeature(class STFFeature *&,class STFFactoryPipeline::FactoryRef *)
+2024-09-22 16:51:41|   0.2|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\pipeline.cpp:1502) class StatusInfo __cdecl STFFactoryPipeline::sendFeatureToDownstreamFactory(class STFFeature *&)
+2024-09-22 16:51:41|   0.2|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\factory.cpp:544) class StatusInfo __cdecl STFFactory::acceptFeature(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>)
+2024-09-22 16:51:41|   0.2|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\factory.cpp:567) class StatusInfo __cdecl STFFactory::acceptFeature(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>)
+2024-09-22 16:51:41|   0.2|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\pipeline.cpp:1162) class StatusInfo __cdecl STFFactoryPipeline::processFeatureWithSpecAndFactory(class STFSpec *,class STFFactory &,class STFFeature *&)
+2024-09-22 16:51:41|   0.2|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\pipeline.cpp:1112) class StatusInfo __cdecl STFFactoryPipeline::searchForNextFactoryAndProcessFeature(class STFFeature *&,class STFFactoryPipeline::FactoryRef *)
+2024-09-22 16:51:41|   0.2|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\pipeline.cpp:1502) class StatusInfo __cdecl STFFactoryPipeline::sendFeatureToDownstreamFactory(class STFFeature *&)
+2024-09-22 16:51:41|   0.2|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\factory.cpp:1159) class StatusInfo __cdecl STFFactory::completed(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>) const
+2024-09-22 16:51:41|   0.2|  0.0|WARN  |(D:\code\fme\source\engine\core\engine\stfspec.h:268) class StatusInfo __cdecl STFSpec::doForwardFuncsOnFeatureAndProcess<class STFFactory::CompleteFunctor>(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>,const class STFFactory::CompleteFunctor &)
+2024-09-22 16:51:41|   0.2|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\factory.cpp:1187) class StatusInfo __cdecl STFFactory::applySpecAndComplete(const class STFTagName,class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>) const
+2024-09-22 16:51:41|   0.2|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\fctattrset.cpp:911) class StatusInfo __cdecl STFAttrSetFactory::process(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>)
+2024-09-22 16:51:41|   0.2|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\factory.cpp:567) class StatusInfo __cdecl STFFactory::acceptFeature(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>)
+2024-09-22 16:51:41|   0.2|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\pipeline.cpp:1162) class StatusInfo __cdecl STFFactoryPipeline::processFeatureWithSpecAndFactory(class STFSpec *,class STFFactory &,class STFFeature *&)
+2024-09-22 16:51:41|   0.2|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\pipeline.cpp:1112) class StatusInfo __cdecl STFFactoryPipeline::searchForNextFactoryAndProcessFeature(class STFFeature *&,class STFFactoryPipeline::FactoryRef *)
+2024-09-22 16:51:41|   0.2|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\pipeline.cpp:1502) class StatusInfo __cdecl STFFactoryPipeline::sendFeatureToDownstreamFactory(class STFFeature *&)
+2024-09-22 16:51:41|   0.2|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\factory.cpp:1159) class StatusInfo __cdecl STFFactory::completed(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>) const
+2024-09-22 16:51:41|   0.2|  0.0|WARN  |(D:\code\fme\source\engine\core\engine\stfspec.h:268) class StatusInfo __cdecl STFSpec::doForwardFuncsOnFeatureAndProcess<class STFFactory::CompleteFunctor>(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>,const class STFFactory::CompleteFunctor &)
+2024-09-22 16:51:41|   0.2|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\factory.cpp:538) class StatusInfo __cdecl STFFactory::acceptFeature(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>)
+2024-09-22 16:51:41|   0.2|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\factory.cpp:567) class StatusInfo __cdecl STFFactory::acceptFeature(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>)
+2024-09-22 16:51:41|   0.2|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\pipeline.cpp:1162) class StatusInfo __cdecl STFFactoryPipeline::processFeatureWithSpecAndFactory(class STFSpec *,class STFFactory &,class STFFeature *&)
+2024-09-22 16:51:41|   0.2|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\pipeline.cpp:1112) class StatusInfo __cdecl STFFactoryPipeline::searchForNextFactoryAndProcessFeature(class STFFeature *&,class STFFactoryPipeline::FactoryRef *)
+2024-09-22 16:51:41|   0.2|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\pipeline.cpp:673) class StatusInfo __cdecl STFFactoryPipeline::processFeature(class STFFeature *&,unsigned int,const class stk::ex::UString<0> &,const class stk::ex::UString<0> &)
+2024-09-22 16:51:41|   0.2|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\fctbrnch.cpp:373) class StatusInfo __cdecl STFBranchingFactory::ProcessFeatureFunctor::operator ()(class FMEScopedPtr<class STFFeature,struct STFFeatureDestructor>) const
+2024-09-22 16:51:41|   0.2|  0.0|WARN  |(D:\code\fme\source\engine\core\engine\stfspec.h:268) class StatusInfo __cdecl STFSpec::doForwardFuncsOnFeatureAndProcess<class STFBranchingFactory::ProcessFeatureFunctor>(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>,const class STFBranchingFactory::ProcessFeatureFunctor &)
+2024-09-22 16:51:41|   0.2|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\fctbrnch.cpp:513) class StatusInfo __cdecl STFBranchingFactory::process(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>)
+2024-09-22 16:51:41|   0.2|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\factory.cpp:567) class StatusInfo __cdecl STFFactory::acceptFeature(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>)
+2024-09-22 16:51:41|   0.2|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\pipeline.cpp:1162) class StatusInfo __cdecl STFFactoryPipeline::processFeatureWithSpecAndFactory(class STFSpec *,class STFFactory &,class STFFeature *&)
+2024-09-22 16:51:41|   0.2|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\pipeline.cpp:1112) class StatusInfo __cdecl STFFactoryPipeline::searchForNextFactoryAndProcessFeature(class STFFeature *&,class STFFactoryPipeline::FactoryRef *)
+2024-09-22 16:51:41|   0.2|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\pipeline.cpp:1502) class StatusInfo __cdecl STFFactoryPipeline::sendFeatureToDownstreamFactory(class STFFeature *&)
+2024-09-22 16:51:41|   0.2|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\factory.cpp:1159) class StatusInfo __cdecl STFFactory::completed(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>) const
+2024-09-22 16:51:41|   0.2|  0.0|WARN  |(D:\code\fme\source\engine\core\engine\stfspec.h:268) class StatusInfo __cdecl STFSpec::doForwardFuncsOnFeatureAndProcess<class STFFactory::CompleteFunctor>(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>,const class STFFactory::CompleteFunctor &)
+2024-09-22 16:51:41|   0.2|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\factory.cpp:538) class StatusInfo __cdecl STFFactory::acceptFeature(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>)
+2024-09-22 16:51:41|   0.2|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\factory.cpp:567) class StatusInfo __cdecl STFFactory::acceptFeature(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>)
+2024-09-22 16:51:41|   0.2|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\pipeline.cpp:1162) class StatusInfo __cdecl STFFactoryPipeline::processFeatureWithSpecAndFactory(class STFSpec *,class STFFactory &,class STFFeature *&)
+2024-09-22 16:51:41|   0.2|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\pipeline.cpp:1112) class StatusInfo __cdecl STFFactoryPipeline::searchForNextFactoryAndProcessFeature(class STFFeature *&,class STFFactoryPipeline::FactoryRef *)
+2024-09-22 16:51:41|   0.2|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\pipeline.cpp:1502) class StatusInfo __cdecl STFFactoryPipeline::sendFeatureToDownstreamFactory(class STFFeature *&)
+2024-09-22 16:51:41|   0.2|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\factory.cpp:1159) class StatusInfo __cdecl STFFactory::completed(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>) const
+2024-09-22 16:51:41|   0.2|  0.0|WARN  |(D:\code\fme\source\engine\core\engine\stfspec.h:268) class StatusInfo __cdecl STFSpec::doForwardFuncsOnFeatureAndProcess<class STFFactory::CompleteFunctor>(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>,const class STFFactory::CompleteFunctor &)
+2024-09-22 16:51:41|   0.2|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\fcttee.cpp:454) class StatusInfo __cdecl STFTeeFactory::outputFeature(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>,unsigned __int64,class STFSpec &,bool)
+2024-09-22 16:51:41|   0.2|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\fcttee.cpp:427) class StatusInfo __cdecl STFTeeFactory::process(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>)
+2024-09-22 16:51:41|   0.2|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\factory.cpp:567) class StatusInfo __cdecl STFFactory::acceptFeature(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>)
+2024-09-22 16:51:41|   0.2|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\pipeline.cpp:1162) class StatusInfo __cdecl STFFactoryPipeline::processFeatureWithSpecAndFactory(class STFSpec *,class STFFactory &,class STFFeature *&)
+2024-09-22 16:51:41|   0.2|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\pipeline.cpp:1112) class StatusInfo __cdecl STFFactoryPipeline::searchForNextFactoryAndProcessFeature(class STFFeature *&,class STFFactoryPipeline::FactoryRef *)
+2024-09-22 16:51:41|   0.2|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\pipeline.cpp:1502) class StatusInfo __cdecl STFFactoryPipeline::sendFeatureToDownstreamFactory(class STFFeature *&)
+2024-09-22 16:51:41|   0.2|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\factory.cpp:544) class StatusInfo __cdecl STFFactory::acceptFeature(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>)
+2024-09-22 16:51:41|   0.2|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\factory.cpp:567) class StatusInfo __cdecl STFFactory::acceptFeature(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>)
+2024-09-22 16:51:41|   0.2|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\pipeline.cpp:1162) class StatusInfo __cdecl STFFactoryPipeline::processFeatureWithSpecAndFactory(class STFSpec *,class STFFactory &,class STFFeature *&)
+2024-09-22 16:51:41|   0.2|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\pipeline.cpp:1112) class StatusInfo __cdecl STFFactoryPipeline::searchForNextFactoryAndProcessFeature(class STFFeature *&,class STFFactoryPipeline::FactoryRef *)
+2024-09-22 16:51:41|   0.2|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\pipeline.cpp:1502) class StatusInfo __cdecl STFFactoryPipeline::sendFeatureToDownstreamFactory(class STFFeature *&)
+2024-09-22 16:51:41|   0.2|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\factory.cpp:1159) class StatusInfo __cdecl STFFactory::completed(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>) const
+2024-09-22 16:51:41|   0.2|  0.0|WARN  |(D:\code\fme\source\engine\core\engine\stfspec.h:268) class StatusInfo __cdecl STFSpec::doForwardFuncsOnFeatureAndProcess<class STFFactory::CompleteFunctor>(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>,const class STFFactory::CompleteFunctor &)
+2024-09-22 16:51:41|   0.2|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\factory.cpp:538) class StatusInfo __cdecl STFFactory::acceptFeature(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>)
+2024-09-22 16:51:41|   0.2|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\factory.cpp:567) class StatusInfo __cdecl STFFactory::acceptFeature(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>)
+2024-09-22 16:51:41|   0.2|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\pipeline.cpp:1162) class StatusInfo __cdecl STFFactoryPipeline::processFeatureWithSpecAndFactory(class STFSpec *,class STFFactory &,class STFFeature *&)
+2024-09-22 16:51:41|   0.2|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\pipeline.cpp:1112) class StatusInfo __cdecl STFFactoryPipeline::searchForNextFactoryAndProcessFeature(class STFFeature *&,class STFFactoryPipeline::FactoryRef *)
+2024-09-22 16:51:41|   0.2|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\pipeline.cpp:1502) class StatusInfo __cdecl STFFactoryPipeline::sendFeatureToDownstreamFactory(class STFFeature *&)
+2024-09-22 16:51:41|   0.2|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\factory.cpp:1159) class StatusInfo __cdecl STFFactory::completed(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>) const
+2024-09-22 16:51:41|   0.2|  0.0|WARN  |(D:\code\fme\source\engine\core\engine\stfspec.h:268) class StatusInfo __cdecl STFSpec::doForwardFuncsOnFeatureAndProcess<class STFCreationFactory::CompletedFunctor>(class std::unique_ptr<class STFFeature,struct STFFeatureDestructor>,const class STFCreationFactory::CompletedFunctor &)
+2024-09-22 16:51:41|   0.2|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\fctcreat.cpp:381) class StatusInfo __cdecl STFCreationFactory::createSome(class STFCoordSys)
+2024-09-22 16:51:41|   0.2|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\fctcreat.cpp:91) class StatusInfo __cdecl STFCreationFactory::allDone(void)
+2024-09-22 16:51:41|   0.2|  0.0|WARN  |(D:\code\fme\source\engine\core\factories\pipeline.cpp:1307) class StatusInfo __cdecl STFFactoryPipeline::allDone(void)
+2024-09-22 16:51:41|   0.2|  0.0|WARN  |(D:\code\fme\source\engine\core\kernel\simptran.cpp:677) class StatusInfo __cdecl STFSimpleTranslator::convert(void)
+2024-09-22 16:51:41|   0.2|  0.0|WARN  |(D:\code\fme\source\engine\core\engine\stftrans.cpp:127) class StatusInfo __cdecl STFTranslator::translate(void)
+2024-09-22 16:51:41|   0.2|  0.0|INFORM|Translation FAILED with 6 error(s) and 3 warning(s) (0 feature(s) output)
+2024-09-22 16:51:41|   0.2|  0.0|INFORM|FME Session Duration: 0.8 seconds. (CPU: 0.1s user, 0.1s system)
+2024-09-22 16:51:41|   0.2|  0.0|INFORM|END - ProcessID: 50616, peak process memory usage: 79336 kB, current process memory usage: 77080 kB

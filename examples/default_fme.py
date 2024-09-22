@@ -1,7 +1,7 @@
 # This is the default content of the PythonCaller transformer in FME.
 # Replace this with the pointer to the external implementation:
 #
-# e.g. from fme_speckle.readers import StreamReader
+# e.g. from old_fme_speckle.readers import StreamReader
 #
 # and replace FeatureProcessor class name with whatever you rename that class as.
 
