@@ -1,11 +1,26 @@
 {
-    "python.analysis.extraPaths": [
-      "/Library/FME/2021.2/fmeobjects/python38/",
-      "/Library/FME/2021.2/fmeobjects/python38/"
-    ],
-    "python.autoComplete.extraPaths": [
-      "/Library/FME/2021.2/fmeobjects/python38/",
-      "/Library/FME/2021.2/fmeobjects/python37/"
-    ],
-    "python.linting.enabled": true,
+  "[python]": {
+    "editor.defaultFormatter": null
+  },
+  "python.analysis.extraPaths": ["/Library/FME/2021.2/fmeobjects/python38/"],
+  "python.autoComplete.extraPaths": [
+    "/Library/FME/2021.2/fmeobjects/python38/",
+    "/Library/FME/2021.2/fmeobjects/python37/",
+    "/Library/FME/2021.2/fmeobjects/python38/fmeobjects"
+  ],
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": true,
+  "python.linting.pylintArgs": [
+    "--include-naming-hint=y",
+    "--ignored-modules=fmeobjects"
+  ],
+  "python.linting.pydocstyleEnabled": true,
+  "python.linting.pydocstyleArgs": ["--convention=google"],
+  "python.formatting.provider": "black",
+  "python.formatting.blackArgs": ["--line-length=120"],
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "python.analysis.stubPath": "./typings",
+  "python.analysis.typeCheckingMode": "basic",
+  "python.analysis.autoImportCompletions": false
 }

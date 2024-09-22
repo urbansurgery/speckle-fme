@@ -1,0 +1,729 @@
+directive @hasScope(scope: String!) on FIELD_DEFINITION
+
+directive @hasScopes(scopes: [String]!) on FIELD_DEFINITION
+
+directive @hasRole(role: String!) on FIELD_DEFINITION
+
+directive @cacheControl(
+  maxAge: Int
+  scope: CacheControlScope
+) on FIELD_DEFINITION | OBJECT | INTERFACE
+
+# A date-time string at UTC, such as 2007-12-03T10:15:30Z, compliant with the `date-time` format outlined in section 5.6 of the RFC 3339 profile of the ISO 8601 standard for representation of dates and times using the Gregorian calendar.
+scalar DateTime
+
+scalar EmailAddress
+
+# The `BigInt` scalar type represents non-fractional signed whole numeric values.
+scalar BigInt
+
+# The `JSONObject` scalar type represents JSON objects as specified by [ECMA-404](http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf).
+scalar JSONObject
+
+type Query {
+  # Stare into the void.
+  _: String
+
+  # Gets a specific app from the server.
+  app(id: String!): ServerApp
+
+  # Returns all the publicly available apps on this server.
+  apps: [ServerAppListItem]
+  serverInfo: ServerInfo!
+
+  # Returns a specific stream.
+  stream(id: String!): Stream
+
+  # All the streams of the current user, pass in the `query` parameter to search by name, description or ID.
+  streams(query: String, limit: Int = 25, cursor: String): StreamCollection
+  adminStreams(
+    offset: Int = 0
+    query: String
+    orderBy: String
+    visibility: String
+    limit: Int = 25
+  ): StreamCollection
+
+  # Gets the profile of a user. If no id argument is provided, will return the current authenticated user's profile (as extracted from the authorization header).
+  user(id: String): User
+
+  # Get users from the server in a paginated view. The query search for matches in name, company and email.
+  users(
+    limit: Int! = 25
+    offset: Int! = 0
+    query: String = null
+  ): UserCollection
+  userSearch(
+    query: String!
+    limit: Int! = 25
+    cursor: String
+  ): UserSearchResultCollection
+  userPwdStrength(pwd: String!): JSONObject
+  serverStats: ServerStats!
+}
+
+type Mutation {
+  # The void stares back.
+  _: String
+
+  # Register a new third party application.
+  appCreate(app: AppCreateInput!): String!
+
+  # Update an existing third party application. **Note: This will invalidate all existing tokens, refresh tokens and access codes and will require existing users to re-authorize it.**
+  appUpdate(app: AppUpdateInput!): Boolean!
+
+  # Deletes a thirty party application.
+  appDelete(appId: String!): Boolean!
+
+  # Revokes (de-authorizes) an application that you have previously authorized.
+  appRevokeAccess(appId: String!): Boolean
+
+  # Creates an personal api token.
+  apiTokenCreate(token: ApiTokenCreateInput!): String!
+
+  # Revokes (deletes) an personal api token.
+  apiTokenRevoke(token: String!): Boolean!
+  branchCreate(branch: BranchCreateInput!): String!
+  branchUpdate(branch: BranchUpdateInput!): Boolean!
+  branchDelete(branch: BranchDeleteInput!): Boolean!
+  commitCreate(commit: CommitCreateInput!): String!
+  commitUpdate(commit: CommitUpdateInput!): Boolean!
+  commitReceive(input: CommitReceivedInput!): Boolean!
+  commitDelete(commit: CommitDeleteInput!): Boolean!
+  objectCreate(objectInput: ObjectCreateInput!): [String]!
+  serverInfoUpdate(info: ServerInfoUpdateInput!): Boolean
+
+  # Creates a new stream.
+  streamCreate(stream: StreamCreateInput!): String
+
+  # Updates an existing stream.
+  streamUpdate(stream: StreamUpdateInput!): Boolean!
+
+  # Deletes an existing stream.
+  streamDelete(id: String!): Boolean!
+  streamsDelete(ids: [String!]): Boolean!
+
+  # Grants permissions to a user on a given stream.
+  streamGrantPermission(permissionParams: StreamGrantPermissionInput!): Boolean
+
+  # Revokes the permissions of a user on a given stream.
+  streamRevokePermission(
+    permissionParams: StreamRevokePermissionInput!
+  ): Boolean
+
+  # Edits a user's profile.
+  userUpdate(user: UserUpdateInput!): Boolean!
+
+  # Delete a user's account.
+  userDelete(userConfirmation: UserDeleteInput!): Boolean!
+  adminDeleteUser(userConfirmation: UserDeleteInput!): Boolean!
+  userRoleChange(userRoleInput: UserRoleInput!): Boolean!
+  serverInviteCreate(input: ServerInviteCreateInput!): Boolean
+  streamInviteCreate(input: StreamInviteCreateInput!): Boolean
+
+  # Creates a new webhook on a stream
+  webhookCreate(webhook: WebhookCreateInput!): String!
+
+  # Updates an existing webhook
+  webhookUpdate(webhook: WebhookUpdateInput!): String!
+
+  # Deletes an existing webhook
+  webhookDelete(webhook: WebhookDeleteInput!): String!
+}
+
+type Subscription {
+  # It's lonely in the void.
+  _: String
+
+  # Subscribe to branch created event
+  branchCreated(streamId: String!): JSONObject
+
+  # Subscribe to branch updated event.
+  branchUpdated(streamId: String!, branchId: String): JSONObject
+
+  # Subscribe to branch deleted event
+  branchDeleted(streamId: String!): JSONObject
+
+  # Subscribe to commit created event
+  commitCreated(streamId: String!): JSONObject
+
+  # Subscribe to commit updated event.
+  commitUpdated(streamId: String!, commitId: String): JSONObject
+
+  # Subscribe to commit deleted event
+  commitDeleted(streamId: String!): JSONObject
+
+  # Subscribes to new stream added event for your profile. Use this to display an up-to-date list of streams.
+  # **NOTE**: If someone shares a stream with you, this subscription will be triggered with an extra value of `sharedBy` in the payload.
+  userStreamAdded: JSONObject
+
+  # Subscribes to stream removed event for your profile. Use this to display an up-to-date list of streams for your profile.
+  # **NOTE**: If someone revokes your permissions on a stream, this subscription will be triggered with an extra value of `revokedBy` in the payload.
+  userStreamRemoved: JSONObject
+
+  # Subscribes to stream updated event. Use this in clients/components that pertain only to this stream.
+  streamUpdated(streamId: String): JSONObject
+
+  # Subscribes to stream deleted event. Use this in clients/components that pertain only to this stream.
+  streamDeleted(streamId: String): JSONObject
+}
+
+type ActivityCollection {
+  totalCount: Int!
+  cursor: String
+  items: [Activity]
+}
+
+type Activity {
+  actionType: String!
+  info: JSONObject!
+  userId: String!
+  streamId: String
+  resourceId: String!
+  resourceType: String!
+  time: DateTime!
+  message: String!
+}
+
+type ServerApp {
+  id: String!
+  secret: String
+  name: String!
+  description: String
+  termsAndConditionsLink: String
+  logo: String
+  public: Boolean
+  trustByDefault: Boolean
+  author: AppAuthor
+  createdAt: DateTime!
+  redirectUrl: String!
+  scopes: [Scope]!
+}
+
+type ServerAppListItem {
+  id: String!
+  name: String!
+  description: String
+  redirectUrl: String!
+  termsAndConditionsLink: String
+  trustByDefault: Boolean
+  logo: String
+  author: AppAuthor
+}
+
+type AppAuthor {
+  name: String
+  id: String
+  avatar: String
+}
+
+input AppCreateInput {
+  name: String!
+  description: String!
+  termsAndConditionsLink: String
+  logo: String
+  public: Boolean
+  redirectUrl: String!
+  scopes: [String]!
+}
+
+input AppUpdateInput {
+  id: String!
+  name: String!
+  description: String!
+  termsAndConditionsLink: String
+  logo: String
+  public: Boolean
+  redirectUrl: String!
+  scopes: [String]!
+}
+
+type AuthStrategy {
+  id: String!
+  name: String!
+  icon: String!
+  url: String!
+  color: String
+}
+
+type ApiToken {
+  id: String!
+  name: String!
+  lastChars: String!
+  scopes: [String]!
+  createdAt: DateTime!
+  lifespan: BigInt!
+  lastUsed: DateTime!
+}
+
+input ApiTokenCreateInput {
+  scopes: [String!]!
+  name: String!
+  lifespan: BigInt
+}
+
+type Branch {
+  id: String!
+  name: String!
+  author: User
+  description: String
+  commits(limit: Int! = 25, cursor: String): CommitCollection
+
+  # All the recent activity on this branch in chronological order
+  activity(
+    actionType: String
+    after: DateTime
+    before: DateTime
+    cursor: DateTime
+    limit: Int! = 25
+  ): ActivityCollection
+}
+
+type Commit {
+  id: String!
+  referencedObject: String!
+  message: String
+  sourceApplication: String
+  totalChildrenCount: Int
+  branchName: String
+  parents: [String]
+  authorName: String
+  authorId: String
+  authorAvatar: String
+  createdAt: DateTime
+
+  # All the recent activity on this commit in chronological order
+  activity(
+    actionType: String
+    after: DateTime
+    before: DateTime
+    cursor: DateTime
+    limit: Int! = 25
+  ): ActivityCollection
+}
+
+type CommitCollectionUserNode {
+  id: String!
+  referencedObject: String!
+  message: String
+  sourceApplication: String
+  totalChildrenCount: Int
+  branchName: String
+  parents: [String]
+  streamId: String
+  streamName: String
+  createdAt: DateTime
+}
+
+type BranchCollection {
+  totalCount: Int!
+  cursor: String
+  items: [Branch]
+}
+
+type CommitCollection {
+  totalCount: Int!
+  cursor: String
+  items: [Commit]
+}
+
+type CommitCollectionUser {
+  totalCount: Int!
+  cursor: String
+  items: [CommitCollectionUserNode]
+}
+
+input BranchCreateInput {
+  streamId: String!
+  name: String!
+  description: String
+}
+
+input BranchUpdateInput {
+  streamId: String!
+  id: String!
+  name: String
+  description: String
+}
+
+input BranchDeleteInput {
+  streamId: String!
+  id: String!
+}
+
+input CommitCreateInput {
+  streamId: String!
+  branchName: String!
+  objectId: String!
+  message: String
+  sourceApplication: String
+  totalChildrenCount: Int
+
+  # **DEPRECATED** Use the `parents` field.
+  previousCommitIds: [String]
+  parents: [String]
+}
+
+input CommitUpdateInput {
+  streamId: String!
+  id: String!
+  message: String!
+}
+
+input CommitReceivedInput {
+  streamId: String!
+  commitId: String!
+  sourceApplication: String!
+  message: String
+}
+
+input CommitDeleteInput {
+  streamId: String!
+  id: String!
+}
+
+type Object {
+  id: String!
+  speckleType: String
+  applicationId: String
+  createdAt: DateTime
+  totalChildrenCount: Int
+
+  # The full object, with all its props & other things. **NOTE:** If you're requesting objects for the purpose of recreating & displaying, you probably only want to request this specific field.
+  data: JSONObject
+
+  # Get any objects that this object references. In the case of commits, this will give you a commit's constituent objects.
+  # **NOTE**: Providing any of the two last arguments ( `query`, `orderBy` ) will trigger a different code branch that executes a much more expensive SQL query. It is not recommended to do so for basic clients that are interested in purely getting all the objects of a given commit.
+  children(
+    limit: Int! = 100
+    depth: Int! = 50
+    select: [String]
+    cursor: String
+    query: [JSONObject!]
+    orderBy: JSONObject
+  ): ObjectCollection!
+}
+
+type ObjectCollection {
+  totalCount: Int!
+  cursor: String
+  objects: [Object]!
+}
+
+input ObjectCreateInput {
+  # The stream against which these objects will be created.
+  streamId: String!
+
+  # The objects you want to create.
+  objects: [JSONObject]!
+}
+
+# Information about this server.
+type ServerInfo {
+  name: String!
+  company: String
+  description: String
+  adminContact: String
+  canonicalUrl: String
+  termsOfService: String
+  roles: [Role]!
+  scopes: [Scope]!
+  inviteOnly: Boolean
+  version: String
+
+  # The authentication strategies available on this server.
+  authStrategies: [AuthStrategy]
+}
+
+# Available roles.
+type Role {
+  name: String!
+  description: String!
+  resourceTarget: String!
+}
+
+# Available scopes.
+type Scope {
+  name: String!
+  description: String!
+}
+
+input ServerInfoUpdateInput {
+  name: String!
+  company: String
+  description: String
+  adminContact: String
+  termsOfService: String
+  inviteOnly: Boolean
+}
+
+type Stream {
+  id: String!
+  name: String!
+  description: String
+  isPublic: Boolean!
+
+  # Your role for this stream. `null` if request is not authenticated, or the stream is not explicitly shared with you.
+  role: String
+  createdAt: DateTime!
+  updatedAt: DateTime!
+  collaborators: [StreamCollaborator]!
+  size: String
+
+  # All the recent activity on this stream in chronological order
+  activity(
+    actionType: String
+    after: DateTime
+    before: DateTime
+    cursor: DateTime
+    limit: Int! = 25
+  ): ActivityCollection
+  commits(limit: Int! = 25, cursor: String): CommitCollection
+  commit(id: String): Commit
+  branches(limit: Int! = 25, cursor: String): BranchCollection
+  branch(name: String = "main"): Branch
+  object(id: String!): Object
+
+  # Returns a list of all the file uploads for this stream.
+  fileUploads: [FileUpload]
+
+  # Returns a specific file upload that belongs to this stream.
+  fileUpload(id: String!): FileUpload
+  webhooks(id: String): WebhookCollection
+}
+
+type StreamCollaborator {
+  id: String!
+  name: String!
+  role: String!
+  company: String
+  avatar: String
+}
+
+type StreamCollection {
+  totalCount: Int!
+  cursor: String
+  items: [Stream]
+}
+
+input StreamCreateInput {
+  name: String
+  description: String
+  isPublic: Boolean
+}
+
+input StreamUpdateInput {
+  id: String!
+  name: String
+  description: String
+  isPublic: Boolean
+}
+
+input StreamGrantPermissionInput {
+  streamId: String!
+  userId: String!
+  role: String!
+}
+
+input StreamRevokePermissionInput {
+  streamId: String!
+  userId: String!
+}
+
+# Base user type.
+type User {
+  id: String!
+  suuid: String
+  email: String
+  name: String
+  bio: String
+  company: String
+  avatar: String
+  verified: Boolean
+  profiles: JSONObject
+  role: String
+
+  # All the recent activity from this user in chronological order
+  activity(
+    actionType: String
+    after: DateTime
+    before: DateTime
+    cursor: DateTime
+    limit: Int! = 25
+  ): ActivityCollection
+  timeline(
+    after: DateTime
+    before: DateTime
+    cursor: DateTime
+    limit: Int! = 25
+  ): ActivityCollection
+
+  # Returns the apps you have authorized.
+  authorizedApps: [ServerAppListItem]
+
+  # Returns the apps you have created.
+  createdApps: [ServerApp]
+
+  # Returns a list of your personal api tokens.
+  apiTokens: [ApiToken]
+  commits(limit: Int! = 25, cursor: String): CommitCollectionUser
+
+  # All the streams that a user has access to.
+  streams(limit: Int! = 25, cursor: String): StreamCollection
+}
+
+type UserCollection {
+  totalCount: Int!
+  items: [User]
+}
+
+type UserSearchResultCollection {
+  cursor: String
+  items: [UserSearchResult]
+}
+
+type UserSearchResult {
+  id: String!
+  name: String
+  bio: String
+  company: String
+  avatar: String
+  verified: Boolean
+}
+
+input UserRoleInput {
+  id: String!
+  role: String!
+}
+
+input UserUpdateInput {
+  name: String
+  company: String
+  bio: String
+  avatar: String
+}
+
+input UserDeleteInput {
+  email: String
+}
+
+type FileUpload {
+  id: String!
+  streamId: String!
+  branchName: String
+
+  # If present, the conversion result is stored in this commit.
+  convertedCommitId: String
+
+  # The user's id that uploaded this file.
+  userId: String!
+
+  # 0 = queued, 1 = processing, 2 = success, 3 = error
+  convertedStatus: Int!
+
+  # Holds any errors or info.
+  convertedMessage: String
+  fileName: String!
+  fileType: String!
+  fileSize: Int!
+  uploadComplete: Boolean!
+  uploadDate: DateTime!
+  convertedLastUpdate: DateTime!
+}
+
+type ServerInvite {
+  id: String!
+  createdAt: DateTime!
+}
+
+input ServerInviteCreateInput {
+  email: String!
+  message: String
+}
+
+input StreamInviteCreateInput {
+  email: String!
+  message: String
+  streamId: String
+}
+
+type ServerStats {
+  totalStreamCount: Int!
+  totalCommitCount: Int!
+  totalObjectCount: Int!
+  totalUserCount: Int!
+
+  # An array of objects currently structured as { created_month: Date, count: int }.
+  streamHistory: [JSONObject]
+
+  # An array of objects currently structured as { created_month: Date, count: int }.
+  commitHistory: [JSONObject]
+
+  # An array of objects currently structured as { created_month: Date, count: int }.
+  objectHistory: [JSONObject]
+
+  # An array of objects currently structured as { created_month: Date, count: int }.
+  userHistory: [JSONObject]
+}
+
+type WebhookCollection {
+  totalCount: Int
+  items: [Webhook]
+}
+
+type Webhook {
+  id: String!
+  streamId: String!
+  url: String!
+  description: String
+  triggers: [String]!
+  enabled: Boolean
+  history(limit: Int! = 25): WebhookEventCollection
+}
+
+input WebhookCreateInput {
+  streamId: String!
+  url: String!
+  description: String
+  triggers: [String]!
+  secret: String
+  enabled: Boolean
+}
+
+input WebhookUpdateInput {
+  id: String!
+  streamId: String!
+  url: String
+  description: String
+  secret: String
+  enabled: Boolean
+  triggers: [String]
+}
+
+input WebhookDeleteInput {
+  id: String!
+  streamId: String!
+}
+
+type WebhookEventCollection {
+  totalCount: Int
+  items: [WebhookEvent]
+}
+
+type WebhookEvent {
+  id: String!
+  webhookId: String!
+  status: Int!
+  statusInfo: String!
+  retryCount: Int!
+  lastUpdate: DateTime!
+  payload: String!
+}
+
+enum CacheControlScope {
+  PUBLIC
+  PRIVATE
+}
+
+# The `Upload` scalar type represents a file upload.
+scalar Upload

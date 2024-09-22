@@ -1,37 +1,44 @@
-import fmeobjects
+"""Generic Client class for FME Speckle."""
+
+from fmeobjects import FMEFeature, kFMEFeatureTypeAttr
 from specklepy.api import operations
 from specklepy.api.client import SpeckleClient, SpeckleException
 from specklepy.api.credentials import get_default_account
 from specklepy.api.models import Stream
 from specklepy.transports.server import ServerTransport
 
-logger = fmeobjects.FMELogFile()
+from fme_speckle import FMEObject
 
-class DefaultClient:
-  def __init__(self, *args):
 
-    account = get_default_account()
-    client = SpeckleClient()
-    client.authenticate(token=account.token)
+class DefaultClient(FMEObject):
+    """Generic Client class for FME Speckle."""
 
-    self.client = client
-    self.account = account
-    pass
+    def __init__(self, *args):
+        """Constructor."""
+        account = get_default_account()
+        client = SpeckleClient()
+        client.authenticate(token=account.token)
 
-  def input(self, feature):
-    client = fmeobjects.FMEFeature()
-    client.setAttribute(fmeobjects.kFMEFeatureTypeAttr, "SpeckleClient")
-    client.setFeatureType('SpeckleClient')
+        self.client = client
+        self.account = account
 
-    client.setAttribute("_token", self.account.token)
-    client.setAttribute("_refreshToken", self.account.refreshToken)
-    client.setAttribute("_host", self.client.url)
+        pass
 
-    client.setAttribute('authenticated', self.client.me is not None)
-    client.setAttribute("userId", self.account.userInfo.id)
-    client.setAttribute("userName", self.account.userInfo.name)
+    def input(self, feature):
+        """Process each feature."""
+        client = FMEFeature()
+        client.setAttribute(kFMEFeatureTypeAttr, "SpeckleClient")
+        client.setFeatureType("SpeckleClient")
 
-    self.pyoutput(client)
+        client.setAttribute("_token", self.account.token)
+        client.setAttribute("_refreshToken", self.account.refreshToken)
 
-    pass
+        client.setAttribute("host", self.client.url)
+        client.setAttribute("authenticated", self.client.me is not None)
+        client.setAttribute("userId", self.account.userInfo.id)
+        client.setAttribute("name", self.account.userInfo.name)
+        client.setAttribute("email", self.account.userInfo.email)
 
+        self.pyoutput(client)
+
+        pass
